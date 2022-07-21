@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FIFA.iml" filepath="$PROJECT_DIR$/.idea/FIFA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FIFA/FIFA.iml" filepath="$PROJECT_DIR$/FIFA/FIFA.iml" />
     </modules>
   </component>
 </project>
