@@ -28,7 +28,6 @@ public class UsController {
         aboutImage.setVisible(true);
         versionText.setVisible(true);
         crditsText.setVisible(false);
-        versionText.setText("Version 0.0.1");
 
     }
 

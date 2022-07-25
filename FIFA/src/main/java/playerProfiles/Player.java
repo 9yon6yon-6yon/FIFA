@@ -16,7 +16,7 @@ public class Player extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Player.fxml")));
         stage.setTitle("Player Profile");
-        stage.setScene(new Scene(root));
+        stage.setScene(new Scene(root,900,600));
         stage.show();
 
     }
