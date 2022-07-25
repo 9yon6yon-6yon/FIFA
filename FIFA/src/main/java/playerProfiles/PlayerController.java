@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import sample.Main;
 
 
-public class PlayerController {
+public class PlayerController {//aa
 
 
     @FXML
