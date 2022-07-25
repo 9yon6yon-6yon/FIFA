@@ -1,0 +1,32 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Yann Sommer	G	33	1.83 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--
+Yvon Mvogo	G	28	1.88 m	87 kg	Switzerland	--	--	--	--	--	--	--	--	--
+Jonas Omlin	G	28	1.88 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--
+Gregor Kobel	G	24	1.96 m	87 kg	Switzerland	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Ricardo Rodríguez	D	29	1.8 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Silvan Widmer	D	29	1.83 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Kevin Mbabu	D	27	1.83 m	83 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Fabian Schär	D	30	1.88 m	83 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Nico Elvedi	D	25	1.88 m	81 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Manuel Akanji	D	27	1.88 m	91 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Eray Cömert	D	24	1.83 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Jordan Lotomba	D	23	1.78 m	71 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Leonidas Stergiou	D	20	1.8 m	68 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Fabian Frei	M	33	1.83 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Steven Zuber	M	30	1.83 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Xherdan Shaqiri	M	30	1.7 m	72 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Granit Xhaka	M	29	1.85 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Remo Freuler	M	30	1.8 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Renato Steffen	M	30	1.7 m	63 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Djibril Sow	M	25	1.83 m	76 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Michel Aebischer	M	25	1.83 m	73 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Ruben Vargas	M	23	1.78 m	68 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Noah Okafor	M	22	1.85 m	83 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Haris Seferovic	F	30	1.88 m	83 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Mario Gavranovic	F	32	1.75 m	76 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Mattia Bottani	F	31	1.7 m	63 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Breel Embolo	F	25	1.88 m	87 kg	Switzerland	--	--	--	--	--	--	--	--	--	--
+Mohamed Zeki Amdouni	F	21	1.85 m	78 kg	Switzerland	--	--	--	--	--	--	--	--	--	--

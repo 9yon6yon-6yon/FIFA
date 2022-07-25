@@ -1,0 +1,32 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Ederson	G	28	1.88 m	86 kg	Brazil	--	--	--	--	--	--	--	--	--
+Alisson	G	29	1.91 m	91 kg	Brazil	--	--	--	--	--	--	--	--	--
+Weverton	G	34	1.88 m	91 kg	Brazil	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Dani Alves	D	39	1.73 m	68 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Thiago Silva	D	37	1.83 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Alex Sandro	D	31	1.8 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Marquinhos	D	28	1.83 m	73 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Danilo	D	31	1.83 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Alex Telles	D	29	1.8 m	71 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Guilherme Arana	D	25	1.75 m	66 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Éder Militão	D	24	1.85 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Gabriel	D	24	1.91 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Léo Ortiz	D	26	1.85 m	83 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Philippe Coutinho	M	30	1.73 m	68 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Fred	M	29	1.7 m	63 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Casemiro	M	30	1.85 m	83 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Fabinho	M	28	1.88 m	78 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Bruno Guimarães	M	24	1.83 m	73 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Lucas Paquetá	M	24	1.8 m	72 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Danilo	M	21	1.75 m	68 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Neymar	F	30	1.75 m	68 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Richarlison	F	25	1.83 m	83 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Gabriel Jesus	F	25	1.75 m	73 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Raphinha	F	25	1.75 m	68 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Vinícius Júnior	F	22	1.75 m	73 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Matheus Cunha	F	23	1.83 m	76 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Rodrygo	F	21	1.75 m	63 kg	Brazil	--	--	--	--	--	--	--	--	--	--
+Gabriel Martinelli	F	21	1.78 m	73 kg	Brazil	--	--	--	--	--	--	--	--	--	--

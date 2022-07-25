@@ -1,0 +1,29 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Fawaz Al-Qarni	G	30	1.83 m	87 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--
+Mohammed Al-Owais	G	30	1.85 m	82 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--
+Mohammed Al-Rubaie	G	24	1.88 m	77 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Yaseer Al-Shahrani	D	30	1.7 m	62 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Mohammed Al-Burayk	D	29	1.73 m	62 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Ali Hadi Albulayhi	D	32	1.8 m	81 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Hassan Al Tambakti	D	23	1.85 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdulelah Al-Amri	D	25	1.85 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Sultan Al-Ghanam	D	28	1.75 m	63 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Ziyad Al Sahafi	D	28	1.88 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Ali Al Lajami	D	26	1.78 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Salman Al-Faraj	M	32	1.78 m	68 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Salem Al-Dawsari	M	30	1.7 m	72 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdullah Otayf	M	29	1.75 m	66 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Sami Al-Naji	M	25	1.75 m	68 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Mohamed Kanno	M	27	1.93 m	67 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdulaziz Al-Bishi	M	28	1.73 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Nasser Al-Dosari	M	23	1.8 m	63 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Hattan Bahebri	M	30	1.7 m	67 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Khalid Al-Ghannam	M	21	1.7 m	63 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Ali Al-Hassan	M	25	1.83 m	68 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdulrahman Ghareeb	F	25	1.65 m	58 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdulrahman Alobud	F	27	1.75 m	68 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Feras Al Brikan	F	22	1.83 m	73 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--
+Abdullah Al-Hamddan	F	22	1.83 m	76 kg	Saudi Arabia	--	--	--	--	--	--	--	--	--	--

@@ -1,0 +1,33 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Franco Armani	G	35	1.88 m	87 kg	Argentina	--	--	--	--	--	--	--	--	--
+Emiliano Martínez	G	29	1.96 m	87 kg	Argentina	--	--	--	--	--	--	--	--	--
+Gerónimo Rulli	G	30	1.88 m	83 kg	Argentina	--	--	--	--	--	--	--	--	--
+Juan Musso	G	28	1.91 m	92 kg	Argentina	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Cristian Romero	D	24	1.85 m	78 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Nicolás Otamendi	D	34	1.83 m	81 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Germán Pezzella	D	31	1.88 m	82 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Nicolás Tagliafico	D	29	1.73 m	63 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Nahuel Molina	D	24	1.75 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Gonzalo Montiel	D	25	1.78 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Lisandro Martínez	D	24	1.75 m	77 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Marcos Senesi	D	25	1.85 m	78 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Juan Foyth	D	24	1.78 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Nehuén Pérez	D	22	1.85 m	73 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Ángel Di María	M	34	1.8 m	73 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Papu Gómez	M	34	1.68 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Marcos Acuña	M	30	1.73 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Rodrigo De Paul	M	28	1.8 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Joaquín Correa	M	27	1.88 m	73 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Giovani Lo Celso	M	26	1.78 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Guido Rodríguez	M	28	1.85 m	78 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Exequiel Palacios	M	23	1.78 m	67 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Alexis Mac Allister	M	23	1.75 m	72 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Lionel Messi	F	35	1.7 m	72 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Nicolás González	F	24	1.8 m	72 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Paulo Dybala	F	28	1.78 m	73 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Ángel Correa	F	27	1.7 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Lautaro Martínez	F	24	1.75 m	72 kg	Argentina	--	--	--	--	--	--	--	--	--	--
+Julián Álvarez	F	22	1.73 m	68 kg	Argentina	--	--	--	--	--	--	--	--	--	--

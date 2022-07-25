@@ -1,0 +1,31 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Sean Johnson	G	33	1.91 m	97 kg	United States	--	--	--	--	--	--	--	--	--
+Ethan Horvath	G	27	1.93 m	83 kg	United States	--	--	--	--	--	--	--	--	--
+Matt Turner	G	28	1.91 m	78 kg	United States	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Walker Zimmerman	D	29	1.91 m	87 kg	United States	--	--	--	--	--	--	--	--	--	--
+DeAndre Yedlin	D	29	1.73 m	73 kg	United States	--	--	--	--	--	--	--	--	--	--
+Erik Palmer-Brown	D	25	1.88 m	87 kg	United States	--	--	--	--	--	--	--	--	--	--
+Aaron Long	D	29	1.85 m	78 kg	United States	--	--	--	--	--	--	--	--	--	--
+Cameron Carter-Vickers	D	24	1.83 m	92 kg	United States	--	--	--	--	--	--	--	--	--	--
+Antonee Robinson	D	24	1.83 m	68 kg	United States	--	--	--	--	--	--	--	--	--	--
+Reggie Cannon	D	24	1.8 m	73 kg	United States	--	--	--	--	--	--	--	--	--	--
+George Bello	D	20	1.73 m	73 kg	United States	--	--	--	--	--	--	--	--	--	--
+Joe Scally	D	19	1.83 m	78 kg	United States	--	--	--	--	--	--	--	--	--	--
+Kobi Henry	D	18	1.88 m	77 kg	United States	--	--	--	--	--	--	--	--	--	--
+Kellyn Acosta	M	27	1.78 m	68 kg	United States	--	--	--	--	--	--	--	--	--	--
+Paul Arriola	M	27	1.68 m	66 kg	United States	--	--	--	--	--	--	--	--	--	--
+Cristian Roldan	M	27	1.73 m	73 kg	United States	--	--	--	--	--	--	--	--	--	--
+Tyler Adams	M	23	1.75 m	72 kg	United States	--	--	--	--	--	--	--	--	--	--
+Christian Pulisic	M	23	1.73 m	68 kg	United States	--	--	--	--	--	--	--	--	--	--
+Luca de la Torre	M	24	1.78 m	67 kg	United States	--	--	--	--	--	--	--	--	--	--
+Weston McKennie	M	23	1.85 m	83 kg	United States	--	--	--	--	--	--	--	--	--	--
+Brenden Aaronson	M	21	1.78 m	68 kg	United States	--	--	--	--	--	--	--	--	--	--
+Yunus Musah	M	19	1.78 m	73 kg	United States	--	--	--	--	--	--	--	--	--	--
+Jordan Morris	F	27	1.83 m	83 kg	United States	--	--	--	--	--	--	--	--	--	--
+Haji Wright	F	24	1.93 m	78 kg	United States	--	--	--	--	--	--	--	--	--	--
+Jesús Ferreira	F	21	1.75 m	68 kg	United States	--	--	--	--	--	--	--	--	--	--
+Timothy Weah	F	22	1.85 m	66 kg	United States	--	--	--	--	--	--	--	--	--	--
+Malik Tillman	F	20	1.88 m	71 kg	United States	--	--	--	--	--	--	--	--	--	--

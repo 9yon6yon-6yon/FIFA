@@ -1,0 +1,30 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Keisuke Osako1	G	22	1.85 m	86 kg	Japan	--	--	--	--	--	--	--	--	--
+Kosei Tani12	G	21	1.91 m	87 kg	Japan	--	--	--	--	--	--	--	--	--
+Zion Suzuki23	G	19	1.91 m	92 kg	Japan	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Miki Yamane2	D	28	1.78 m	72 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Shogo Taniguchi3	D	31	1.83 m	73 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Shinnosuke Nakatani4	D	26	1.83 m	78 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Shinnosuke Hatanaka5	D	26	1.83 m	83 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Tomoki Iwata6	D	25	1.78 m	77 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Daiki Sugioka13	D	23	1.83 m	73 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Sho Sasaki19	D	32	1.78 m	68 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Hayato Araki22	D	25	1.85 m	77 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Takuma Ominami24	D	24	1.83 m	76 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Ryuta Koike25	D	26	1.7 m	67 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Gakuto Notsuda7	M	28	1.78 m	72 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Tsukasa Morishima8	M	25	1.75 m	67 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Yasuto Wakisaka14	M	27	1.73 m	68 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Kento Hashimoto15	M	28	1.83 m	68 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Kota Mizunuma18	M	32	1.75 m	72 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Joel Fujita26	M	20	1.75 m	73 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Takuma Nishimura9	F	25	1.78 m	76 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Yuto Iwasaki10	F	24	1.73 m	72 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Shuto Machino11	F	22	1.85 m	77 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Yuki Soma16	F	25	1.65 m	68 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Ryo Miyaichi17	F	29	1.83 m	78 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Mao Hosoya20	F	20	1.78 m	68 kg	Japan	--	--	--	--	--	--	--	--	--	--
+Makoto Mitsuta21	F	23	1.7 m	58 kg	Japan	--	--	--	--	--	--	--	--	--	--

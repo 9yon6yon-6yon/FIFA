@@ -9,8 +9,6 @@ import javafx.stage.Stage;
 import java.util.Objects;
 
 public class Player extends Application {
-    static  Stage mainStage;
-
 
     @Override
     public void start(Stage stage) throws Exception {

@@ -1,0 +1,28 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Saad Al Sheeb	G	32	1.88 m	83 kg	Qatar	--	--	--	--	--	--	--	--	--
+Yousof Hassan	G	26	1.88 m	78 kg	Qatar	--	--	--	--	--	--	--	--	--
+Meshaal Barsham22	G	24	1.78 m	66 kg	Qatar	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Ró-Ró	D	31	1.8 m	73 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Abdelkarim Hassan	D	28	1.83 m	82 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Salem Al Hajri	D	26	1.83 m	68 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Bassam Al Rawi	D	24	1.75 m	77 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Tarek Salman	D	24	1.8 m	71 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Musaab Khidir	D	28	1.75 m	--	Qatar	--	--	--	--	--	--	--	--	--	--
+Homam Ahmed	D	22	1.85 m	71 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Karim Boudiaf	M	31	1.91 m	87 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Boualem Khoukhi	M	32	1.88 m	78 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Abdullah Al Ahrak	M	25	1.75 m	71 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Hazem Shehata	M	24	--	--	Qatar	--	--	--	--	--	--	--	--	--	--
+Ismail Mohamad	M	32	1.68 m	63 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Ali Asad	M	29	1.8 m	59 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Abdelrahman Fahmi Moustafa	M	25	1.68 m	63 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Mohammed Waad	M	22	1.83 m	68 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Naif Abdulraheem Al Hadhrami	M	21	--	--	Qatar	--	--	--	--	--	--	--	--	--	--
+Assim Madabo23	M	25	1.63 m	71 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Almoez Ali	F	25	1.8 m	68 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Akram Afif	F	25	1.8 m	68 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Ahmed Alaa	F	29	1.75 m	73 kg	Qatar	--	--	--	--	--	--	--	--	--	--
+Khalid Muneer Ali	F	24	1.7 m	54 kg	Qatar	--	--	--	--	--	--	--	--	--	--

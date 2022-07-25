@@ -1,0 +1,28 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Mohamed Sedki Debchi1	G	22	1.96 m	--	Tunisia	--	--	--	--	--	--	--	--	--
+Aymen Dahmen16	G	25	--	--	Tunisia	--	--	--	--	--	--	--	--	--
+Bechir Ben Said22	G	29	1.88 m	--	Tunisia	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Bilel Ifa2	D	32	1.85 m	77 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Montassar Talbi3	D	24	1.91 m	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Ali Abdi4	D	28	1.83 m	73 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Ali Maâloul12	D	32	1.75 m	72 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Mohamed Drager20	D	26	1.8 m	73 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Rami Kaib21	D	25	1.78 m	63 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Alaa Ghram24	D	21	--	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Mootez Zaddem	M	21	--	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Adam Ben Lamin5	M	21	1.83 m	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Nader Ghandri6	M	27	1.93 m	87 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Anis Ben Slimane8	M	21	1.85 m	86 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Mohamed Ben Larbi9	M	26	1.8 m	78 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Hannibal Mejbri10	M	19	1.78 m	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Ferjani Sassi13	M	30	1.85 m	78 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Aissa Laidouni14	M	25	1.78 m	73 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Mohamed Ali Ben Romdhane15	M	22	1.83 m	--	Tunisia	--	--	--	--	--	--	--	--	--	--
+Naïm Sliti23	M	29	1.73 m	78 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Youssef M'Sakni7	F	31	1.75 m	73 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Taha Yassine Khenissi11	F	30	1.8 m	77 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Issam Jebali17	F	30	1.85 m	83 kg	Tunisia	--	--	--	--	--	--	--	--	--	--
+Seifeddin Jaziri19	F	29	1.8 m	--	Tunisia	--	--	--	--	--	--	--	--	--	--

@@ -1,0 +1,32 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Andrew Redmayne	G	33	1.93 m	83 kg	Australia	--	--	--	--	--	--	--	--	--
+Danny Vukovic	G	37	1.88 m	93 kg	Australia	--	--	--	--	--	--	--	--	--
+Mat Ryan	G	30	1.83 m	82 kg	Australia	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Jason Davidson	D	31	1.8 m	72 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Bailey Wright	D	29	1.85 m	83 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Trent Sainsbury	D	30	1.83 m	76 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Milos Degenek	D	28	1.88 m	82 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Aziz Behich	D	31	1.7 m	63 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Kye Rowles	D	24	1.85 m	88 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Fran Karacic	D	26	1.85 m	73 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Nathaniel Atkinson	D	23	1.8 m	--	Australia	--	--	--	--	--	--	--	--	--	--
+Joel King	D	21	1.78 m	78 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Aaron Mooy	M	31	1.75 m	68 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Jackson Irvine	M	29	1.88 m	68 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Awer Mabil	M	26	1.78 m	63 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Kenneth Dougall	M	29	1.83 m	78 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Ajdin Hrustic	M	26	1.83 m	78 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Riley McGree	M	23	1.78 m	72 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Denis Genreau	M	23	1.75 m	73 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Gianni Stensness	M	23	1.85 m	--	Australia	--	--	--	--	--	--	--	--	--	--
+Martin Boyle	F	29	1.73 m	53 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Mathew Leckie	F	31	1.8 m	82 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Adam Taggart	F	29	1.83 m	68 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Mitch Duke	F	31	1.83 m	83 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Craig Goodwin	F	30	1.8 m	72 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Jamie Maclaren	F	28	1.78 m	76 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Nicholas D'Agostino	F	24	1.75 m	77 kg	Australia	--	--	--	--	--	--	--	--	--	--
+Marco Tilio	F	20	1.7 m	--	Australia	--	--	--	--	--	--	--	--	--	--

@@ -1,0 +1,41 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Wojciech Szczesny	G	32	1.96 m	88 kg	Poland	--	--	--	--	--	--	--	--	--
+Lukasz Skorupski	G	31	1.88 m	83 kg	Poland	--	--	--	--	--	--	--	--	--
+Bartlomiej Dragowski	G	24	1.91 m	73 kg	Poland	--	--	--	--	--	--	--	--	--
+Kamil Grabara	G	23	1.96 m	78 kg	Poland	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Kamil Glik	D	34	1.91 m	78 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Marcin Kaminski	D	30	1.93 m	83 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Bartosz Bereszynski	D	30	1.83 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Tomasz Kedziora	D	28	1.83 m	73 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Mateusz Wieteska	D	25	1.88 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Jan Bednarek	D	26	1.88 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Robert Gumny	D	24	1.83 m	71 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Tymoteusz Puchacz	D	23	1.8 m	73 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Kamil Pestka	D	23	1.88 m	67 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Jakub Kiwior	D	22	1.88 m	--	Poland	--	--	--	--	--	--	--	--	--	--
+Krystian Bielik	D	24	1.88 m	78 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Matthew Cash	D	24	1.85 m	63 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Grzegorz Krychowiak	M	32	1.85 m	83 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Kamil Grosicki	M	34	1.8 m	78 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Mateusz Klich	M	32	1.83 m	83 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Piotr Zielinski	M	28	1.8 m	73 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Przemyslaw Frankowski	M	27	1.75 m	68 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Karol Linetty	M	27	1.75 m	73 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Jacek Góralski	M	29	1.73 m	66 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Kamil Jozwiak	M	24	1.75 m	68 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Sebastian Szymanski	M	23	1.75 m	58 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Konrad Michalak	M	24	1.75 m	59 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Damian Szymanski	M	27	1.83 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Patryk Kun	M	27	1.65 m	53 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Szymon Zurkowski	M	24	1.85 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Przemyslaw Placheta	M	24	1.78 m	72 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Jakub Kaminski	M	20	1.78 m	71 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Nicola Zalewski	F	20	1.65 m	--	Poland	--	--	--	--	--	--	--	--	--	--
+Robert Lewandowski	F	33	1.85 m	81 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Arkadiusz Milik	F	28	1.85 m	78 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Karol Swiderski	F	25	1.83 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Krzysztof Piatek	F	27	1.83 m	77 kg	Poland	--	--	--	--	--	--	--	--	--	--
+Adam Buksa	F	26	1.91 m	78 kg	Poland	--	--	--	--	--	--	--	--	--	--

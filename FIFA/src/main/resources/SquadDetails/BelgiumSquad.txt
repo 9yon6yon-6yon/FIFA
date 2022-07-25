@@ -1,0 +1,35 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Simon Mignolet	G	34	1.93 m	87 kg	Belgium	--	--	--	--	--	--	--	--	--
+Thibaut Courtois	G	30	1.98 m	91 kg	Belgium	--	--	--	--	--	--	--	--	--
+Koen Casteels	G	30	1.98 m	78 kg	Belgium	--	--	--	--	--	--	--	--	--
+Matz Sels	G	30	1.88 m	73 kg	Belgium	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Toby Alderweireld	D	33	1.85 m	81 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Jan Vertonghen	D	35	1.88 m	78 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Dedryck Boyata	D	31	1.88 m	83 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Thomas Meunier	D	30	1.91 m	88 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Thomas Foket	D	27	1.78 m	72 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Jason Denayer	D	27	1.83 m	68 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Brandon Mechele	D	29	1.91 m	81 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Timothy Castagne	D	26	1.85 m	78 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Wout Faes	D	24	1.88 m	82 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Arthur Theate	D	22	--	--	Belgium	--	--	--	--	--	--	--	--	--	--
+Leander Dendoncker	M	27	1.88 m	83 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Eden Hazard	M	31	1.75 m	73 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Thorgan Hazard	M	29	1.75 m	71 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Axel Witsel	M	33	1.85 m	81 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Dennis Praet	M	28	1.8 m	78 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Yannick Carrasco	M	28	1.85 m	73 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Adnan Januzaj	M	27	1.85 m	76 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Youri Tielemans	M	25	1.75 m	72 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Hans Vanaken	M	29	1.96 m	77 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Alexis Saelemaekers	M	23	1.8 m	72 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Charles De Ketelaere	M	21	1.93 m	73 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Amadou Onana	M	20	1.93 m	76 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Dries Mertens14	M	35	1.7 m	59 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Romelu Lukaku	F	29	1.91 m	92 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Michy Batshuayi	F	28	1.83 m	76 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Leandro Trossard	F	27	1.7 m	59 kg	Belgium	--	--	--	--	--	--	--	--	--	--
+Loïs Openda	F	22	1.75 m	--	Belgium	--	--	--	--	--	--	--	--	--	--

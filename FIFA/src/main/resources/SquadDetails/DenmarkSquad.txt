@@ -1,0 +1,29 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Kasper Schmeichel	G	35	1.88 m	87 kg	Denmark	--	--	--	--	--	--	--	--	--
+Daniel Iversen	G	25	1.91 m	79 kg	Denmark	--	--	--	--	--	--	--	--	--
+Peter Vindahl Jensen	G	24	1.96 m	87 kg	Denmark	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Nicolai Boilesen	D	30	1.85 m	78 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Jannik Vestergaard	D	29	1.98 m	97 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Andreas Christensen	D	26	1.88 m	82 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Jens Stryger Larsen	D	31	1.8 m	81 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Joachim Andersen	D	26	1.93 m	88 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Rasmus Kristensen	D	25	1.88 m	68 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Joakim Maehle	D	25	1.85 m	78 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Victor Nelsson	D	23	1.85 m	78 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Christian Eriksen	M	30	1.83 m	76 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Thomas Delaney	M	30	1.83 m	78 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Daniel Wass	M	33	1.8 m	73 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Pierre-Emile Hojbjerg	M	26	1.88 m	83 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Phillip Biling	M	26	1.93 m	83 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Mathias Jensen	M	26	1.8 m	68 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Morten Hjulmand	M	23	1.85 m	73 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Mikkel Damsgaard	M	22	1.75 m	66 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Andreas Cornelius	F	29	1.93 m	91 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Yussuf Poulsen	F	28	1.93 m	83 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Martin Braithwaite	F	31	1.78 m	73 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Robert Skov	F	26	1.85 m	81 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Andreas Skov Olsen	F	22	1.88 m	78 kg	Denmark	--	--	--	--	--	--	--	--	--	--
+Jonas Wind	F	23	1.91 m	82 kg	Denmark	--	--	--	--	--	--	--	--	--	--

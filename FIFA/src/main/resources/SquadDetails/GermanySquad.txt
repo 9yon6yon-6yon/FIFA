@@ -1,0 +1,30 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Manuel Neuer	G	36	1.93 m	92 kg	Germany	--	--	--	--	--	--	--	--	--
+Kevin Trapp	G	32	1.88 m	83 kg	Germany	--	--	--	--	--	--	--	--	--
+Oliver Baumann	G	32	1.88 m	82 kg	Germany	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Antonio Rüdiger	D	29	1.91 m	83 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Niklas Süle	D	26	1.96 m	97 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Jonathan Tah	D	26	1.96 m	97 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Lukas Klostermann	D	26	1.88 m	87 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Thilo Kehrer	D	25	1.85 m	76 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Benjamin Henrichs	D	25	1.83 m	78 kg	Germany	--	--	--	--	--	--	--	--	--	--
+David Raum	D	24	1.8 m	73 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Nico Schlotterbeck	D	22	1.91 m	86 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Ilkay Gündogan	M	31	1.8 m	78 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Leon Goretzka	M	27	1.88 m	82 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Jonas Hofmann	M	30	1.75 m	73 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Serge Gnabry	M	27	1.75 m	77 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Joshua Kimmich	M	27	1.78 m	73 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Julian Brandt	M	26	1.85 m	83 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Kai Havertz	M	23	1.88 m	83 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Jamal Musiala	M	19	1.8 m	68 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Anton Stach	M	23	1.93 m	86 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Marco Reus	F	33	1.8 m	71 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Thomas Müller	F	32	1.85 m	76 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Timo Werner	F	26	1.8 m	73 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Leroy Sané	F	26	1.83 m	78 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Lukas Nmecha	F	23	1.85 m	78 kg	Germany	--	--	--	--	--	--	--	--	--	--
+Karim Adeyemi	F	20	1.8 m	68 kg	Germany	--	--	--	--	--	--	--	--	--	--

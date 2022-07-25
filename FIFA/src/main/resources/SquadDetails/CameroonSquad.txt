@@ -1,0 +1,28 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Devis Epassy Mboka	G	29	1.88 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--
+Andre Onana	G	26	1.91 m	92 kg	Cameroon	--	--	--	--	--	--	--	--	--
+Simon Omossola	G	24	1.88 m	--	Cameroon	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Ambroise Oyongo	D	31	1.75 m	68 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Jean-Charles Castelletto	D	27	1.85 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Collins Faï	D	29	1.65 m	72 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Michael Ngadeu	D	31	1.91 m	87 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Olivier Mbaizo	D	24	1.8 m	68 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Nouhou Tolo	D	25	1.78 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Duplex Tchamba Bangou	D	24	1.91 m	--	Cameroon	--	--	--	--	--	--	--	--	--	--
+Christopher Maurice Wooh	D	20	1.91 m	--	Cameroon	--	--	--	--	--	--	--	--	--	--
+André-Frank Zambo Anguissa	M	26	1.83 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Olivier Ntcham	M	26	1.8 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Samuel Oum Gouet	M	24	1.85 m	73 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Nicolas Ngamaleu	M	28	1.8 m	68 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Martin Hongla	M	24	1.8 m	77 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Pierre Kunde Malong	M	26	1.8 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Gaël Ondoua	M	26	1.85 m	78 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Eric Maxim Choupo-Moting	F	33	1.91 m	88 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Vincent Aboubakar	F	30	1.83 m	82 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Karl Toko Ekambi	F	29	1.85 m	73 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Kévin Soni	F	24	1.83 m	76 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Léandre Tawamba	F	32	1.88 m	83 kg	Cameroon	--	--	--	--	--	--	--	--	--	--
+Ignatius Ganago	F	23	1.78 m	82 kg	Cameroon	--	--	--	--	--	--	--	--	--	--

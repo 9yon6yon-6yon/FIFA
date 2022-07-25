@@ -1,0 +1,32 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Alexander Domínguez	G	35	1.93 m	78 kg	Ecuador	--	--	--	--	--	--	--	--	--
+Hernan Galindez	G	35	1.88 m	88 kg	Ecuador	--	--	--	--	--	--	--	--	--
+Wellington Ramírez	G	21	1.88 m	68 kg	Ecuador	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Robert Arboleda	D	30	1.88 m	78 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Xavier Arreaga	D	27	1.83 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Pervis Estupiñán	D	24	1.75 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Byron Castillo	D	23	1.7 m	58 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Félix Torres	D	25	1.88 m	78 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Angelo Preciado	D	24	1.73 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Diego Palacios	D	23	1.7 m	68 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Jackson Porozo	D	21	1.93 m	87 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Piero Hincapié	D	20	1.83 m	66 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Dixon Arroyo	M	30	1.78 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Carlos Gruezo	M	27	1.73 m	71 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Sebastián Méndez	M	25	1.75 m	72 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+José Cifuentes	M	23	1.75 m	68 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Alan Franco	M	23	1.75 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Gonzalo Plata	M	21	1.78 m	63 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Alexander Alvarado	M	23	1.65 m	67 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Moises Caicedo	M	20	1.78 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Enner Valencia	F	32	1.78 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Romario Ibarra	F	27	1.75 m	73 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Ángel Mena	F	34	1.7 m	68 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Jordy Caicedo	F	24	1.85 m	82 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Michael Estrada	F	26	1.85 m	86 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Djorkaeff Reasco	F	23	1.73 m	--	Ecuador	--	--	--	--	--	--	--	--	--	--
+Leonardo Campana	F	22	1.88 m	78 kg	Ecuador	--	--	--	--	--	--	--	--	--	--
+Jeremy Sarmiento	F	20	--	--	Ecuador	--	--	--	--	--	--	--	--	--	--
