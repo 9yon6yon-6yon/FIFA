@@ -9,4 +9,7 @@ module com.example.fifa {
     exports playerProfiles;
     opens About to javafx.fxml;
     exports  About;
+    opens sample to javafx.fxml;
+    exports sample;
+
 }
