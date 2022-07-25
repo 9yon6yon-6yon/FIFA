@@ -6,16 +6,15 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="404.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="playerProfiles.PlayerController">
    <children>
-      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="689.0">
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="689.0" useSystemMenuBar="true">
         <menus>
           <Menu mnemonicParsing="false" text="Home">
             <items>
                   <MenuItem mnemonicParsing="false" text="Details" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Log Out" />
+                  <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#onLogOutClicked" text="Log Out" />
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
