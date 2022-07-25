@@ -9,5 +9,9 @@ module com.example.fifa {
     exports  About;
     opens sample to javafx.fxml;
     exports sample;
+    opens BMI to javafx.fxml;
+    exports BMI;
+    opens BuyTicket  to javafx.fxml;
+    exports BuyTicket;
 
 }
