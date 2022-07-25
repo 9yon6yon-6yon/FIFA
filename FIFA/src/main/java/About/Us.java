@@ -15,7 +15,7 @@ public class Us extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Us.fxml")));
         stage.setTitle("About");
         stage.setScene(new Scene(root));
-        stage.show();
+        stage.show();//up to date
 
 
     }
