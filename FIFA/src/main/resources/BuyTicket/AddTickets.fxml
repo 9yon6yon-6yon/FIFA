@@ -15,10 +15,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BuyTicket.TicketController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BuyTicket.AddTicketsController">
    <children>
-      <MenuBar fx:id="menubar" cache="true" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="25.0" prefWidth="910.0" useSystemMenuBar="true">
+      <MenuBar fx:id="menubar" cache="true" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="25.0" prefWidth="900.0" useSystemMenuBar="true">
          <menus>
             <Menu mnemonicParsing="false" text="Home">
                <items>
@@ -43,7 +42,7 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Label fx:id="buticketsLabel" alignment="CENTER" layoutX="293.0" layoutY="27.0" prefHeight="49.0" prefWidth="325.0" text="Buy Tickets" wrapText="true">
+      <Label fx:id="buticketsLabel" alignment="CENTER" layoutX="288.0" layoutY="36.0" prefHeight="49.0" prefWidth="325.0" text="EDIT Tickets" wrapText="true">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
@@ -64,13 +63,13 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fitHeight="141.0" fitWidth="121.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="141.0" fitWidth="121.0" layoutX="9.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/fifaLogo22.png" />
          </image>
       </ImageView>
-      <Separator layoutX="205.0" layoutY="106.0" prefHeight="3.0" prefWidth="500.0" />
-      <Label layoutX="56.0" layoutY="219.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Separator layoutX="200.0" layoutY="115.0" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="51.0" layoutY="228.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -88,7 +87,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="293.0" layoutY="188.0" prefHeight="16.0" prefWidth="243.0" text="Available Matches">
+      <Label layoutX="288.0" layoutY="197.0" prefHeight="16.0" prefWidth="243.0" text="Available Matches">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -109,7 +108,7 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER_RIGHT" layoutX="646.0" layoutY="188.0" prefHeight="16.0" prefWidth="243.0" text="Available Tickets">
+      <Label alignment="CENTER_RIGHT" layoutX="624.0" layoutY="197.0" prefHeight="19.0" prefWidth="188.0" text="Available Tickets">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -130,7 +129,7 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="756.0" layoutY="219.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="228.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -148,8 +147,8 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <DatePicker fx:id="ticketsDate" layoutX="692.0" layoutY="136.0" />
-      <Label alignment="CENTER_RIGHT" layoutX="527.0" layoutY="139.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
+      <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -170,17 +169,17 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <ImageView fx:id="shoppingCart" fitHeight="33.0" fitWidth="37.0" layoutX="853.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="shoppingCart" fitHeight="33.0" fitWidth="37.0" layoutX="848.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/icons8-cart.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="buyCart1" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="259.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="268.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -198,7 +197,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="502.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="511.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -216,12 +215,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart2" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket2" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="502.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="511.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -239,7 +238,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="259.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="268.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -257,12 +256,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart8" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket8" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="302.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="311.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -280,7 +279,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="302.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="311.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -298,12 +297,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart3" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket3" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="342.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="351.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -321,7 +320,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="342.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="351.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -339,12 +338,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart4" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket4" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="382.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="391.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -362,7 +361,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="382.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="391.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -380,12 +379,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart5" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket5" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="422.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="431.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -403,7 +402,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="422.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="431.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -421,12 +420,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart6" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket6" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="462.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <Label layoutX="51.0" layoutY="471.0" prefHeight="40.0" prefWidth="600.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -444,7 +443,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="756.0" layoutY="462.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+      <Label layoutX="728.0" layoutY="471.0" prefHeight="40.0" prefWidth="70.0" text="Label">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -462,9 +461,70 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="buyCart7" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="reductTicket7" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="831.0" layoutY="197.0" prefHeight="19.0" prefWidth="44.0" text="Edit">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket2" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket8" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket3" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket4" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket5" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket16" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket7" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
          </image>
       </ImageView>
    </children>
