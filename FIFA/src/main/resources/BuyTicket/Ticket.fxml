@@ -2,11 +2,7 @@
 
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,34 +11,8 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BuyTicket.TicketController">
    <children>
-      <MenuBar fx:id="menubar" cache="true" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="25.0" prefWidth="910.0" useSystemMenuBar="true">
-         <menus>
-            <Menu mnemonicParsing="false" text="Home">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Details" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#onLogOutClicked" text="Log Out" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="View">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Edit" />
-                  <MenuItem mnemonicParsing="false" text="Delete" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#aboutClicked" text="About" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" onAction="#exitClicked" text="Exit" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
       <Label fx:id="buticketsLabel" alignment="CENTER" layoutX="293.0" layoutY="27.0" prefHeight="49.0" prefWidth="325.0" text="Buy Tickets" wrapText="true">
          <font>
             <Font name="System Bold" size="40.0" />

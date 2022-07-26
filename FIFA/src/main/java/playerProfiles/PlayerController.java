@@ -1,44 +1,16 @@
 package playerProfiles;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.URL;
-import java.util.*;
-
-import About.Us;
-import javafx.beans.Observable;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ListView;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
-import sample.Main;
+
+import java.io.FileNotFoundException;
 
 public class PlayerController {
 
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
     private ChoiceBox<String> countryNames;
-
-    @FXML
-    private MenuItem logOut;
-
-    @FXML
-    private MenuBar menubar;
 
     @FXML
     private ListView<String> playerLists;
@@ -46,7 +18,6 @@ public class PlayerController {
     @FXML
     private ImageView showFlags;
     String[] countries = {"none", "Qatar", "Ecuador", "Senegal", "Netherlands", "England", "Iran", "USA", "Wales", "Argentina", "Saudi Arabia", "Mexico", "Poland", "France", "Australia", "Denmark", "Tunisia", "Spain", "Costa Rica", "Germany", "Japan", "Belgium", "Canada", "Morocco", "Croatia", "Brazil", "Serbia", "Switzerland", "Cameroon", "Portugal", " Ghana", "Uruguay", "South Korea"};
-
 
     @FXML
     public void initialize() throws FileNotFoundException {
@@ -56,10 +27,8 @@ public class PlayerController {
 
 
     }
-
-
     private void getCountryName(ChoiceBox<String> choice)  {
-       String nameOfCountry = choice.getValue();
+        String nameOfCountry = choice.getValue();
         System.out.println( nameOfCountry);
         if (nameOfCountry.equals(countries[0])) {
             playerLists.setVisible(true);
@@ -142,32 +111,6 @@ public class PlayerController {
 //        if (nameOfCountry.equals(countries[32])) {
 //        }
 //
-    }
-
-    @FXML
-    void aboutClicked(ActionEvent event) throws IOException {
-        Stage stage = new Stage();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(Us.class.getResource("Us.fxml")));
-        stage.setTitle("About");
-        stage.setScene(new javafx.scene.Scene(root));
-        stage.show();
-
-    }
-
-    @FXML
-    void onLogOutClicked(ActionEvent event) throws IOException {
-        Stage stage = new Stage();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getResource("sample.fxml")));
-        stage.setScene(new javafx.scene.Scene(root));
-        stage.show();
-
-
-    }
-
-    @FXML
-    void exitClicked(ActionEvent event) {
-        System.exit(0);
-
     }
 
 }
