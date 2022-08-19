@@ -11,7 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BuyTicket.TicketController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.TicketController">
    <children>
       <Label fx:id="buticketsLabel" alignment="CENTER" layoutX="293.0" layoutY="27.0" prefHeight="49.0" prefWidth="325.0" text="Buy Tickets" wrapText="true">
          <font>

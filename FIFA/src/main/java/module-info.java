@@ -5,13 +5,13 @@ module com.example.fifa {
 
     opens playerProfiles to javafx.fxml;
     exports playerProfiles;
-    opens About to javafx.fxml;
-    exports  About;
-    opens sample to javafx.fxml;
-    exports sample;
-    opens BMI to javafx.fxml;
-    exports BMI;
-    opens BuyTicket  to javafx.fxml;
-    exports BuyTicket;
+    opens Admin.About to javafx.fxml;
+    exports Admin.About;
+    opens LoginUI to javafx.fxml;
+    exports LoginUI;
+    opens User.BMI to javafx.fxml;
+    exports User.BMI;
+    exports User;
+    opens User to javafx.fxml;
 
 }

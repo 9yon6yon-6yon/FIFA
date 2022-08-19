@@ -1,4 +1,4 @@
-package BMI;
+package User.BMI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,4 +1,4 @@
-package BuyTicket;
+package User;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;

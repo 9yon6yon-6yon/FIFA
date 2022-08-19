@@ -1,4 +1,4 @@
-package BMI;
+package User.BMI;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -27,7 +27,7 @@ public class BMI extends Application {
 //
 //        VBox vBox = new VBox(10);
 //
-//        Label IblTitle = new Label("BMI Calculator");
+//        Label IblTitle = new Label("User.BMI Calculator");
 //        IblTitle.setFont(Font.font(18));
 //        vBox.getChildren().add(IblTitle);
 //
@@ -55,10 +55,10 @@ public class BMI extends Application {
 //                    return;
 //                }
 //                double result = calculateBMI(mass,height);
-//                showMessage("Your BMI is: " +(Math.round(result*100.0) / 100.0), "Your BMI result");
+//                showMessage("Your User.BMI is: " +(Math.round(result*100.0) / 100.0), "Your User.BMI result");
 //            }
 //        });
-        Parent root = FXMLLoader.load(Objects.requireNonNull(BMI.class.getResource("BMI.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(BMI.class.getResource("User.BMI.fxml")));
         Scene scene = new Scene(root,900,600);
         stage.setTitle("BMI");
         stage.setScene(scene);

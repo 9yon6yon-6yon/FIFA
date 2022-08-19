@@ -1,9 +1,9 @@
-package BuyTicket;
+package Admin;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Ticket extends Application {
+public class AddTickets extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
