@@ -22,7 +22,7 @@
       </Label>
       <ImageView fx:id="showFlags" fitHeight="63.0" fitWidth="121.0" focusTraversable="true" layoutX="390.0" layoutY="42.0" pickOnBounds="true">
          <image>
-            <Image url="@../Images/cup.jpeg" />
+            <Image url="@../../../../Images/cup.jpeg" />
          </image>
       </ImageView>
       <Label alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="15.0" prefWidth="226.0" text="Players" underline="true" wrapText="true">

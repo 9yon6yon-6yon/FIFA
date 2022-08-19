@@ -16,7 +16,7 @@
       <AnchorPane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="600.0" fitWidth="382.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../Images/18-182611_world-cup-png-fifa-world-cup-png-transparent.png" />
+               <Image url="@../../../../Images/18-182611_world-cup-png-fifa-world-cup-png-transparent.png" />
             </ImageView>
          </children>
       </AnchorPane>
