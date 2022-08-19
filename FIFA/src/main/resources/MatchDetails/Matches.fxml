@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchDetails.MatchesController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchDetails.MatchesController">
    <children>
       <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="900.0">
          <menus>
@@ -31,65 +32,95 @@
          </menus>
       </MenuBar>
       <ChoiceBox fx:id="gamesGroup" layoutX="351.0" layoutY="70.0" prefHeight="43.0" prefWidth="225.0" />
-      <ImageView fx:id="flag1" fitHeight="85.0" fitWidth="145.0" layoutX="39.0" layoutY="161.0" pickOnBounds="true">
+      <ImageView fx:id="flag1" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="160.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/qa.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag7" fitHeight="85.0" fitWidth="145.0" layoutX="733.0" layoutY="158.0" pickOnBounds="true">
+      <ImageView fx:id="flag7" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="160.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/qa.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag2" fitHeight="85.0" fitWidth="145.0" layoutX="43.0" layoutY="263.0" pickOnBounds="true">
+      <ImageView fx:id="flag2" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="260.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/nl.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
       <ImageView fx:id="flag8" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="260.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/nl.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag3" fitHeight="85.0" fitWidth="145.0" layoutX="43.0" layoutY="379.0" pickOnBounds="true">
+      <ImageView fx:id="flag3" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="360.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/ec.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag9" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="376.0" pickOnBounds="true">
+      <ImageView fx:id="flag9" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="360.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/ec.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag4" fitHeight="85.0" fitWidth="145.0" layoutX="47.0" layoutY="496.0" pickOnBounds="true">
+      <ImageView fx:id="flag4" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="460.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/sn.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag10" fitHeight="85.0" fitWidth="145.0" layoutX="741.0" layoutY="493.0" pickOnBounds="true">
+      <ImageView fx:id="flag10" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="460.0" pickOnBounds="true" AnchorPane.rightAnchor="18.0">
          <image>
-            <Image url="@../flags/sn.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag5" fitHeight="85.0" fitWidth="145.0" layoutX="44.0" layoutY="628.0" pickOnBounds="true">
+      <ImageView fx:id="flag5" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="560.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/ec.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag11" fitHeight="85.0" fitWidth="145.0" layoutX="738.0" layoutY="625.0" pickOnBounds="true">
+      <ImageView fx:id="flag11" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="560.0" pickOnBounds="true" AnchorPane.rightAnchor="18.0">
          <image>
-            <Image url="@../flags/ec.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag6" fitHeight="85.0" fitWidth="145.0" layoutX="48.0" layoutY="745.0" pickOnBounds="true">
+      <ImageView fx:id="flag6" fitHeight="85.0" fitWidth="145.0" layoutX="27.0" layoutY="660.0" pickOnBounds="true">
          <image>
-            <Image url="@../flags/sn.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="flag12" fitHeight="85.0" fitWidth="145.0" layoutX="742.0" layoutY="742.0" pickOnBounds="true">
+      <ImageView fx:id="flag12" fitHeight="85.0" fitWidth="145.0" layoutX="737.0" layoutY="660.0" pickOnBounds="true" AnchorPane.rightAnchor="18.0">
          <image>
-            <Image url="@../flags/sn.png" />
+            <Image url="@../Images/icons8-flag-100.png" />
          </image>
       </ImageView>
+      <Label fx:id="vs1" alignment="CENTER" layoutX="174.0" layoutY="171.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vs2" alignment="CENTER" layoutX="174.0" layoutY="271.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vs3" alignment="CENTER" layoutX="174.0" layoutY="371.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vs4" alignment="CENTER" layoutX="174.0" layoutY="471.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vs5" alignment="CENTER" layoutX="173.0" layoutY="571.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vs6" alignment="CENTER" layoutX="175.0" layoutY="671.0" prefHeight="63.0" prefWidth="561.0" style="-fx-background-color: #10ff04;" text=":" textFill="#000000fd">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
