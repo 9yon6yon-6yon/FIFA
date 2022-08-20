@@ -1,0 +1,26 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Hugo Lloris	G	35	1.88 m	82 kg	France	--	--	--	--	--	--	--	--	--
+Alphonse Areola	G	29	1.96 m	92 kg	France	--	--	--	--	--	--	--	--	--
+Mike Maignan	G	27	1.91 m	87 kg	France	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Lucas Digne	D	29	1.78 m	73 kg	France	--	--	--	--	--	--	--	--	--	--
+Presnel Kimpembe	D	26	1.83 m	77 kg	France	--	--	--	--	--	--	--	--	--	--
+Benjamin Pavard	D	26	1.85 m	81 kg	France	--	--	--	--	--	--	--	--	--	--
+Jules Koundé	D	23	1.78 m	68 kg	France	--	--	--	--	--	--	--	--	--	--
+Jonathan Clauss	D	29	1.78 m	68 kg	France	--	--	--	--	--	--	--	--	--	--
+Theo Hernández	D	24	1.83 m	81 kg	France	--	--	--	--	--	--	--	--	--	--
+Ibrahima Konaté	D	23	1.93 m	93 kg	France	--	--	--	--	--	--	--	--	--	--
+William Saliba	D	21	1.93 m	83 kg	France	--	--	--	--	--	--	--	--	--	--
+Adrien Rabiot	M	27	1.88 m	71 kg	France	--	--	--	--	--	--	--	--	--	--
+Christopher Nkunku	M	24	1.75 m	73 kg	France	--	--	--	--	--	--	--	--	--	--
+Matteo Guendouzi	M	23	1.85 m	68 kg	France	--	--	--	--	--	--	--	--	--	--
+Boubacar Kamara	M	22	1.83 m	68 kg	France	--	--	--	--	--	--	--	--	--	--
+Aurélien Tchouaméni	M	22	1.85 m	78 kg	France	--	--	--	--	--	--	--	--	--	--
+Karim Benzema	F	34	1.85 m	81 kg	France	--	--	--	--	--	--	--	--	--	--
+Antoine Griezmann	F	31	1.75 m	73 kg	France	--	--	--	--	--	--	--	--	--	--
+Wissam Ben Yedder	F	31	1.7 m	68 kg	France	--	--	--	--	--	--	--	--	--	--
+Kingsley Coman	F	26	1.8 m	76 kg	France	--	--	--	--	--	--	--	--	--	--
+Kylian Mbappé	F	23	1.78 m	73 kg	France	--	--	--	--	--	--	--	--	--	--
+Moussa Diaby	F	23	1.7 m	68 kg	France	--	--	--	--	--	--	--	--	--	--

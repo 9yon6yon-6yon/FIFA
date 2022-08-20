@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AddTicketsController">
+   <children>
+      <Label fx:id="buticketsLabel" alignment="CENTER" layoutX="288.0" layoutY="36.0" prefHeight="49.0" prefWidth="325.0" text="EDIT Tickets" wrapText="true">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.028630604967474937" green="0.050936076790094376" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.06731237471103668" green="0.8552631735801697" blue="0.5138178467750549" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="141.0" fitWidth="121.0" layoutX="9.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/fifaLogo22.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="200.0" layoutY="115.0" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="51.0" layoutY="228.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="288.0" layoutY="197.0" prefHeight="16.0" prefWidth="243.0" text="Available Matches">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="624.0" layoutY="197.0" prefHeight="19.0" prefWidth="188.0" text="Available Tickets">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="728.0" layoutY="228.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="shoppingCart" fitHeight="33.0" fitWidth="37.0" layoutX="848.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-cart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reductTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="268.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="511.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket2" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="511.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="268.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket8" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="311.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="311.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket3" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="351.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="351.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket4" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="391.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="391.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket5" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="431.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="431.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket6" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="471.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="728.0" layoutY="471.0" prefHeight="40.0" prefWidth="70.0" text="Label">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="reductTicket7" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-minus-key-100.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="831.0" layoutY="197.0" prefHeight="19.0" prefWidth="44.0" text="Edit">
+         <textFill>
+            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket2" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket8" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket3" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket4" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket5" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket16" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTicket7" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-plus-key-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

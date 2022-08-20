@@ -1,0 +1,31 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Dominik Livakovic	G	27	1.88 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--
+Ivica Ivusic	G	27	--	--	Croatia	--	--	--	--	--	--	--	--	--
+Nediljko Labrovic	G	22	--	--	Croatia	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Domagoj Vida	D	33	1.83 m	76 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Sime Vrsaljko	D	30	1.8 m	76 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Duje Caleta-Car	D	25	1.93 m	87 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Martin Erlic	D	24	1.93 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Borna Barisic	D	29	1.85 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Josip Juranovic	D	26	1.75 m	68 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Borna Sosa	D	24	1.88 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Marin Pongracic	D	24	1.91 m	93 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Josip Stanisic	D	22	1.85 m	77 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Josko Gvardiol	D	20	1.85 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Josip Sutalo	D	22	--	--	Croatia	--	--	--	--	--	--	--	--	--	--
+Luka Modric	M	36	1.73 m	66 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Mateo Kovacic	M	28	1.78 m	78 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Marcelo Brozovic	M	29	1.8 m	68 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Mario Pasalic	M	27	1.88 m	82 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Nikola Vlasic	M	24	1.78 m	72 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Josip Brekalo	M	24	1.75 m	68 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Luka Ivanusec	M	23	1.75 m	76 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Lovro Majer	M	24	1.78 m	73 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Kristijan Jakic	M	25	1.8 m	73 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Luka Sucic8	M	19	1.85 m	71 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Andrej Kramaric	F	31	1.78 m	73 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Mislav Orsic	F	29	1.78 m	68 kg	Croatia	--	--	--	--	--	--	--	--	--	--
+Ante Budimir	F	31	1.91 m	73 kg	Croatia	--	--	--	--	--	--	--	--	--	--

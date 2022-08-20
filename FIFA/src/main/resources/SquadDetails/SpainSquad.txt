@@ -1,0 +1,28 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Robert Sánchez	G	24	1.98 m	88 kg	Spain	--	--	--	--	--	--	--	--	--
+David Raya	G	26	1.83 m	78 kg	Spain	--	--	--	--	--	--	--	--	--
+Unai Simón	G	25	1.91 m	87 kg	Spain	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+César Azpilicueta	D	32	1.78 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Jordi Alba	D	33	1.7 m	68 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Eric García	D	21	1.83 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Marcos Alonso	D	31	1.88 m	83 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Iñigo Martínez	D	31	1.83 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Dani Carvajal	D	30	1.73 m	73 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Diego Llorente	D	28	1.85 m	73 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Pau Torres	D	25	1.91 m	78 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Sergio Busquets	M	34	1.88 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Koke	M	30	1.75 m	77 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Pablo Sarabia	M	30	1.75 m	68 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Marco Asensio	M	26	1.83 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Marcos Llorente	M	27	1.83 m	73 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Dani Olmo	M	24	1.78 m	72 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Rodri	M	26	1.91 m	82 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Carlos Soler	M	25	1.8 m	76 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Gavi	M	17	1.73 m	68 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Álvaro Morata	F	29	1.91 m	83 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Raúl de Tomás	F	27	1.8 m	72 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Ferran Torres	F	22	1.83 m	77 kg	Spain	--	--	--	--	--	--	--	--	--	--
+Ansu Fati	F	19	1.78 m	66 kg	Spain	--	--	--	--	--	--	--	--	--	--

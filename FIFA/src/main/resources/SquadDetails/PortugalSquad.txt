@@ -1,0 +1,30 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Rui Patrício	G	34	1.91 m	83 kg	Portugal	--	--	--	--	--	--	--	--	--
+Rui Silva	G	28	1.91 m	91 kg	Portugal	--	--	--	--	--	--	--	--	--
+Diogo Costa	G	22	1.85 m	81 kg	Portugal	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Pepe	D	39	1.88 m	81 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Raphaël Guerreiro	D	28	1.7 m	71 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+João Cancelo	D	28	1.83 m	73 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Domingos Duarte	D	27	1.93 m	78 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+David Carmo	D	23	1.93 m	76 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Diogo Dalot	D	23	1.83 m	76 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Nuno Mendes	D	20	1.75 m	68 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+João Moutinho	M	35	1.7 m	59 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Danilo Pereira	M	30	1.88 m	83 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Bruno Fernandes	M	27	1.78 m	68 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+William Carvalho	M	30	1.88 m	78 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Otávio	M	27	1.7 m	63 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Bernardo Silva	M	27	1.73 m	63 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Rúben Neves	M	25	1.8 m	78 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+João Palhinha	M	27	1.91 m	83 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Vitinha	M	22	1.73 m	63 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Matheus Nunes	M	23	1.83 m	76 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+André Silva	F	26	1.85 m	83 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Cristiano Ronaldo	F	37	1.88 m	83 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Ricardo Horta	F	27	1.73 m	59 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Diogo Jota	F	25	1.78 m	68 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Goncalo Guedes	F	25	1.78 m	68 kg	Portugal	--	--	--	--	--	--	--	--	--	--
+Rafael Leão	F	23	1.88 m	81 kg	Portugal	--	--	--	--	--	--	--	--	--	--

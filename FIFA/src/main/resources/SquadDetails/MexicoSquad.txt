@@ -1,0 +1,42 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Alfredo Talavera	G	39	1.88 m	83 kg	Mexico	--	--	--	--	--	--	--	--	--
+Rodolfo Cota	G	35	1.83 m	83 kg	Mexico	--	--	--	--	--	--	--	--	--
+Guillermo Ochoa	G	37	1.85 m	78 kg	Mexico	--	--	--	--	--	--	--	--	--
+Carlos Acevedo	G	26	1.83 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Julio Domínguez	D	34	1.75 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Héctor Moreno	D	34	1.83 m	76 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Néstor Araujo	D	30	1.88 m	87 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Jorge Sánchez	D	24	1.7 m	66 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Kevin Álvarez	D	23	1.75 m	63 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+César Montes	D	25	1.91 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Jesús Angulo	D	24	1.78 m	73 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Luís Romo	D	27	1.8 m	83 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Gerardo Arteaga	D	23	1.75 m	63 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Johan Vásquez	D	23	1.83 m	72 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Julián Araujo	D	20	1.78 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Israel Reyes	D	22	1.78 m	73 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Andrés Guardado	M	35	1.7 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Luis Chávez	M	26	1.78 m	73 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Érick Sánchez	M	22	1.68 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Jesús Gallardo	M	27	1.78 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Héctor Herrera	M	32	1.85 m	78 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Marcelo Flores	M	18	1.75 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Roberto Alvarado	M	23	1.75 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Érick Gutiérrez	M	27	1.8 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Érick Aguirre	M	25	1.7 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Orbelín Pineda	M	26	1.68 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Francisco Córdova	M	25	1.73 m	63 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Edson Álvarez	M	24	1.85 m	73 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Diego Lainez	M	22	1.68 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Fernando Beltrán	M	24	1.65 m	66 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Erik Lira	M	22	1.7 m	62 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Henry Martín	F	29	1.8 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Jesús Corona	F	29	1.73 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Raúl Jiménez	F	31	1.91 m	76 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Rodolfo Pizarro	F	28	1.78 m	63 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Alexis Vega	F	24	1.75 m	72 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Uriel Antuna	F	24	1.68 m	58 kg	Mexico	--	--	--	--	--	--	--	--	--	--
+Santiago Giménez	F	21	1.83 m	68 kg	Mexico	--	--	--	--	--	--	--	--	--	--

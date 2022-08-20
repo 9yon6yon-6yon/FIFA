@@ -1,0 +1,34 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Hossein Hosseini	G	30	1.85 m	78 kg	Iran	--	--	--	--	--	--	--	--	--
+Alireza Beiranvand	G	29	1.96 m	83 kg	Iran	--	--	--	--	--	--	--	--	--
+Amir Abedzadeh	G	29	1.85 m	78 kg	Iran	--	--	--	--	--	--	--	--	--
+Sayedpayam Niazmand	G	27	1.93 m	82 kg	Iran	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Majid Hosseini	D	26	1.83 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Sadegh Moharrami	D	26	1.75 m	71 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Omid Norafkan	D	25	1.8 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Aref Gholami	D	25	1.83 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Aref Aghasi	D	25	1.88 m	87 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Armin Sohrabian	D	26	1.8 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Abolfazl Jalali	D	24	1.78 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Saleh Hardani Kherad	D	23	1.75 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Seyed Mehdi Hosseini	M	28	--	--	--	--	--	--	--	--	--	--	--	--	--
+Omid Ebrahimi	M	34	1.78 m	73 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Mehdi Shiri	M	31	1.75 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Alireza Jahanbakhsh	M	28	1.8 m	76 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Saeid Ezatolahi	M	25	1.91 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Ali Gholizadeh	M	26	1.75 m	72 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Soroush Rafiei	M	32	1.75 m	--	Iran	--	--	--	--	--	--	--	--	--	--
+Ehsan Hajsafi	M	32	1.78 m	73 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Mehdi Mehdipour	M	28	--	--	Iran	--	--	--	--	--	--	--	--	--	--
+Mehdi Torabi	M	27	1.85 m	71 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Ahmad Nourollahi	M	29	1.78 m	73 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Milad Sarlak Chiva	M	27	1.8 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Sardar Azmoun	F	27	1.85 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Mehdi Taremi	F	30	1.88 m	78 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Ali Alipour	F	26	1.8 m	68 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Allahyar Sayyad	F	21	1.83 m	76 kg	Iran	--	--	--	--	--	--	--	--	--	--
+Amirhossein Hosseinzadeh	F	21	1.78 m	78 kg	--	--	--	--	--	--	--	--	--	--	--
+Saeid Sadeghi	F	28	1.8 m	--	Iran	--	--	--	--	--	--	--	--	--	--

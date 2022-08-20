@@ -1,0 +1,25 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Abdul Manaf Nurudeen1	G	23	1.91 m	73 kg	Ghana	--	--	--	--	--	--	--	--	--
+Lawrence Ati12	G	25	1.88 m	83 kg	Ghana	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Andy Yiadom	D	30	1.8 m	73 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Denis Korsah Akoumah	D	26	--	--	Ghana	--	--	--	--	--	--	--	--	--	--
+Alidu Seidu2	D	22	1.73 m	68 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Abdul Mumin5	D	24	1.88 m	78 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Baba Rahman17	D	28	1.8 m	72 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Daniel Amartey18	D	27	1.85 m	78 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Edmund Addo6	M	22	--	--	Ghana	--	--	--	--	--	--	--	--	--	--
+Daniel-Kofi Kyereh8	M	26	1.78 m	73 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Mubarak Wakaso11	M	32	1.7 m	66 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Mohammed Kudus20	M	21	1.78 m	68 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Iddrisu Baba21	M	26	1.85 m	73 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Benjamin Tetteh	F	25	1.93 m	63 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Christopher Antwi-Adjei	F	28	1.73 m	72 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Daniel Barnieh	F	21	--	--	Ghana	--	--	--	--	--	--	--	--	--	--
+Fatawu Issahaku7	F	18	--	--	Ghana	--	--	--	--	--	--	--	--	--	--
+Jordan Ayew9	F	30	1.83 m	78 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+André Ayew10	F	32	1.75 m	72 kg	Ghana	--	--	--	--	--	--	--	--	--	--
+Felix Afena-Gyan13	F	19	--	--	Ghana	--	--	--	--	--	--	--	--	--	--
+Kwasi Wriedt23	F	28	1.88 m	82 kg	Ghana	--	--	--	--	--	--	--	--	--	--

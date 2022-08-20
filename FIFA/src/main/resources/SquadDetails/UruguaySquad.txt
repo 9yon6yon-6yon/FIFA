@@ -1,0 +1,32 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Fernando Muslera	G	36	1.91 m	83 kg	Uruguay	--	--	--	--	--	--	--	--	--
+Sebastián Sosa	G	35	1.8 m	72 kg	Uruguay	--	--	--	--	--	--	--	--	--
+Sergio Rochet	G	29	1.91 m	82 kg	Uruguay	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Martín Cáceres	D	35	1.8 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Diego Godín	D	36	1.88 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Damián Suárez	D	34	1.73 m	59 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Sebastián Coates	D	31	1.96 m	92 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Gullermo Varela	D	29	1.73 m	68 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+José Giménez	D	27	1.85 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Mathías Olivera	D	24	1.83 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Matías Viña	D	24	1.75 m	68 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Ronald Araújo	D	23	1.88 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Alan Matturro	D	17	--	--	Uruguay	--	--	--	--	--	--	--	--	--	--
+Matías Vecino	M	30	1.88 m	81 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Giorgian de Arrascaeta	M	28	1.73 m	73 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Mauro Arambarri	M	26	1.75 m	73 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Fernando Gorriarán	M	27	1.68 m	68 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Lucas Torreira	M	26	1.65 m	63 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Federico Valverde	M	24	1.83 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Manuel Ugarte	M	21	1.83 m	77 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Nicolás De La Cruz	M	25	1.68 m	68 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Facundo Pellistri	M	20	1.75 m	68 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Augusto Scarone	M	18	--	--	Uruguay	--	--	--	--	--	--	--	--	--	--
+Maxi Gómez	F	25	1.85 m	91 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Edinson Cavani	F	35	1.83 m	71 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Diego Rossi	F	24	1.7 m	63 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Agustín Canobbio	F	23	1.75 m	73 kg	Uruguay	--	--	--	--	--	--	--	--	--	--
+Darwin Núñez	F	23	1.88 m	78 kg	Uruguay	--	--	--	--	--	--	--	--	--	--

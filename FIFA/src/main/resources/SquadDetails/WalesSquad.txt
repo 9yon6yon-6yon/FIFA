@@ -1,0 +1,33 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Danny Ward	G	29	1.91 m	87 kg	Wales	--	--	--	--	--	--	--	--	--
+Adam Davies	G	30	1.85 m	73 kg	Wales	--	--	--	--	--	--	--	--	--
+Wayne Hennessey	G	35	1.98 m	88 kg	Wales	--	--	--	--	--	--	--	--	--
+Tom King	G	27	1.85 m	78 kg	Wales	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Ben Davies	D	29	1.8 m	76 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Chris Gunter	D	33	1.8 m	71 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Connor Roberts	D	26	1.75 m	71 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Joe Rodon	D	24	1.8 m	68 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Chris Mepham	D	24	1.91 m	83 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Rhys Norrington-Davies	D	23	1.8 m	68 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Neco Williams	D	21	1.83 m	72 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Oliver Denham	D	20	1.83 m	--	Wales	--	--	--	--	--	--	--	--	--	--
+Ethan Ampadu	D	21	1.83 m	78 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Jonny Williams	M	28	1.68 m	58 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Joe Allen	M	32	1.68 m	62 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Aaron Ramsey	M	31	1.78 m	76 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Joe Morrell	M	25	1.85 m	77 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Harry Wilson	M	25	1.73 m	68 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Dylan Levitt	M	21	1.8 m	73 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Rubin Colwill	M	20	1.7 m	--	Wales	--	--	--	--	--	--	--	--	--	--
+Mark Harris	M	23	1.83 m	73 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Daniel James	M	24	1.7 m	76 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Matt Smith	F	33	1.98 m	73 kg	England	--	--	--	--	--	--	--	--	--	--
+Brennan Johnson	F	21	1.78 m	73 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Gareth Bale	F	33	1.85 m	81 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Wes Burns	F	27	1.73 m	68 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Kieffer Moore	F	29	1.96 m	83 kg	Wales	--	--	--	--	--	--	--	--	--	--
+Sorba Thomas	F	23	--	--	Wales	--	--	--	--	--	--	--	--	--	--
+Rabbi Matondo	F	21	1.75 m	66 kg	Wales	--	--	--	--	--	--	--	--	--	--

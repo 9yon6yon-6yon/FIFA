@@ -1,0 +1,29 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Milan Borjan	G	34	1.96 m	78 kg	Canada	--	--	--	--	--	--	--	--	--
+Maxime Crépeau	G	28	1.8 m	87 kg	Canada	--	--	--	--	--	--	--	--	--
+Dayne St. Clair	G	25	1.91 m	73 kg	Canada	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Doneil Henry	D	29	1.88 m	82 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Steven Vitória	D	35	1.96 m	86 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Sam Adekugbe	D	27	1.75 m	73 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Richie Laryea	D	27	1.75 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Kamal Miller	D	25	1.83 m	--	Canada	--	--	--	--	--	--	--	--	--	--
+Alistair Johnston	D	23	1.8 m	77 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Scott Kennedy	D	25	1.93 m	78 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Atiba Hutchinson	M	39	1.88 m	83 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Samuel Piette	M	27	1.7 m	73 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Jonathan Osorio	M	30	1.75 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Mark-Anthony Kaye	M	27	1.85 m	77 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Stephen Eustáquio	M	25	1.78 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Tajon Buchanan	M	23	1.83 m	71 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Junior Hoilett	M	32	1.73 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Lucas Cavallini	F	29	1.8 m	86 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Cyle Larin	F	27	1.88 m	88 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Ike Ugbo	F	23	1.83 m	78 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Alphonso Davies	F	21	1.83 m	73 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Raheem Edwards	F	27	1.73 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Jonathan David	F	22	1.8 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Charles-Andreas Brym	F	23	1.85 m	68 kg	Canada	--	--	--	--	--	--	--	--	--	--
+Luca Koleosho	F	17	--	--	Canada	--	--	--	--	--	--	--	--	--	--

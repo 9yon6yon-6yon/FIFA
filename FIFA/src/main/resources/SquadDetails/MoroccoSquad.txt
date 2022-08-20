@@ -1,0 +1,34 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Bono1	G	31	1.93 m	78 kg	Morocco	--	--	--	--	--	--	--	--	--
+Munir12	G	33	1.91 m	87 kg	Morocco	--	--	--	--	--	--	--	--	--
+Anass Zniti22	G	33	1.91 m	--	Morocco	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Sofian Chakla	D	28	1.88 m	77 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Achraf Hakimi2	D	23	1.8 m	73 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Adam Masina3	D	28	1.88 m	78 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Achraf Dari3	D	23	1.91 m	--	Morocco	--	--	--	--	--	--	--	--	--	--
+Nayef Aguerd5	D	26	1.88 m	76 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Yahia Attiyat Allah7	D	27	1.75 m	--	Morocco	--	--	--	--	--	--	--	--	--	--
+Jawad El Yamiq18	D	30	1.91 m	83 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Sofiane Alakouch20	D	23	1.75 m	66 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Samy Mmaee23	D	25	1.85 m	82 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Mohamed Chibi25	D	29	1.85 m	--	Morocco	--	--	--	--	--	--	--	--	--	--
+Adel Taarabt	M	33	1.85 m	77 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Noussair Mazraoui	M	24	1.83 m	63 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Yahya Jabrane	M	31	1.83 m	--	Morocco	--	--	--	--	--	--	--	--	--	--
+Sofyan Amrabat4	M	25	1.85 m	68 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Romain Saïss6	M	32	1.91 m	78 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Azz-Eddine Ounahi8	M	22	--	--	Morocco	--	--	--	--	--	--	--	--	--	--
+Amine Harit10	M	25	1.8 m	67 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Faycal Fajr11	M	33	1.78 m	72 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Ilias Chair13	M	24	1.57 m	53 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Selim Amallah15	M	25	1.85 m	82 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Aymen Barkok16	M	24	1.88 m	82 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Munir El Haddadi	F	26	1.75 m	68 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Tarik Tissoudali9	F	29	1.83 m	68 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Zakaria Aboukhlal14	F	22	1.78 m	73 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Ayoub El Kaabi17	F	29	1.83 m	72 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Youssef En-Nesyri19	F	25	1.88 m	73 kg	Morocco	--	--	--	--	--	--	--	--	--	--
+Soufiane Rahimi21	F	26	1.8 m	76 kg	Morocco	--	--	--	--	--	--	--	--	--	--

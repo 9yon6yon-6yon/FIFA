@@ -1,0 +1,27 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Alioune Badara Faty1	G	23	--	--	Senegal	--	--	--	--	--	--	--	--	--
+Landing Badji16	G	18	--	--	Senegal	--	--	--	--	--	--	--	--	--
+Pape Abdoulaye Dieng23	G	27	--	--	Senegal	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+El Hadji Baldé2	D	28	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Malickou Ndoye3	D	22	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Amadou Ndiaye11	D	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Abdoulaye Diedhiou12	D	22	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Melo Ndiaye15	D	27	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Cheikhou Ndiaye22	D	20	1.78 m	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Alassane Faye4	M	18	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+El Hadji Latyr Ndiaye5	M	22	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Ousmane Sow6	M	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Jean Louis Diouf7	M	26	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Alassane Maodo Kante8	M	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Lamine Camara13	M	18	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Moussa Ndiaye14	M	18	1.78 m	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Ngagne Fall17	M	22	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Lamine Diadhiou20	M	19	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Etane Tendeng21	M	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Elhadj Mané9	F	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Bouly Junior Sambou10	F	23	1.83 m	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Jean Rémi Bocandé18	F	33	--	--	Senegal	--	--	--	--	--	--	--	--	--	--
+Paul Bassene19	F	21	--	--	Senegal	--	--	--	--	--	--	--	--	--	--

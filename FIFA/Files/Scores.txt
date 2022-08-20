@@ -1,0 +1,48 @@
+Qatar_0_0_Ecuador
+Senegal_0_0_Netherlands
+Qatar_0_0_Senegal
+Netherlands_0_0_Ecuador
+Netherlands_0_0_Qatar
+Ecuador_0_0_Senegal
+England_0_0_Iran
+USA_0_0_Wales
+England_0_0_USA
+Wales_0_0_Iran
+Wales_0_0_England
+Iran_0_0_USA
+Argentina_0_0_Saudi Arabia
+Mexico_0_0_Poland
+Argentina_0_0_Mexico
+Poland_0_0_Saudi Arabia
+Poland_0_0_Argentina
+Saudi Arabia_0_0_Mexico
+France_0_0_Australia
+Denmark_0_0_Tunisia
+France_0_0_Denmark
+Tunisia_0_0_Australia
+Tunisia_0_0_France
+Australia_0_0_Denmark
+Spain_0_0_Costa Rica
+Germany_0_0_Japan
+Spain_0_0_Germany
+Japan_0_0_Costa Rica
+Japan_0_0_Spain
+Costa Rica_0_0_Germany
+Belgium_0_0_Canada
+Morocco_0_0_Croatia
+Belgium_0_0_Morocco
+Croatia_0_0_Canada
+Croatia_0_0_Belgium
+Canada_0_0_Morocco
+Brazil_0_0_Serbia
+Switzerland_0_0_Cameroon
+Brazil_0_0_Switzerland
+Cameroon_0_0_Serbia
+Cameroon_0_0_Brazil
+Serbia_0_0_Switzerland
+Portugal_0_0_Ghana
+Uruguay_0_0_South Korea
+Portugal_0_0_Uruguay
+South Korea_0_0_Ghana
+South Korea_0_0_Portugal
+Ghana_0_0_Uruguay

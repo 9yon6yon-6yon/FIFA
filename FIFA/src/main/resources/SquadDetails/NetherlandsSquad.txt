@@ -1,0 +1,29 @@
+Goalkeepers
+NAME	POS	AGE	HT	WT	NAT	P	SB	S	GC	A	FC	FA	YC	RC
+Jasper Cillessen	G	33	1.85 m	83 kg	Netherlands	--	--	--	--	--	--	--	--	--
+Mark Flekken	G	29	1.96 m	87 kg	Netherlands	--	--	--	--	--	--	--	--	--
+Kjell Scherpen	G	22	2.03 m	97 kg	Netherlands	--	--	--	--	--	--	--	--	--
+Outfield Players
+NAME	POS	AGE	HT	WT	NAT	P	SB	G	A	SH	SO	FC	FA	YC	RC
+Daley Blind	D	32	1.8 m	72 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Stefan de Vrij	D	30	1.88 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Bruno Martins Indi	D	30	1.85 m	76 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Nathan Aké	D	27	1.8 m	73 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Hans Hateboer	D	28	1.85 m	72 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Denzel Dumfries	D	26	1.88 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Matthijs de Ligt	D	22	1.88 m	87 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Jordan Teze	D	22	1.83 m	68 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Tyrell Malacia	D	22	1.7 m	67 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Jurriën Timber	D	21	1.78 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Davy Klaassen	M	29	1.78 m	68 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Frenkie de Jong	M	25	1.8 m	73 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Jerdy Schouten	M	25	1.85 m	72 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Guus Til	M	24	1.85 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Teun Koopmeiners	M	24	1.83 m	77 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Steven Berghuis	F	30	1.83 m	73 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Memphis Depay	F	28	1.75 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Wout Weghorst	F	29	1.98 m	83 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Vincent Janssen	F	28	1.83 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Steven Bergwijn	F	24	1.78 m	78 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Cody Gakpo	F	23	1.78 m	76 kg	Netherlands	--	--	--	--	--	--	--	--	--	--
+Noa Lang	F	23	1.78 m	68 kg	Netherlands	--	--	--	--	--	--	--	--	--	--

@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="404.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="playerProfiles.PlayerController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="playerProfiles.PlayerController">
    <children>
-      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="689.0" useSystemMenuBar="true">
-        <menus>
-          <Menu mnemonicParsing="false" text="Home">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Details" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#onLogOutClicked" text="Log Out" />
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="View">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Edit" />
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#aboutClicked" text="About" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" onAction="#exitClicked" text="Exit" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <ChoiceBox fx:id="countryNames" layoutX="736.0" layoutY="61.0" prefHeight="24.0" prefWidth="150.0" />
+      <ListView fx:id="playerLists" disable="true" layoutX="14.0" layoutY="153.0" prefHeight="433.0" prefWidth="879.0" />
+      <Label layoutX="602.0" layoutY="61.0" prefHeight="27.0" prefWidth="128.0" text="Country Name" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="showFlags" fitHeight="63.0" fitWidth="121.0" focusTraversable="true" layoutX="390.0" layoutY="42.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Images/cup.jpeg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="15.0" prefWidth="226.0" text="Players" underline="true" wrapText="true">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.028630604967474937" green="0.050936076790094376" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.06731237471103668" green="0.8552631735801697" blue="0.5138178467750549" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
    </children>
 </AnchorPane>
