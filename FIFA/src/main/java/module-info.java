@@ -8,6 +8,8 @@ module com.example.fifa {
     opens Admin to javafx.fxml;
     exports Admin;
     opens LoginUI to javafx.fxml;
+    exports BMI to javafx.fxml ;
+    opens  BMI ;
     exports LoginUI;
     opens User to javafx.fxml;
     exports User;

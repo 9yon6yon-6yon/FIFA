@@ -11,7 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" scaleShape="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.BMI.BMIController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" scaleShape="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BMI.BMIController">
    <children>
       <ImageView fx:id="maleIcon" fitHeight="138.0" fitWidth="138.0" layoutX="303.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
          <image>

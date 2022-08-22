@@ -4,8 +4,8 @@ import java.io.*;
 
 public class CreateFileNames {
     public static void main(String[] args) throws IOException {
-//        String[] countries = {"Qatar", "Ecuador", "Senegal", "Netherlands", "England", "Iran", "USA", "Wales", "Argentina", "Saudi Arabia", "Mexico", "Poland", "France", "Australia", "Denmark", "Tunisia", "Spain", "Costa Rica", "Germany", "Japan", "Belgium", "Canada", "Morocco", "Croatia", "Brazil", "Serbia", "Switzerland", "Cameroon", "Portugal", " Ghana", "Uruguay", "South Korea"};
-//        String name = "/home/thebird/Desktop/FIFA/FIFA/Files/Score.txt";
+//       String[] countries = {"Qatar", "Ecuador", "Senegal", "Netherlands", "England", "Iran", "USA", "Wales", "Argentina", "SaudiArabia", "Mexico", "Poland", "France", "Australia", "Denmark", "Tunisia", "Spain", "CostaRica", "Germany", "Japan", "Belgium", "Canada", "Morocco", "Croatia", "Brazil", "Serbia", "Switzerland", "Cameroon", "Portugal", " Ghana", "Uruguay", "SouthKorea"};
+//        String name = "/home/thebird/Desktop/FIFA/FIFA/src/main/java/Countries/";
 //        String name2 = "/home/thebird/Desktop/FIFA/FIFA/Files/Scores.txt";
 //
 //        File file = new File(name);
