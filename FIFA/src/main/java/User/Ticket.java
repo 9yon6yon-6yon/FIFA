@@ -15,7 +15,6 @@ public class Ticket extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Ticket.fxml")));
         stage.setTitle(" Buy Tickets ");
-
         stage.getIcons().add(new Image(new FileInputStream("Images/icons8-world-cup-2018-100.png")));
         stage.setScene(new Scene(root));
         stage.show();
