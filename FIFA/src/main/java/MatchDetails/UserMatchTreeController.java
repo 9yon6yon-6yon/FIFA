@@ -1,17 +1,11 @@
 package MatchDetails;
+
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 
-public class MatchTreeController {
+public class UserMatchTreeController {
 
 
-    @FXML
-    private CheckBox f1m1;
-
-    @FXML
-    private CheckBox f1m2;
 
     @FXML
     private TextField finalMatch1;
@@ -19,29 +13,6 @@ public class MatchTreeController {
     @FXML
     private TextField finalMatch2;
 
-    @FXML
-    private CheckBox q1m1;
-
-    @FXML
-    private CheckBox q1m2;
-
-    @FXML
-    private CheckBox q1m3;
-
-    @FXML
-    private CheckBox q1m4;
-
-    @FXML
-    private CheckBox q1m5;
-
-    @FXML
-    private CheckBox q1m6;
-
-    @FXML
-    private CheckBox q1m7;
-
-    @FXML
-    private CheckBox q1m8;
 
     @FXML
     private TextField quater1;
@@ -67,53 +38,6 @@ public class MatchTreeController {
     @FXML
     private TextField quater8;
 
-    @FXML
-    private CheckBox r1m1;
-
-    @FXML
-    private CheckBox r1m10;
-
-    @FXML
-    private CheckBox r1m11;
-
-    @FXML
-    private CheckBox r1m12;
-
-    @FXML
-    private CheckBox r1m13;
-
-    @FXML
-    private CheckBox r1m14;
-
-    @FXML
-    private CheckBox r1m15;
-
-    @FXML
-    private CheckBox r1m16;
-
-    @FXML
-    private CheckBox r1m2;
-
-    @FXML
-    private CheckBox r1m3;
-
-    @FXML
-    private CheckBox r1m4;
-
-    @FXML
-    private CheckBox r1m5;
-
-    @FXML
-    private CheckBox r1m6;
-
-    @FXML
-    private CheckBox r1m7;
-
-    @FXML
-    private CheckBox r1m8;
-
-    @FXML
-    private CheckBox r1m9;
 
     @FXML
     private TextField round1;
@@ -164,21 +88,6 @@ public class MatchTreeController {
     private TextField round9;
 
     @FXML
-    private CheckBox s1m1;
-
-    @FXML
-    private CheckBox s1m2;
-
-    @FXML
-    private CheckBox s1m3;
-
-    @FXML
-    private CheckBox s1m4;
-
-    @FXML
-    private Button savetree;
-
-    @FXML
     private TextField semi1;
 
     @FXML
@@ -189,11 +98,5 @@ public class MatchTreeController {
 
     @FXML
     private TextField semi4;
-
-    @FXML
-    void initialize() {
-
-
-    }
 
 }
