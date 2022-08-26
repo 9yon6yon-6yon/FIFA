@@ -47,9 +47,14 @@ public class TicketController {
             if(bought){
                 try {
                     buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
-                    TicketGenerator tg = new TicketGenerator();
-                    tg.setToken(codeText.getText());
                     TicketSubmitForm t =  new TicketSubmitForm();
+                    TicketSubmitFormController tc = new TicketSubmitFormController();
+                    Label l = new Label();
+                    l.setText(codeText.getText());
+                    tc.setTokenView(l);
+                    Label l2 = new Label();
+                    l2.setText("Argentina VS Brazil");
+                    tc.setMatchTeams(l2);
                     t.start(new Stage());
                 } catch (Exception e) {
                     throw new RuntimeException(e);

@@ -113,10 +113,6 @@ public class TicketGenerator {
             pdfDocument.setDefaultPageSize(PageSize.A5);
             ImageData coverData = ImageDataFactory.create("Images/fifa22_banner_1500x500.jpg");
             Image bannerPic = new Image(coverData);
-            TicketSubmitFormController tc = new TicketSubmitFormController();
-            String match = String.valueOf(tc.getMatchTeams());
-            System.out.println(match);
-            String tok = String.valueOf(tc.getTokenView());
             PdfFont times = PdfFontFactory.createFont("Fonts/timesnewroman.ttf");
             PdfFont vog = PdfFontFactory.createFont("Fonts/Vogue.ttf");
             ImageData imageData = ImageDataFactory.create("Images/fifaLogo22.png");
@@ -124,21 +120,20 @@ public class TicketGenerator {
             waterMark.setFixedPosition(pdfDocument.getDefaultPageSize().getWidth() / 2 - 100, pdfDocument.getDefaultPageSize().getHeight() / 2 - 119);
             waterMark.setOpacity(.25f);
             doc.add(bannerPic);
-            String qrValues = name + "\n" + userID + "\n" + email + "\n" + contactInfo + "\n" + tok + "\n";
+            String qrValues = name + "\n" + userID + "\n" + email + "\n" + contactInfo + "\n" + getToken() + "\n";
             BarcodeQRCode qr = new BarcodeQRCode(qrValues);
             PdfFormXObject qrCode = qr.createFormXObject(ColorConstants.BLACK, pdfDocument);
             Image qrImg = new Image(qrCode).setWidth(80).setHorizontalAlignment(HorizontalAlignment.RIGHT).setMargins(10, 5, 0, 0);
             doc.add(qrImg);
             doc.add(waterMark);
             Paragraph p1 = new Paragraph().setFont(vog).setTextAlignment(TextAlignment.CENTER);
-            p1.add(matchInfo).setFontSize(20);
+            p1.add(getMatchInfo()).setFontSize(20);
             Paragraph p2 = new Paragraph().setFontSize(12).setFont(times).setPaddingLeft(20).setHorizontalAlignment(HorizontalAlignment.LEFT);
             p2.add("\n\tName\t : \t" + name);
             p2.add("\n\tUser ID\t : \t" + userID);
             p2.add("\n\tEmail\t : \t" + email);
             p2.add("\n\tContact No\t : \t" + contactInfo);
-            p2.add("\n\tToken No\t : \t" + token);
-            System.out.println(tok);
+            p2.add("\n\tToken No\t : \t" + getToken());
 
             doc.add(p1);
             doc.add(p2);

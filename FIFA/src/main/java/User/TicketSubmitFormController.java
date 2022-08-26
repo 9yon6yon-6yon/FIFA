@@ -87,7 +87,9 @@ public class TicketSubmitFormController {
         saveButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(), "", sDir);
+                TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(),getTokenView().getText(), sDir);
+                tg.setToken(getTokenView().getText());
+                tg.setMatchInfo(getMatchTeams().getText());
                 tg.generatePDF();
                 System.exit(0);
             }
