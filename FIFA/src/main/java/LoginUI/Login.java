@@ -41,7 +41,7 @@ public class Login {
     private void checkLoging() throws IOException{
 
         Main m = new Main();
-        if(username.getText().toString().equals("javacoding")&& password.getText().toString().equals("123")){
+        if(username.getText().equals("javacoding")&& password.getText().equals("123")){
             wronglogin.setText("Success!");
 
             m.changeScene("AfterLogin.fxml");

@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 import java.io.*;
 
@@ -46,7 +47,11 @@ public class TicketController {
             if(bought){
                 try {
                     buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
-                } catch (FileNotFoundException e) {
+                    TicketGenerator tg = new TicketGenerator();
+                    tg.setToken(codeText.getText());
+                    TicketSubmitForm t =  new TicketSubmitForm();
+                    t.start(new Stage());
+                } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
                 bought = false;
