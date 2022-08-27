@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
 
 import java.io.BufferedReader;
@@ -14,6 +15,50 @@ import java.io.IOException;
 
 
 public class PlayerController {
+    @FXML
+    private MenuItem aboutUs;
+
+    @FXML
+    private MenuItem buyTicket;
+
+    @FXML
+    private MenuItem checkBMI;
+
+    @FXML
+    private MenuItem close;
+
+    @FXML
+    private MenuItem feed;
+
+    @FXML
+    private MenuItem groupMatches;
+
+    @FXML
+    private MenuItem groups;
+
+    @FXML
+    private MenuItem howTo;
+
+    @FXML
+    private MenuItem logOut;
+
+    @FXML
+    private MenuItem liveMatch;
+
+    @FXML
+    private MenuItem matchScores;
+
+    @FXML
+    private MenuItem matchtree;
+
+    @FXML
+    private MenuItem pProfiles;
+
+    @FXML
+    private MenuItem profile;
+
+    @FXML
+    private MenuItem refresh;
 
     @FXML
     private ChoiceBox<String> countryNames;

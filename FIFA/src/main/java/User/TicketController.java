@@ -2,10 +2,7 @@ package User;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -13,6 +10,50 @@ import javafx.stage.Stage;
 import java.io.*;
 
 public class TicketController {
+    @FXML
+    private MenuItem aboutUs;
+
+    @FXML
+    private MenuItem buyTicket;
+
+    @FXML
+    private MenuItem checkBMI;
+
+    @FXML
+    private MenuItem close;
+
+    @FXML
+    private MenuItem feed;
+
+    @FXML
+    private MenuItem groupMatches;
+
+    @FXML
+    private MenuItem groups;
+
+    @FXML
+    private MenuItem howTo;
+
+    @FXML
+    private MenuItem logOut;
+
+    @FXML
+    private MenuItem liveMatch;
+
+    @FXML
+    private MenuItem matchScores;
+
+    @FXML
+    private MenuItem matchtree;
+
+    @FXML
+    private MenuItem pProfiles;
+
+    @FXML
+    private MenuItem profile;
+
+    @FXML
+    private MenuItem refresh;
 
 
     @FXML

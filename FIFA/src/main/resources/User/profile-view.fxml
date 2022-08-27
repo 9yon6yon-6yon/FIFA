@@ -12,26 +12,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ProfileController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ProfileController">
    <left>
-      <VBox prefHeight="200.0" prefWidth="320.0" spacing="50.0" style="-fx-background-color: #bf90fc;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="320.0" spacing="50.0" BorderPane.alignment="CENTER">
          <children>
             <VBox alignment="CENTER" prefHeight="201.0" prefWidth="320.0" spacing="15.0">
                <VBox.margin>
                   <Insets top="50.0" />
                </VBox.margin>
                <children>
-                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="profilePic" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true">
                      <image>
                         <Image url="@../Images/profile0.png" />
                      </image>
                   </ImageView>
-                  <Label text="Redoy Kumar Shaha">
+                  <Label fx:id="FullNameLabel" text="Full Name">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button fx:id="edit" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="30.0" prefWidth="105.0" text="Edit pofile">
+                  <Button fx:id="edit" mnemonicParsing="false" prefHeight="30.0" prefWidth="153.0" text="Edit pofile">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
@@ -42,11 +42,11 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="292.0">
                      <children>
-                        <ImageView fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="pimg" fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/404-4042686_my-profile-person-icon-png-free-transparent-png.png" />
                            </image></ImageView>
-                        <Label prefHeight="17.0" prefWidth="97.0" text="Profile">
+                        <Label fx:id="profileLabel" prefHeight="21.0" prefWidth="106.0" text="Profile">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -58,12 +58,12 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="292.0">
                      <children>
-                        <ImageView fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="keyimg" fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/475-4751731_key-password-hd-png-download.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="17.0" prefWidth="97.0" text="Password">
+                        <Label fx:id="passwordLabel" prefHeight="21.0" prefWidth="109.0" text="Password">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -75,12 +75,12 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="292.0">
                      <children>
-                        <ImageView fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="setimg" fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/logo-setting-png-favpng-2bV5C3tpD4hJJFSR5YsVDrWt4.jpg" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="17.0" prefWidth="97.0" text="Settings">
+                        <Label fx:id="settingsLabel" prefHeight="21.0" prefWidth="104.0" text="Settings">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -92,12 +92,12 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="292.0">
                      <children>
-                        <ImageView fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="privacyimg" fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/cropped-security-shield-lock-512.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="17.0" prefWidth="97.0" text="Privacy">
+                        <Label fx:id="privacylabel" prefHeight="17.0" prefWidth="97.0" text="Privacy">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -107,6 +107,11 @@
                         </Label>
                      </children>
                   </HBox>
+                  <ImageView fx:id="goBack" fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-back-100.png" />
+                     </image>
+                  </ImageView>
                </children>
             </VBox>
          </children>
@@ -115,7 +120,7 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" style="-fx-background-color: #dcc9f5;" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="17.0" prefWidth="679.0" text="Profile settings">
+            <Label prefHeight="17.0" prefWidth="679.0" text="Profile">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
@@ -132,13 +137,13 @@
                   </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
                      <children>
-                        <Label prefHeight="26.0" prefWidth="105.0" text="Name">
+                        <Label prefHeight="26.0" prefWidth="114.0" text="Name">
                            <font>
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField prefHeight="25.0" prefWidth="330.0" />
+                        <Pane prefHeight="29.0" prefWidth="131.0" />
+                        <TextField fx:id="nameField" prefHeight="25.0" prefWidth="323.0" promptText="enter name" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -149,21 +154,24 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField prefHeight="25.0" prefWidth="330.0" />
+                        <TextField fx:id="userNameField" prefHeight="25.0" prefWidth="323.0" promptText="usename" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
                      <children>
-                        <Label prefHeight="26.0" prefWidth="105.0" text="Date of birth">
+                        <Label prefHeight="26.0" prefWidth="156.0" text="Date of birth">
                            <font>
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField prefHeight="25.0" prefWidth="330.0" />
+                        <Pane prefHeight="29.0" prefWidth="86.0" />
+                        <TextField fx:id="dobfield" prefHeight="25.0" prefWidth="324.0" promptText="dd/mm/yyyy" />
                      </children>
                   </HBox>
                </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
             </VBox>
             <VBox prefHeight="141.0" prefWidth="880.0" spacing="30.0">
                <children>
@@ -180,7 +188,7 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField prefHeight="25.0" prefWidth="330.0" />
+                        <TextField fx:id="cinfoField" prefHeight="25.0" prefWidth="330.0" promptText="Contact no" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -191,12 +199,15 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField prefHeight="25.0" prefWidth="330.0" />
+                        <TextField fx:id="emailfield" prefHeight="25.0" prefWidth="330.0" promptText="email" />
                      </children>
                   </HBox>
                </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
             </VBox>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Save changes">
+            <Button fx:id="saveChanges1" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Save changes">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
