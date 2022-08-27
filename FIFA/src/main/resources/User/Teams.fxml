@@ -41,7 +41,7 @@
          <menus>
             <Menu mnemonicParsing="false" text="Home">
                <items>
-                  <MenuItem fx:id="feed" mnemonicParsing="false" text="Feed">
+                  <MenuItem fx:id="feed1" mnemonicParsing="false" onAction="#feedOnAction" text="Feed">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -50,7 +50,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="refresh" mnemonicParsing="false" text="Refresh">
+                  <MenuItem fx:id="refresh1" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -59,7 +59,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="close" mnemonicParsing="false" text="Close">
+                  <MenuItem fx:id="close1" mnemonicParsing="false" onAction="#closeOnAction" text="Close">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -69,7 +69,7 @@
                      </graphic>
                   </MenuItem>
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="logOut" mnemonicParsing="false" text="Log Out">
+                  <MenuItem fx:id="logOut1" mnemonicParsing="false" onAction="#logoutOnAction" text="Log Out">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -89,7 +89,7 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Edit">
                <items>
-                  <MenuItem fx:id="profile" mnemonicParsing="false" text="Profile">
+                  <MenuItem fx:id="profile1" mnemonicParsing="false" onAction="#profileOnAction" text="Profile">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -109,7 +109,7 @@
             </Menu>
             <Menu mnemonicParsing="false" text="View">
                <items>
-                  <MenuItem fx:id="liveMatch" mnemonicParsing="false" text="Live Match">
+                  <MenuItem fx:id="liveMatch1" mnemonicParsing="false" onAction="#LiveOnAction" text="Live Match">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -118,7 +118,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="matchScores" mnemonicParsing="false" text="Match Scores">
+                  <MenuItem fx:id="matchScores1" mnemonicParsing="false" onAction="#matchScoreOnAction" text="Match Scores">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -127,7 +127,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="groups" mnemonicParsing="false" text="Groups">
+                  <MenuItem fx:id="groups1" mnemonicParsing="false" onAction="#groupsOnAction" text="Groups">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -136,7 +136,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="groupMatches" mnemonicParsing="false" text="Group Matches">
+                  <MenuItem fx:id="groupMatches1" mnemonicParsing="false" onAction="#gMatchesOnAction" text="Group Matches">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -145,7 +145,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="matchtree" mnemonicParsing="false" text="Match Tree">
+                  <MenuItem fx:id="matchtree1" mnemonicParsing="false" onAction="#mTreeOnAction" text="Match Tree">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -154,7 +154,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="pProfiles" mnemonicParsing="false" text="Players Profile">
+                  <MenuItem fx:id="pProfiles1" mnemonicParsing="false" onAction="#pProfilesOnAction" text="Players Profile">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -163,7 +163,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="checkBMI" mnemonicParsing="false" text="Check BMI">
+                  <MenuItem fx:id="checkBMI1" mnemonicParsing="false" onAction="#checkBMIOnAction" text="Check BMI">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -183,7 +183,7 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Shop">
                <items>
-                  <MenuItem fx:id="buyTicket" mnemonicParsing="false" text="Buy Ticket">
+                  <MenuItem fx:id="buyTicket1" mnemonicParsing="false" onAction="#buyTicketOnAction" text="Buy Ticket">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -203,7 +203,7 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Help">
                <items>
-                  <MenuItem fx:id="howTo" mnemonicParsing="false" text="How to?">
+                  <MenuItem fx:id="howTo1" mnemonicParsing="false" onAction="#howToOnAction" text="How to?">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -213,7 +213,7 @@
                      </graphic>
                   </MenuItem>
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="aboutUs" mnemonicParsing="false" text="About">
+                  <MenuItem fx:id="aboutUs1" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
