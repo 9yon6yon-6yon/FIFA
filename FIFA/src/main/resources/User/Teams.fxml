@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.TeamsController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ChoiceBox fx:id="groupNames" layoutX="15.0" layoutY="93.0" prefHeight="24.0" prefWidth="173.0" />
+      <ImageView fx:id="imagr1" fitHeight="65.0" fitWidth="120.0" layoutX="302.0" layoutY="161.0" pickOnBounds="true">
+         <image>
+            <Image url="@../flags/ec.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagr2" fitHeight="65.0" fitWidth="120.0" layoutX="302.0" layoutY="251.0" pickOnBounds="true">
+         <image>
+            <Image url="@../flags/sn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagr3" fitHeight="65.0" fitWidth="120.0" layoutX="302.0" layoutY="338.0" pickOnBounds="true">
+         <image>
+            <Image url="@../flags/nl.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagr4" fitHeight="65.0" fitWidth="120.0" layoutX="302.0" layoutY="419.0" pickOnBounds="true">
+         <image>
+            <Image url="@../flags/qa.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name1" layoutX="90.0" layoutY="176.0" prefHeight="36.0" prefWidth="197.0" text="Ecuador" />
+      <Label fx:id="name2" layoutX="90.0" layoutY="266.0" prefHeight="36.0" prefWidth="197.0" text="Snegal" />
+      <Label fx:id="name3" layoutX="90.0" layoutY="353.0" prefHeight="36.0" prefWidth="197.0" text="Netherlands" />
+      <Label fx:id="name4" layoutX="90.0" layoutY="434.0" prefHeight="36.0" prefWidth="197.0" text="Qatar" />
+   </children>
+</AnchorPane>

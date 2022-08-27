@@ -2,7 +2,9 @@
 
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -40,24 +42,6 @@
          </image>
       </ImageView>
       <Separator layoutX="205.0" layoutY="106.0" prefHeight="3.0" prefWidth="500.0" />
-      <Label layoutX="56.0" layoutY="219.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
       <Label layoutX="293.0" layoutY="188.0" prefHeight="16.0" prefWidth="243.0" text="Available Matches">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
@@ -100,24 +84,6 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="756.0" layoutY="219.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
       <DatePicker fx:id="ticketsDate" layoutX="692.0" layoutY="136.0" />
       <Label alignment="CENTER_RIGHT" layoutX="527.0" layoutY="139.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
          <textFill>
@@ -145,12 +111,19 @@
             <Image url="@../Images/icons8-cart.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="buyCart1" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="buyTo" fitHeight="42.0" fitWidth="30.0" layoutX="665.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
+            <Image url="@../Images/icons8-buy-100.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="259.0" prefHeight="40.0" prefWidth="600.0" text="Label">
+      <ListView fx:id="showavbMatches" layoutX="32.0" layoutY="222.0" prefHeight="325.0" prefWidth="642.0" />
+      <ListView fx:id="showavbTickets" layoutX="705.0" layoutY="222.0" prefHeight="325.0" prefWidth="183.0" />
+      <TextField fx:id="codeText" layoutX="400.0" layoutY="550.0" prefHeight="30.0" prefWidth="226.0" promptText="enter code">
+         <font>
+            <Font name="FreeMono" size="13.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="205.0" layoutY="551.0" prefHeight="30.0" prefWidth="153.0" text="Ticket Code">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -161,281 +134,15 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
+                        <Color red="0.15411792695522308" green="0.7236841917037964" blue="0.1920890212059021" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </textFill>
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
       </Label>
-      <Label layoutX="756.0" layoutY="502.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart2" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="502.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="259.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart8" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="302.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="302.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart3" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="342.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="342.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart4" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="382.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="382.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart5" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="422.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="422.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart6" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="56.0" layoutY="462.0" prefHeight="40.0" prefWidth="600.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <Label layoutX="756.0" layoutY="462.0" prefHeight="40.0" prefWidth="70.0" text="Label">
-         <textFill>
-            <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.04721003770828247" green="0.2876664996147156" blue="0.40789473056793213" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="buyCart7" fitHeight="30.0" fitWidth="45.0" layoutX="843.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/icons8-add-shopping-cart-100.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

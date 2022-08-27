@@ -10,11 +10,11 @@ import javafx.stage.Stage;
 import java.io.FileInputStream;
 import java.util.Objects;
 
-public class Ticket extends Application {
+public class Matches extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Ticket.fxml")));
-        stage.setTitle(" Buy Tickets ");
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Matches.fxml")));
+        stage.setTitle(" Groups ");
         stage.getIcons().add(new Image(new FileInputStream("Images/icons8-world-cup-2018-100.png")));
         stage.setScene(new Scene(root));
         stage.show();
