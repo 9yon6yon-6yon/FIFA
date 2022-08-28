@@ -2,6 +2,10 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,7 +15,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" scaleShape="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.BMIController">
+<AnchorPane fx:id="BMIroot" prefHeight="600.0" prefWidth="900.0" scaleShape="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.BMIController">
    <children>
       <ImageView fx:id="maleIcon" fitHeight="138.0" fitWidth="138.0" layoutX="303.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="459.0">
          <image>
@@ -148,5 +152,201 @@
          </font>
       </Label>
       <Button fx:id="calculateButton" alignment="CENTER" contentDisplay="BOTTOM" defaultButton="true" layoutX="420.0" layoutY="510.0" mnemonicParsing="false" onAction="#onCalculate" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #4dff4d;" text="Calculate" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="510.0" />
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem fx:id="feed1" mnemonicParsing="false" onAction="#feedOnAction" text="Feed">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-news-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="refresh1" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-restart-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="close1" mnemonicParsing="false" onAction="#closeOnAction" text="Close">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-close-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="logOut1" mnemonicParsing="false" onAction="#logoutOnAction" text="Log Out">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-log-out-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-home-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem fx:id="profile1" mnemonicParsing="false" onAction="#profileOnAction" text="Profile">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-account-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-edit-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem fx:id="liveMatch1" mnemonicParsing="false" onAction="#LiveOnAction" text="Live Match">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-live-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="matchScores1" mnemonicParsing="false" onAction="#matchScoreOnAction" text="Match Scores">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-score-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="groups1" mnemonicParsing="false" onAction="#groupsOnAction" text="Groups">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-team-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="groupMatches1" mnemonicParsing="false" onAction="#gMatchesOnAction" text="Group Matches">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-vs-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="matchtree1" mnemonicParsing="false" onAction="#mTreeOnAction" text="Match Tree">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-match-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="pProfiles1" mnemonicParsing="false" onAction="#pProfilesOnAction" text="Players Profile">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-people-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="checkBMI1" mnemonicParsing="false" onAction="#checkBMIOnAction" text="Check BMI">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-bmi-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-view-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Shop">
+               <items>
+                  <MenuItem fx:id="buyTicket1" mnemonicParsing="false" onAction="#buyTicketOnAction" text="Buy Ticket">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-ticket-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="howTo1" mnemonicParsing="false" onAction="#howToOnAction" text="How to?">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-external-link-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="aboutUs1" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-about-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-help-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
    </children>
 </AnchorPane>

@@ -2,11 +2,15 @@ package User;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -35,17 +39,17 @@ public class Login {
 
     @FXML
     void userLogin(ActionEvent event) throws IOException {
-
-        checkLoging();
+        checkLoging(event);
 
     }
 
 
-    private void checkLoging() throws IOException {
+    private void checkLoging(ActionEvent event) throws IOException {
 
-        Main mn = new Main();
-        boolean matched = false;
-
+        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Feed.fxml");
+        Parent root = scene.root;
+        FeedController main = (FeedController) scene.controller;
         String user1 = username.getText();
         String user2 = password.getText();
 
@@ -54,10 +58,8 @@ public class Login {
         String line;
         while ((line = br.readLine()) != null) {
             if (line.equals(user1 + "\t" + user2)) {
-                matched = true;
-
-                mn.changeScene("afterLoging.fxml");
-
+                mainStage.setScene(new Scene(root));
+                break;
             }
         }
 
@@ -76,16 +78,23 @@ public class Login {
 
     @FXML
     void userSignup(ActionEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("signUp.fxml");
+        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("signUp.fxml");
+        Parent root = scene.root;
+        signUp main = (signUp) scene.controller;
+        mainStage.setScene(new Scene(root));
 
 
     }
 
     @FXML
     void forgetmethod(MouseEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("Forgotten.fxml");
+
+        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Forgotten.fxml");
+        Parent root = scene.root;
+        ForgottenController main = (ForgottenController) scene.controller;
+        mainStage.setScene(new Scene(root));//need to add new live fxml here
 
     }
 
