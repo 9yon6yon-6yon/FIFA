@@ -5,9 +5,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 
 public class UsController {
 
+    public AnchorPane aboutUsroot;
     @FXML
     private Button aboutButton;
 

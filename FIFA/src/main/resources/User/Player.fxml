@@ -15,7 +15,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.PlayerController">
+<AnchorPane fx:id="PlayerRoot" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.PlayerController">
    <children>
       <ChoiceBox fx:id="countryNames" layoutX="736.0" layoutY="61.0" prefHeight="24.0" prefWidth="150.0" />
       <ListView fx:id="playerLists" editable="true" layoutX="14.0" layoutY="153.0" prefHeight="500.0" prefWidth="879.0" />

@@ -3,7 +3,7 @@
  * Lecturer at CSE, UIU
  */
 
-package User;
+package Admin;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
