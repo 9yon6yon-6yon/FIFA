@@ -14,12 +14,14 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.Slider;
 
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 
 public class BMIController {
+    public AnchorPane BMIroot;
     @FXML
     private MenuItem aboutUs1;
 
@@ -191,7 +193,7 @@ public class BMIController {
 
     @FXML
     void feedOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
@@ -202,7 +204,7 @@ public class BMIController {
 
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("sample.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
@@ -218,7 +220,7 @@ public class BMIController {
 
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
@@ -227,16 +229,12 @@ public class BMIController {
 
     @FXML
     void aboutOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Us.fxml");
-        Parent root = scene.root;
-        UsController us = (UsController) scene.controller;
-        mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Ticket.fxml");
         Parent root = scene.root;
         TicketController tc = (TicketController) scene.controller;
@@ -245,7 +243,7 @@ public class BMIController {
 
     @FXML
     void checkBMIOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("BMI.fxml");
         Parent root = scene.root;
         BMIController bmi = (BMIController) scene.controller;
@@ -254,7 +252,7 @@ public class BMIController {
 
     @FXML
     void gMatchesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Matches.fxml");
         Parent root = scene.root;
         MatchesController mc = (MatchesController) scene.controller;
@@ -263,7 +261,7 @@ public class BMIController {
 
     @FXML
     void groupsOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Teams.fxml");
         Parent root = scene.root;
         TeamsController tc = (TeamsController) scene.controller;
@@ -277,7 +275,7 @@ public class BMIController {
 
     @FXML
     void mTreeOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("UserMatchTree.fxml");
         Parent root = scene.root;
         UserMatchTreeController um = (UserMatchTreeController) scene.controller;
@@ -286,7 +284,7 @@ public class BMIController {
 
     @FXML
     void matchScoreOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
@@ -295,7 +293,7 @@ public class BMIController {
 
     @FXML
     void pProfilesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Player.fxml");
         Parent root = scene.root;
         PlayerController pc = (PlayerController) scene.controller;
@@ -304,7 +302,7 @@ public class BMIController {
 
     @FXML
     void profileOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("profile-view.fxml");
         Parent root = scene.root;
         ProfileController pc = (ProfileController) scene.controller;

@@ -19,7 +19,6 @@ public class FXMLScene {
         FXMLScene fxmlScene = new FXMLScene();
         FXMLLoader fxmlLoader = new FXMLLoader(); // creates a basic fxml object here
         fxmlLoader.setLocation(fxmlScene.getClass().getResource(fxml)); // sets the fxml loader to new class
-
         fxmlScene.root =  fxmlLoader.load();
         fxmlScene.controller = fxmlLoader.getController(); // gets the controller class of new fxml scene
 

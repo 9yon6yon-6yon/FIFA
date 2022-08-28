@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.TeamsController">
+<AnchorPane fx:id="TeamsRoot" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.TeamsController">
    <children>
       <ChoiceBox fx:id="groupNames" layoutX="15.0" layoutY="93.0" prefHeight="24.0" prefWidth="173.0" />
       <ImageView fx:id="imagr1" fitHeight="65.0" fitWidth="120.0" layoutX="302.0" layoutY="161.0" pickOnBounds="true">
