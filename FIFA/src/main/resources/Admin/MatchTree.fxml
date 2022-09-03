@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.MatchTreeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="match-tree" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.MatchTreeController">
    <children>
       <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
@@ -33,39 +33,39 @@
       </MenuBar>
       <HBox layoutY="103.0" prefHeight="49.0" prefWidth="1200.0">
          <children>
-            <Label alignment="CENTER" prefHeight="52.0" prefWidth="300.0" text="Round Up 16" />
-            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Quater Final" />
-            <Label alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Semi-Final" />
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="300.0" styleClass="border" stylesheets="@../Style/style.css" text="Round Up 16" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border1" stylesheets="@../Style/style.css" text="Quater Final" />
+            <Label alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border2" stylesheets="@../Style/style.css" text="Semi-Final" />
             <Label alignment="CENTER" layoutX="610.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Final" />
             <Label alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Semi-Final" />
-            <Label alignment="CENTER" layoutX="730.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Quater Final" />
-            <Label alignment="CENTER" layoutX="410.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" text="Round Up 16" />
+            <Label alignment="CENTER" layoutX="730.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border1" text="Quater Final" />
+            <Label alignment="CENTER" layoutX="410.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border" text="Round Up 16" />
          </children>
       </HBox>
-      <TextField fx:id="round1" layoutX="10.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round2" layoutX="10.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round3" layoutX="10.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round4" layoutX="10.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round5" layoutX="10.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round6" layoutX="10.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round7" layoutX="10.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round8" layoutX="10.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round9" layoutX="1040.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round10" layoutX="1040.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round11" layoutX="1040.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round12" layoutX="1040.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round13" layoutX="1040.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round14" layoutX="1040.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round15" layoutX="1040.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="round16" layoutX="1040.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater1" layoutX="185.0" layoutY="210.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater2" layoutX="185.0" layoutY="295.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater3" layoutX="185.0" layoutY="375.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater4" layoutX="185.0" layoutY="455.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater5" layoutX="860.0" layoutY="212.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater6" layoutX="860.0" layoutY="297.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater7" layoutX="860.0" layoutY="377.0" prefHeight="24.0" prefWidth="150.0" />
-      <TextField fx:id="quater8" layoutX="860.0" layoutY="457.0" prefHeight="24.0" prefWidth="150.0" />
+      <TextField fx:id="round1" layoutX="10.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round2" layoutX="10.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round3" layoutX="10.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round4" layoutX="10.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round5" layoutX="10.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round6" layoutX="10.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round7" layoutX="10.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round8" layoutX="10.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
+      <TextField fx:id="round9" layoutX="1040.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round10" layoutX="1040.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round11" layoutX="1040.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round12" layoutX="1040.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round13" layoutX="1040.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round14" layoutX="1040.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round15" layoutX="1040.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="round16" layoutX="1040.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
+      <TextField fx:id="quater1" layoutX="185.0" layoutY="210.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater2" layoutX="185.0" layoutY="295.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater3" layoutX="185.0" layoutY="375.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater4" layoutX="185.0" layoutY="455.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater5" layoutX="860.0" layoutY="212.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater6" layoutX="860.0" layoutY="297.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater7" layoutX="860.0" layoutY="377.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
+      <TextField fx:id="quater8" layoutX="860.0" layoutY="457.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
       <TextField fx:id="semi1" layoutX="360.0" layoutY="255.0" prefHeight="24.0" prefWidth="150.0" />
       <TextField fx:id="semi2" layoutX="360.0" layoutY="415.0" prefHeight="24.0" prefWidth="150.0" />
       <TextField fx:id="semi3" layoutX="695.0" layoutY="255.0" prefHeight="24.0" prefWidth="150.0" />

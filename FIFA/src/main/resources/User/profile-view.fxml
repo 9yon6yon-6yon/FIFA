@@ -10,6 +10,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ProfileController">
@@ -21,7 +24,7 @@
                   <Insets top="50.0" />
                </VBox.margin>
                <children>
-                  <ImageView fx:id="profilePic" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true">
+                  <ImageView fx:id="profilePic" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" style="visibility: #circle;">
                      <image>
                         <Image url="@../Images/profile0.png" />
                      </image>
@@ -31,10 +34,26 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button fx:id="edit" mnemonicParsing="false" prefHeight="30.0" prefWidth="153.0" text="Edit pofile">
+                  <Button fx:id="edit" mnemonicParsing="false" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #614796;" styleClass="edit_profile" stylesheets="@../Style/style.css" text="Edit pofile">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8684210777282715" green="0.8402777910232544" blue="0.8402777910232544" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.9607843160629272" blue="0.9607843160629272" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
                   </Button>
                </children>
             </VBox>
@@ -127,13 +146,45 @@
                <VBox.margin>
                   <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
                </VBox.margin>
+               <textFill>
+                  <LinearGradient endX="0.061611374407582895" endY="1.0" startX="0.023696682464454975">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8684210777282715" green="0.8402777910232544" blue="0.8402777910232544" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color blue="0.5921052694320679" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Label>
             <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="679.0" text="Profile ditails">
+                  <Label prefHeight="30.0" prefWidth="151.0" text="Profile ditails">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
+                     <textFill>
+                        <LinearGradient endX="0.061611374407582895" endY="1.0" startX="0.023696682464454975">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8684210777282715" green="0.8402777910232544" blue="0.8402777910232544" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.21176470816135406" green="0.027450980618596077" blue="0.027450980618596077" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
                   </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
                      <children>
@@ -143,7 +194,7 @@
                            </font>
                         </Label>
                         <Pane prefHeight="29.0" prefWidth="131.0" />
-                        <TextField fx:id="nameField" prefHeight="25.0" prefWidth="323.0" promptText="enter name" />
+                        <TextField fx:id="nameField" prefHeight="55.0" prefWidth="323.0" promptText="enter name" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -175,10 +226,26 @@
             </VBox>
             <VBox prefHeight="141.0" prefWidth="880.0" spacing="30.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="679.0" text="Contact info">
+                  <Label prefHeight="30.0" prefWidth="132.0" text="Contact info">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
+                     <textFill>
+                        <LinearGradient endX="0.061611374407582895" endY="1.0" startX="0.023696682464454975">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8684210777282715" green="0.8402777910232544" blue="0.8402777910232544" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.21176470816135406" green="0.027450980618596077" blue="0.027450980618596077" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
                   </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
                      <children>
@@ -207,10 +274,26 @@
                   <Insets left="10.0" />
                </padding>
             </VBox>
-            <Button fx:id="saveChanges1" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Save changes">
+            <Button fx:id="saveChanges1" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #614796;" styleClass="edit_profile" stylesheets="@../Style/style.css" text="Save changes">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8684210777282715" green="0.8402777910232544" blue="0.8402777910232544" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.9607843160629272" blue="0.9607843160629272" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Button>
          </children>
       </VBox>

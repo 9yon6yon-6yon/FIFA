@@ -10,20 +10,20 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FBB917;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Login">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Login">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane opacity="0.33" prefHeight="200.0" prefWidth="200.0" stylesheets="@../Style/style.css" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="600.0" fitWidth="363.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="291.0" fitWidth="301.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/18-182611_world-cup-png-fifa-world-cup-png-transparent.png" />
+                  <Image url="@../Images/icons8-world-cup-2018-100.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane prefHeight="600.0" prefWidth="572.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="600.0" prefWidth="502.0" style="-fx-background-color: #EFF878;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="60.0" fitWidth="71.0" layoutX="270.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,7 +42,7 @@
             </Label>
             <TextField fx:id="username" layoutX="195.0" layoutY="233.0" prefHeight="33.0" prefWidth="257.0" promptText="username" style="-fx-background-color: #FEFCFF;" />
             <PasswordField fx:id="password" layoutX="195.0" layoutY="322.0" prefHeight="33.0" prefWidth="259.0" promptText="password" style="-fx-background-color: #FEFCFF;" />
-            <Button fx:id="button" layoutX="277.0" layoutY="386.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #046307;" text="Sign In" />
+            <Button fx:id="button" layoutX="277.0" layoutY="386.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #046307;" text="Sign In" textFill="WHITE" />
             <Label fx:id="wronglogin" layoutX="221.0" layoutY="192.0" prefHeight="31.0" prefWidth="308.0" textFill="RED">
                <font>
                   <Font size="15.0" />
@@ -57,7 +57,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="button2" layoutX="41.0" layoutY="531.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #046307;" text="Sign Up">
+            <Button fx:id="button2" layoutX="41.0" layoutY="531.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #046307;" text="Sign Up" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>

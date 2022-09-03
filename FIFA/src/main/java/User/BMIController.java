@@ -205,7 +205,7 @@ public class BMIController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
