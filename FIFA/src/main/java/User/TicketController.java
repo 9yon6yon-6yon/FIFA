@@ -150,22 +150,17 @@ public class TicketController {
 
     @FXML
     void feedOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
-        Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("Feed.fxml");
+
 
 
     }
 
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
-        Parent root = scene.root;
-        Login login = (Login) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("sample.fxml");
 
 
     }
@@ -177,11 +172,8 @@ public class TicketController {
 
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
-        Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        Main m = new Main();
+        m.changeScene("Feed.fxml");
     }
 
     @FXML
@@ -191,38 +183,26 @@ public class TicketController {
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Ticket.fxml");
-        Parent root = scene.root;
-        TicketController tc = (TicketController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("Ticket.fxml");
     }
 
     @FXML
     void checkBMIOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("BMI.fxml");
-        Parent root = scene.root;
-        BMIController bmi = (BMIController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("BMI.fxml");
     }
 
     @FXML
     void gMatchesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Matches.fxml");
-        Parent root = scene.root;
-        MatchesController mc = (MatchesController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("Matches.fxml");
     }
 
     @FXML
     void groupsOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Teams.fxml");
-        Parent root = scene.root;
-        TeamsController tc = (TeamsController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("Teams.fxml");
     }
 
     @FXML
@@ -232,38 +212,26 @@ public class TicketController {
 
     @FXML
     void mTreeOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("UserMatchTree.fxml");
-        Parent root = scene.root;
-        UserMatchTreeController um = (UserMatchTreeController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("UserMatchTree.fxml");
     }
 
     @FXML
     void matchScoreOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
-        Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("Feed.fxml");
     }
 
     @FXML
     void pProfilesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Player.fxml");
-        Parent root = scene.root;
-        PlayerController pc = (PlayerController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("player.fxml");
     }
 
     @FXML
     void profileOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("profile-view.fxml");
-        Parent root = scene.root;
-        ProfileController pc = (ProfileController) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("profile-view.fxml");
 
     }
 

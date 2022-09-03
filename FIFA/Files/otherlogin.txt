@@ -1,5 +1,1 @@
-sajib   16.6.1999  Bangladesh
-choyon	1.1.2000	India
-		
-		
-		
+sajib	16.6.1999	Bangladesh

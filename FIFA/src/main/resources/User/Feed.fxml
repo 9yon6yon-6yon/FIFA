@@ -10,7 +10,12 @@
 
 <AnchorPane fx:id="FeedRoot" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FeedController">
    <children>
-      <MenuBar layoutX="8.0" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Images/photo.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="8.0" layoutY="7.0" style="-fx-background-color: #33C7FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="Home">
             <items>

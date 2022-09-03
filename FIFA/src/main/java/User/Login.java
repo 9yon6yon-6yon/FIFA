@@ -46,24 +46,28 @@ public class Login {
 
     private void checkLoging(ActionEvent event) throws IOException {
 
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
-        Parent root = scene.root;
-        FeedController main = (FeedController) scene.controller;
+
+        Main mn=new Main();
+
+        boolean matched=false;
+
         String user1 = username.getText();
         String user2 = password.getText();
+        String line;
+
 
         FileReader fr = new FileReader("Files/login.txt");
         BufferedReader br = new BufferedReader(fr);
-        String line;
+
         while ((line = br.readLine()) != null) {
             if (line.equals(user1 + "\t" + user2)) {
-                mainStage.setScene(new Scene(root));
-                break;
+                matched=true;
+
+
+                mn.changeScene("Feed.fxml");
+
             }
         }
-
-
         if (username.getText().isEmpty() && password.getText().isEmpty()) {
 
             wronglogin.setText("Please enter your data.");
@@ -71,18 +75,42 @@ public class Login {
 
         } else wronglogin.setText("Wrong username or password!");
 
+
         fr.close();
 
 
     }
 
     @FXML
+    void adminloginbutton(ActionEvent event)throws IOException {
+
+
+
+
+        if(username.getText().toString().equals("admin@gmail.com") && password.getText().toString().equals("88991010") ){
+            Main mn=new Main();
+            mn.changeScene("adminProfile.fxml");
+
+
+        }
+        else if (username.getText().isEmpty() && password.getText().isEmpty()) {
+
+            wronglogin.setText("Please enter your data.");
+
+
+
+        }
+
+        else wronglogin.setText("Wrong username or password!");
+
+
+
+    }
+
+    @FXML
     void userSignup(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("signUp.fxml");
-        Parent root = scene.root;
-        signUp main = (signUp) scene.controller;
-        mainStage.setScene(new Scene(root));
+        Main m = new Main();
+        m.changeScene("signUp.fxml");
 
 
     }
@@ -90,11 +118,8 @@ public class Login {
     @FXML
     void forgetmethod(MouseEvent event) throws IOException {
 
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Forgotten.fxml");
-        Parent root = scene.root;
-        ForgottenController main = (ForgottenController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        Main m = new Main();
+        m.changeScene("Forgotten.fxml");
 
     }
 
