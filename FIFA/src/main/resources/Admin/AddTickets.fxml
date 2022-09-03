@@ -85,7 +85,7 @@
                 <Font name="FreeMono Bold" size="18.0" />
             </font>
         </Label>
-        <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" />
+        <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" stylesheets="@../Style/style.css" />
         <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
             <textFill>
                 <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
@@ -143,9 +143,9 @@
                 <Image url="@../Images/icons8-plus-key-100.png" />
             </image>
         </ImageView>
-        <TextField fx:id="setMatch1" layoutX="68.0" layoutY="233.0" prefHeight="30.0" prefWidth="541.0" />
+        <TextField fx:id="setMatch1" layoutX="68.0" layoutY="233.0" prefHeight="30.0" prefWidth="541.0" styleClass="add-match-box" stylesheets="@../Style/style.css" />
         <Label fx:id="avbtk1" alignment="CENTER" contentDisplay="CENTER" layoutX="660.0" layoutY="233.0" prefHeight="30.0" prefWidth="140.0" />
-      <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="522.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: #0fffdb;" text="ADD">
+      <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="522.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: #ffa64d;" styleClass="add" stylesheets="@../Style/style.css" text="ADD">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -172,7 +172,7 @@
             <Image url="@../Images/icons8-search-100.png" />
          </image>
       </ImageView>
-      <TextField fx:id="searchTokenField" layoutX="25.0" layoutY="535.0" prefHeight="24.0" prefWidth="188.0" promptText="enter token" />
+      <TextField fx:id="searchTokenField" layoutX="25.0" layoutY="535.0" prefHeight="24.0" prefWidth="188.0" promptText="enter token" styleClass="search-edit" stylesheets="@../Style/style.css" />
       <Label alignment="CENTER_RIGHT" layoutX="613.0" layoutY="197.0" prefHeight="19.0" prefWidth="188.0" text="Add Tickets">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
@@ -220,7 +220,7 @@
             <Image url="@../Images/icons8-restart-100.png" />
          </image>
       </ImageView>
-      <Button fx:id="editing" alignment="CENTER" contentDisplay="CENTER" layoutX="820.0" layoutY="559.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="57.0" style="-fx-background-color: #0fffdb;" text="Edit">
+      <Button fx:id="editing" alignment="CENTER" contentDisplay="CENTER" layoutX="820.0" layoutY="559.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="57.0" style="-fx-background-color: #ffa64d;" styleClass="credits-btn" stylesheets="@../Style/style.css" text="Edit">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
