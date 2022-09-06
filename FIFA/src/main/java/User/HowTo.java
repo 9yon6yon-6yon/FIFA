@@ -5,13 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
-public class Main extends Application {
+public class HowTo  extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Main.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("HowTo.fxml"));
         stage.setTitle("FIFA WORLD CUP 2022");
-        stage.setResizable(false);
         stage.setScene(new Scene(fxmlLoader.load()));
         stage.show();
     }
@@ -20,3 +18,5 @@ public class Main extends Application {
         launch(args);
     }
 }
+
+

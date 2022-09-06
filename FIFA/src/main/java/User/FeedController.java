@@ -79,7 +79,7 @@ public class FeedController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -144,7 +144,11 @@ public class FeedController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage)  FeedRoot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML
