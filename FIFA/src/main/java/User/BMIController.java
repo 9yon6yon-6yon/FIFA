@@ -1,11 +1,9 @@
 package User;
 
 
-import Admin.About.UsController;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -205,7 +203,7 @@ public class BMIController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -270,7 +268,11 @@ public class BMIController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML

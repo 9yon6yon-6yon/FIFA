@@ -3,15 +3,17 @@ package User;
 import Admin.About.UsController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class UserMatchTreeController {
     public AnchorPane userTree;
@@ -152,6 +154,89 @@ public class UserMatchTreeController {
 
     @FXML
     private TextField semi4;
+    @FXML
+    private Label winnerText;
+
+    @FXML
+    void initialize() {
+        try {
+            BufferedReader bwRoundup = new BufferedReader(new FileReader("Files/RoundUp.txt"));
+            BufferedReader bwqua = new BufferedReader(new FileReader("Files/quater.txt"));
+            BufferedReader bwsemi = new BufferedReader(new FileReader("Files/semi.txt"));
+            BufferedReader bwfinal = new BufferedReader(new FileReader("Files/finalMatch.txt"));
+            BufferedReader bwinner = new BufferedReader(new FileReader("Files/won.txt"));
+
+            ArrayList<String> rd = new ArrayList<>();
+            String rdline;
+            while ((rdline = bwRoundup.readLine()) != null) {
+                rd.add(rdline);
+            }
+
+            ArrayList<String> qu = new ArrayList<>();
+            String qLine;
+            while ((qLine = bwqua.readLine()) != null) {
+                qu.add(qLine);
+            }
+            ArrayList<String> sem = new ArrayList<>();
+            String semLine;
+            while ((semLine = bwsemi.readLine()) != null) {
+                sem.add(semLine);
+            }
+            ArrayList<String> fin = new ArrayList<>();
+            String finLine;
+            while ((finLine = bwfinal.readLine()) != null) {
+                fin.add(finLine);
+            }
+            round1.setText(rd.get(0));
+            round2.setText(rd.get(1));
+            round3.setText(rd.get(2));
+            round4.setText(rd.get(3));
+            round5.setText(rd.get(4));
+            round6.setText(rd.get(5));
+            round7.setText(rd.get(6));
+            round8.setText(rd.get(7));
+            round9.setText(rd.get(8));
+            round10.setText(rd.get(9));
+            round11.setText(rd.get(10));
+            round12.setText(rd.get(11));
+            round13.setText(rd.get(12));
+            round14.setText(rd.get(13));
+            round15.setText(rd.get(14));
+            round16.setText(rd.get(15));
+
+
+            quater1.setText(qu.get(0));
+            quater2.setText(qu.get(1));
+            quater3.setText(qu.get(2));
+            quater4.setText(qu.get(3));
+            quater5.setText(qu.get(4));
+            quater6.setText(qu.get(5));
+            quater7.setText(qu.get(6));
+            quater8.setText(qu.get(7));
+
+            semi1.setText(sem.get(0));
+            semi2.setText(sem.get(1));
+            semi3.setText(sem.get(2));
+            semi4.setText(sem.get(3));
+
+            finalMatch1.setText(fin.get(0));
+            finalMatch2.setText(fin.get(1));
+
+
+            winnerText.setText(bwinner.readLine());
+
+            bwRoundup.close();
+            bwqua.close();
+            bwsemi.close();
+            bwfinal.close();
+            bwinner.close();
+
+        } catch (IOException e) {
+            System.out.println(e);
+            ;
+        }
+
+    }
 
     @FXML
     void closeOnAction(ActionEvent event) {
@@ -172,7 +257,7 @@ public class UserMatchTreeController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) userTree.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -181,8 +266,8 @@ public class UserMatchTreeController {
     }
 
     @FXML
-    void refreshOnAction(ActionEvent event) {
-
+    void refreshOnAction(ActionEvent event) throws IOException {
+        mTreeOnAction(event);
     }
 
     @FXML
@@ -241,7 +326,11 @@ public class UserMatchTreeController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage) userTree.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML
