@@ -45,8 +45,6 @@ public class Login {
 
 
     private void checkLoging(ActionEvent event) throws IOException {
-
-
         Main mn=new Main();
 
         boolean matched=false;
@@ -68,44 +66,37 @@ public class Login {
 
             }
         }
-        if (username.getText().isEmpty() && password.getText().isEmpty()) {
-
-            wronglogin.setText("Please enter your data.");
-
-
-        } else wronglogin.setText("Wrong username or password!");
-
 
         fr.close();
 
 
-    }
+        if(user1.toString().equals("admin@gmail.com") && user2.toString().equals("626262")){
 
-    @FXML
-    void adminloginbutton(ActionEvent event)throws IOException {
-
-
-
-
-        if(username.getText().toString().equals("admin@gmail.com") && password.getText().toString().equals("88991010") ){
-            Main mn=new Main();
             mn.changeScene("adminProfile.fxml");
 
 
         }
-        else if (username.getText().isEmpty() && password.getText().isEmpty()) {
-
-            wronglogin.setText("Please enter your data.");
 
 
+        if (user1.isEmpty() && user2.isEmpty()) {
 
-        }
+            wronglogin.setText("Please enter your data."); }
+
 
         else wronglogin.setText("Wrong username or password!");
 
 
 
+
+
     }
+
+
+
+
+
+
+
 
     @FXML
     void userSignup(ActionEvent event) throws IOException {
