@@ -86,9 +86,18 @@
 
 .border1{
 -fx-background-color:#aaff80 ;
+-fx-background-radius: 30;
 }
 
 .border2{
+-fx-background-color:#75d98b;
+-fx-background-radius:30;
+
+}
+
+.border3{
+-fx-background-color:#99deae;
+-fx-background-radius:30;
 
 }
 
@@ -102,6 +111,15 @@
 
 }
 .edit_profile{
+-fx-background-radius: 30;
+
+}
+
+.jfx-text-field {
+-fx-prompt-text-fill:#f0f5f1;
+}
+
+.sign-in{
 -fx-background-radius: 30;
 
 }
