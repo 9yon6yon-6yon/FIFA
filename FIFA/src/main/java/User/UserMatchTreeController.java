@@ -235,7 +235,6 @@ public class UserMatchTreeController {
 
         } catch (IOException e) {
             System.out.println(e);
-            ;
         }
 
     }

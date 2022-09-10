@@ -1,8 +1,8 @@
 package User;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -11,6 +11,7 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 
 public class TicketSubmitFormController {
 
@@ -42,6 +43,26 @@ public class TicketSubmitFormController {
     private TextField userid;
     @FXML
     private Button saveButton;
+    private String m;
+
+    public String getTk() {
+        return tk;
+    }
+
+    public void setTk(String tk) {
+        this.tk = tk;
+    }
+
+    private String tk;
+
+    public String getM() {
+        return m;
+    }
+
+    public void setM(String m) {
+        this.m = m;
+    }
+
     private String sDir;
 
     public String getsDir() {
@@ -70,28 +91,32 @@ public class TicketSubmitFormController {
 
     @FXML
     void initialize() {
+        matchTeams.setText(m);
+        tokenView.setText(tk);
 
-        choosepath.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                DirectoryChooser directoryChooser = new DirectoryChooser();
-                directoryChooser.setTitle("save to");
-                File defaultDic = new File(System.getProperty("user.dir"));
-                directoryChooser.setInitialDirectory(defaultDic);
-                Stage stage = (Stage) form.getScene().getWindow();
-                File selectedDir = directoryChooser.showDialog(stage);
-                setsDir(selectedDir.getAbsolutePath());
-                locationPath.setText(sDir);
-            }
+        choosepath.setOnAction(actionEvent -> {
+            DirectoryChooser directoryChooser = new DirectoryChooser();
+            directoryChooser.setTitle("save to");
+            File defaultDic = new File(System.getProperty("user.dir"));
+            directoryChooser.setInitialDirectory(defaultDic);
+            Stage stage = (Stage) form.getScene().getWindow();
+            File selectedDir = directoryChooser.showDialog(stage);
+            setsDir(selectedDir.getAbsolutePath());
+            locationPath.setText(sDir);
         });
-        saveButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(),getTokenView().getText(), sDir);
-                tg.setToken(getTokenView().getText());
-                tg.setMatchInfo(getMatchTeams().getText());
-                tg.generatePDF();
-                System.exit(0);
+        saveButton.setOnAction(actionEvent -> {
+            TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(), getTokenView().getText(), sDir);
+            tg.setToken(tk);
+            tg.setMatchInfo(m);
+            tg.generatePDF();
+            try {
+                Stage mainStage = (Stage) form.getScene().getWindow(); // then cast to stage to get the window
+                FXMLScene scene = FXMLScene.load("Ticket.fxml");
+                Parent root = scene.root;
+                TicketController tc = (TicketController) scene.controller;
+                mainStage.setScene(new Scene(root));
+            } catch (IOException e) {
+                System.out.println(e);
             }
         });
 

@@ -18,6 +18,8 @@ import com.itextpdf.layout.properties.HorizontalAlignment;
 import com.itextpdf.layout.properties.TextAlignment;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class TicketGenerator {
@@ -129,11 +131,14 @@ public class TicketGenerator {
             Paragraph p1 = new Paragraph().setFont(vog).setTextAlignment(TextAlignment.CENTER);
             p1.add(getMatchInfo()).setFontSize(20);
             Paragraph p2 = new Paragraph().setFontSize(12).setFont(times).setPaddingLeft(20).setHorizontalAlignment(HorizontalAlignment.LEFT);
-            p2.add("\n\tName\t : \t" + name);
-            p2.add("\n\tUser ID\t : \t" + userID);
-            p2.add("\n\tEmail\t : \t" + email);
-            p2.add("\n\tContact No\t : \t" + contactInfo);
-            p2.add("\n\tToken No\t : \t" + getToken());
+            p2.add("\n\tName      :\t" + name);
+            p2.add("\n\tUser ID   :\t" + userID);
+            p2.add("\n\tEmail\t   :\t" + email);
+            p2.add("\n\tPhone No  :\t" + contactInfo);
+            p2.add("\n\tToken No  :\t" + getToken());
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            Date date = new Date();
+            p2.add("\n\nTime and Date :\t"+formatter.format(date));
 
             doc.add(p1);
             doc.add(p2);
