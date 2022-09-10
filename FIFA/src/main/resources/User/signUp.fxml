@@ -21,17 +21,17 @@
    <right>
       <AnchorPane prefHeight="600.0" prefWidth="514.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="596.0" fitWidth="901.0" layoutX="-400.0" layoutY="-1.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="596.0" fitWidth="901.0" layoutX="-400.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/back1.jpg" />
+                  <Image url="@../Images/b3.jpg" />
                </image>
                <effect>
-                  <GaussianBlur />
+                  <GaussianBlur radius="0.0" />
                </effect>
             </ImageView>
-            <Label layoutX="278.0" layoutY="7.0" text="Already have an account?">
+            <Label layoutX="278.0" layoutY="7.0" text="Already have an account?" textFill="#07235e">
                <font>
-                  <Font name="System Bold" size="11.0" />
+                  <Font name="System Bold" size="12.0" />
                </font>
             </Label>
             <Label layoutX="417.0" layoutY="5.0" textFill="#046307">
@@ -39,39 +39,19 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="9.0" prefHeight="31.0" prefWidth="89.0" text="Sign Up" textFill="#046307">
+            <Label layoutX="-269.0" layoutY="19.0" prefHeight="31.0" prefWidth="89.0" text="Sign Up" textFill="#046307">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="1.0" layoutY="43.0" text="Personal details">
+            <Label layoutX="-288.0" layoutY="51.0" text="Personal details">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="-91.0" layoutY="205.0" prefHeight="17.0" prefWidth="125.0" text="Date of Birth">
+            <Button fx:id="signbutton" layoutX="340.0" layoutY="528.0" mnemonicParsing="false" onAction="#signupComplete" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #614796;" styleClass="edit_profile" stylesheets="@../Style/style.css" text="Sign up">
                <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="-91.0" layoutY="277.0" prefHeight="17.0" prefWidth="137.0" text="Country of Residence">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="-91.0" layoutY="346.0" prefHeight="29.0" prefWidth="150.0" text="Password">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="-90.0" layoutY="420.0" prefHeight="36.0" prefWidth="203.0" text="Confirm password">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Button fx:id="signbutton" layoutX="223.0" layoutY="550.0" mnemonicParsing="false" onAction="#signupComplete" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #614796;" styleClass="edit_profile" stylesheets="@../Style/style.css" text="Sign up">
-               <font>
-                  <Font size="14.0" />
+                  <Font size="16.0" />
                </font>
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
@@ -90,20 +70,35 @@
                   </LinearGradient>
                </textFill>
             </Button>
-            <Label fx:id="signbackLabel" layoutX="417.0" layoutY="6.0" onMouseClicked="#backlogin" text="Sign in" textFill="#046307" underline="true">
+            <Label fx:id="signbackLabel" layoutX="427.0" layoutY="6.0" onMouseClicked="#backlogin" text="Sign in" textFill="#071a5e" underline="true">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="sname" layoutX="-95.0" layoutY="104.0" prefHeight="25.0" prefWidth="289.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <TextField fx:id="smail" layoutX="-94.0" layoutY="150.0" prefHeight="25.0" prefWidth="290.0" promptText="Email ( This will be your FIFA + ID)" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+            <TextField fx:id="sname" layoutX="-359.0" layoutY="117.0" prefHeight="25.0" prefWidth="289.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
                <font>
-                  <Font size="11.0" />
+                  <Font name="System Bold Italic" size="14.0" />
                </font></TextField>
-            <TextField fx:id="scountry" layoutX="-93.0" layoutY="300.0" prefHeight="25.0" prefWidth="290.0" promptText="country" />
-            <PasswordField fx:id="spassword" layoutX="-92.0" layoutY="375.0" prefHeight="25.0" prefWidth="290.0" promptText="password" />
-            <PasswordField layoutX="-93.0" layoutY="452.0" prefHeight="25.0" prefWidth="291.0" promptText="confirm password" />
-            <TextField fx:id="sdof" layoutX="-95.0" layoutY="228.0" prefHeight="25.0" prefWidth="290.0" promptText="enter a date" />
+            <TextField fx:id="smail" layoutX="-360.0" layoutY="175.0" prefHeight="25.0" prefWidth="290.0" promptText="Email ( This will be your FIFA + ID)" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="scountry" layoutX="-363.0" layoutY="295.0" prefHeight="25.0" prefWidth="290.0" promptText="country of residence" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="spassword" layoutX="-362.0" layoutY="358.0" prefHeight="25.0" prefWidth="290.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></PasswordField>
+            <PasswordField layoutX="-364.0" layoutY="425.0" prefHeight="25.0" prefWidth="291.0" promptText="confirm password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></PasswordField>
+            <TextField fx:id="sdof" layoutX="-361.0" layoutY="236.0" prefHeight="25.0" prefWidth="290.0" promptText="Enter a date of birth" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></TextField>
          </children>
       </AnchorPane>
    </right>

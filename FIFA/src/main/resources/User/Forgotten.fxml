@@ -4,17 +4,45 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane onMouseClicked="#backmethod" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FBB917;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ForgottenController">
+<AnchorPane onMouseClicked="#backmethod" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ForgottenController">
    <children>
-      <Label layoutX="347.0" layoutY="22.0" text="Forgot your password?" textFill="#046307">
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutY="172.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/forgot.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="2.59" />
+         </effect>
+      </ImageView>
+      <Label layoutX="347.0" layoutY="22.0" text="Forgot your password?">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8815165876777251" startY="0.34123222748815163">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03529411926865578" green="0.21176470816135406" blue="0.4588235318660736" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
       </Label>
       <ImageView fitHeight="44.0" fitWidth="54.0" layoutX="450.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -25,23 +53,61 @@
          <font>
             <Font name="Arial Bold" size="19.0" />
          </font>
+         <textFill>
+            <LinearGradient endX="0.8815165876777251" endY="1.0" startX="0.8767772511848341" startY="0.5734597156398104">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03529411926865578" green="0.21176470816135406" blue="0.4588235318660736" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
       </Label>
-      <TextField fx:id="createpassword" layoutX="360.0" layoutY="176.0" onAction="#modifypass" prefHeight="27.0" prefWidth="223.0" promptText="create password" />
+      <TextField fx:id="createpassword" layoutX="360.0" layoutY="176.0" onAction="#modifypass" prefHeight="27.0" prefWidth="223.0" promptText="create password" style="-fx-background-color: TRANSPARENT; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></TextField>
       <Label fx:id="hidelabel" layoutX="184.0" layoutY="138.0" prefHeight="30.0" prefWidth="209.0" textFill="RED">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="button" layoutX="440.0" layoutY="306.0" mnemonicParsing="false" onAction="#change" style="-fx-background-color: #046307;" text="Change" underline="true">
+      <Button fx:id="button" layoutX="422.0" layoutY="306.0" mnemonicParsing="false" onAction="#change" prefHeight="32.0" prefWidth="88.0" styleClass="border" stylesheets="@../Style/style.css" text="Change" textFill="#200857" underline="true">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <PasswordField fx:id="confirmpassword" layoutX="359.0" layoutY="236.0" onAction="#modifypass" prefHeight="25.0" prefWidth="223.0" promptText="confirm password" />
-      <Label layoutX="14.0" layoutY="9.0" prefHeight="27.0" prefWidth="111.0" text="Back" textFill="GREEN" underline="true">
+      <PasswordField fx:id="confirmpassword" layoutX="359.0" layoutY="236.0" onAction="#modifypass" prefHeight="25.0" prefWidth="223.0" promptText="confirm password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></PasswordField>
+      <Label layoutX="14.0" layoutY="9.0" prefHeight="27.0" prefWidth="111.0" text="Back" underline="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8815165876777251" startY="0.4075829383886256">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03529411926865578" green="0.21176470816135406" blue="0.4588235318660736" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
       </Label>
    </children>
 </AnchorPane>
