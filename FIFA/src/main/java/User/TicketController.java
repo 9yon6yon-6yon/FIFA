@@ -1,9 +1,8 @@
 package User;
 
-import Admin.About.UsController;
+import Admin.Us;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -13,6 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.*;
+import java.util.Objects;
 
 public class TicketController {
     public AnchorPane TicketRoot;
@@ -83,7 +83,7 @@ public class TicketController {
     private DatePicker ticketsDate;
     boolean bought = true;
 
-
+    String match_name;
     String path = "Files/availableMatch.txt";
 
     @FXML
@@ -92,34 +92,56 @@ public class TicketController {
         ticketsDate.setOnAction(this::readFile);
         buyTo.setOnMouseClicked(mouseEvent -> {
             if (bought) {
-                try {
-                    buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
-                    TicketSubmitForm t = new TicketSubmitForm();
-                    TicketSubmitFormController tc = new TicketSubmitFormController();
-                    Label l = new Label();
-                    l.setText(codeText.getText());
-                    tc.setTokenView(l);
-                    Label l2 = new Label();
-                    l2.setText("Argentina VS Brazil");
-                    tc.setMatchTeams(l2);
-                    t.start(new Stage());
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
+                if (Objects.equals(codeText.getText(), "")) {
+                    Alert alert = new Alert(Alert.AlertType.NONE);
+                    alert.setAlertType(Alert.AlertType.WARNING);
+                    alert.setContentText("Ticket not found");
+                    alert.show();
+                } else {
+                    try {
+                        readToken();
+                        buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
+                        Stage mainStage = (Stage) TicketRoot.getScene().getWindow();
+                        FXMLScene scene = FXMLScene.load("TicketSubmitForm.fxml");
+                        Parent root = scene.root;
+                        TicketSubmitFormController tc = (TicketSubmitFormController) scene.controller;
+                        tc.setM("T.I. of "+match_name);
+                        tc.setTk(codeText.getText());
+                        mainStage.setScene(new Scene(root));
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+                    bought = false;
                 }
-                bought = false;
 
             } else {
                 try {
                     buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-100.png")));
                 } catch (FileNotFoundException e) {
-                    throw new RuntimeException(e);
+                    System.out.println(e);
                 }
                 bought = true;
             }
-
         });
 
     }
+
+    private void readToken() {
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader(path));
+            String line;
+            while ((line = bf.readLine()) != null) {
+                String[] parts = line.split("___");
+                if (codeText.getText().equals(parts[2])) {
+                    match_name = parts[1];
+                }
+            }     bf.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
 
     private void readFile(ActionEvent actionEvent) {
         try {
@@ -162,7 +184,7 @@ public class TicketController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -185,7 +207,13 @@ public class TicketController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 
@@ -227,7 +255,11 @@ public class TicketController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage) TicketRoot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML

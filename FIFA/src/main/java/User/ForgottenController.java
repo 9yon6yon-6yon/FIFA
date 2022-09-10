@@ -38,7 +38,7 @@ public class ForgottenController {
     @FXML
     void backmethod(MouseEvent event) throws IOException {
         Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login main = (Login) scene.controller;
         mainStage.setScene(new Scene(root));//need to add new live fxml here

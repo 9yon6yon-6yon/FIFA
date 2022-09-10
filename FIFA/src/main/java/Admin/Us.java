@@ -1,20 +1,19 @@
-package Admin.About;
+package Admin;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.util.Objects;
 
 
 public class Us extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Us.fxml")));
+        FXMLLoader fxmlLoader = new FXMLLoader(Us.class.getResource("Us.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("About");
-        stage.setScene(new Scene(root));
+        stage.setScene(scene);
         stage.show();//up to date
 
 

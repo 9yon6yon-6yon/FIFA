@@ -1,10 +1,9 @@
 package User;
 
-import Admin.About.UsController;
+import Admin.Us;
 import MatchDetails.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
@@ -15,7 +14,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -269,10 +267,12 @@ public class PlayerController {
         }
 
     }
+
     @FXML
-    void closeOnAction(ActionEvent event) throws  IOException{
-      System.exit(0);
+    void closeOnAction(ActionEvent event) throws IOException {
+        System.exit(0);
     }
+
     @FXML
     void feedOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
@@ -287,7 +287,7 @@ public class PlayerController {
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -310,7 +310,14 @@ public class PlayerController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
 
     }
 
@@ -352,7 +359,11 @@ public class PlayerController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML

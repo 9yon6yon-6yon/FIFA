@@ -1,6 +1,7 @@
 package Admin;
 
 import java.io.*;
+import java.util.Objects;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,8 +37,6 @@ public class AddTicketsController {
     @FXML
     private TextField setMatch1;
 
-    @FXML
-    private ImageView shoppingCart;
 
     @FXML
     private DatePicker ticketsDate;
@@ -49,7 +48,6 @@ public class AddTicketsController {
     String path = "Files/availableMatch.txt";
     int a = 0;
     String token;
-    boolean edit = false;
 
     @FXML
     void initialize() {
@@ -69,7 +67,6 @@ public class AddTicketsController {
             avbtk1.setText(String.valueOf(a));
         });
         searchImg.setOnMouseClicked(mouseEvent -> {
-            edit = true;
             addButton.setVisible(false);
             searchTokenField.setVisible(true);
             editing.setVisible(true);
@@ -78,7 +75,43 @@ public class AddTicketsController {
         refresh.setOnMouseClicked(mouseEvent -> {
             setMatch1.setText("");
         });
-        editing.setOnAction(this::editFile);
+        editing.setOnAction(event -> {
+            try {
+                String t = "Files/temp.txt";
+                File temp = new File(t);
+                BufferedReader bf = new BufferedReader(new FileReader(path));
+                BufferedWriter bw = new BufferedWriter(new FileWriter(temp, true));
+                String line;
+                boolean found = false;
+                token = searchTokenField.getText();
+                while ((line = bf.readLine()) != null) {
+                    String[] parts = line.split("___");
+                    if (token.equals(parts[2])) {
+                        found = true;
+                        bw.append(String.valueOf(ticketsDate.getValue())).append("___").append(setMatch1.getText()).append("___").append(token).append("___").append(avbtk1.getText()).append("\n");
+                    } else
+                        bw.append(line).append("\n");
+                }
+                if (!found) {
+                    Alert alert = new Alert(Alert.AlertType.NONE);
+                    alert.setAlertType(Alert.AlertType.WARNING);
+                    alert.setContentText("Ticket not found");
+                    alert.show();
+                }
+                bf.close();
+                bw.close();
+                temp.renameTo(new File(path));
+                searchTokenField.setText("");
+                setMatch1.setText("");
+                avbtk1.setText("");
+                addButton.setVisible(true);
+                token = null;
+                editing.setVisible(false);
+                searchTokenField.setVisible(false);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     private void readFile(ActionEvent actionEvent) {
@@ -87,6 +120,7 @@ public class AddTicketsController {
             showMatchesfromFile.getItems().clear();
             BufferedReader bf = new BufferedReader(new FileReader(path));
             String line;
+
             while ((line = bf.readLine()) != null) {
                 String[] parts = line.split("___");
                 if (parts[0].equals(String.valueOf(ticketsDate.getValue()))) {
@@ -103,56 +137,27 @@ public class AddTicketsController {
     }
 
     private void writeFile(ActionEvent actionEvent) {
-        try {
-            Randomtokens randomtokens = new Randomtokens();
-            BufferedWriter bw = new BufferedWriter(new FileWriter(path, true));
-            if(edit) {
-                bw.append(String.valueOf(ticketsDate.getValue())).append("___")
-                        .append(setMatch1.getText()).append("___").append(token)
-                        .append("___").append(avbtk1.getText()).append("\n");
+        String ticket = setMatch1.getText();
+        String noOfTicket = avbtk1.getText();
+        if (Objects.equals(ticket, "") && Objects.equals(noOfTicket, "")) {
+            Alert alert = new Alert(Alert.AlertType.NONE);
+            alert.setAlertType(Alert.AlertType.ERROR);
+            alert.setContentText("Please Enter a valid Match and Number of Tickets" + "\n e.g. Country VS Country & 10");
+            alert.show();
 
-            }else  {
-                bw.append(String.valueOf(ticketsDate.getValue())).append("___")
-                        .append(setMatch1.getText()).append("___").append(randomtokens.getAlphaNumericString())
-                        .append("___").append(avbtk1.getText()).append("\n");
+        } else {
+            try {
+                Randomtokens randomtokens = new Randomtokens();
+                BufferedWriter bw = new BufferedWriter(new FileWriter(path, true));
+                bw.append(String.valueOf(ticketsDate.getValue())).append("___").append(setMatch1.getText()).append("___").append(randomtokens.getAlphaNumericString()).append("___").append(avbtk1.getText()).append("\n");
+                bw.close();
+                setMatch1.setText("");
+                avbtk1.setText("");
+                a = 0;
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
-            bw.close();
-            setMatch1.setText("");
-            avbtk1.setText("");
-            a = 0;
-            edit = false;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
-    private void editFile(ActionEvent actionEvent) {
-        try {
-            String t = "Files/temp.txt";
-            File temp = new File(t);
-            BufferedReader bf = new BufferedReader(new FileReader(path));
-            BufferedWriter bw = new BufferedWriter(new FileWriter(temp, true));
-            String line;
-            while ((line = bf.readLine()) != null) {
-                String[] parts = line.split("___");
-                if (token.equals(parts[2])) {
-                    bw.append(String.valueOf(ticketsDate.getValue())).append("___").append(setMatch1.getText()).append("___").append(token).append("___").append(avbtk1.getText()).append("\n");
-                }
-                bw.append(line).append("\n");
-            }
-            bf.close();
-            bw.close();
-            temp.renameTo(new File(path));
-            searchTokenField.setText("");
-            setMatch1.setText("");
-            avbtk1.setText("");
-            addButton.setVisible(true);
-            edit = false;
-            token = null;
-            editing.setVisible(false);
-            searchTokenField.setVisible(false);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 

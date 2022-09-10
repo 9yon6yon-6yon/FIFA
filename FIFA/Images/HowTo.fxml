@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="howTo" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.HowToController">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem fx:id="feed" mnemonicParsing="false" onAction="#feedOnAction" text="Feed">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-news-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="refresh" mnemonicParsing="false" text="Refresh">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-restart-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeOnAction" text="Close">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-close-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#logoutOnAction" text="Log Out">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-log-out-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-home-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="pages">
+              <items>
+                  <MenuItem fx:id="wikipage" mnemonicParsing="false" text="Wiki">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-wikipedia-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                <MenuItem fx:id="mempage" mnemonicParsing="false" text="Members / Fork">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-team-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="contributors" mnemonicParsing="false" text="Contributors">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-contribution-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="netpage" mnemonicParsing="false" text="Network">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-net-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+              </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/icons8-git-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <WebView fx:id="gitPage" layoutX="11.0" layoutY="56.0" prefHeight="739.0" prefWidth="580.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="55.0" />
+   </children>
+</AnchorPane>

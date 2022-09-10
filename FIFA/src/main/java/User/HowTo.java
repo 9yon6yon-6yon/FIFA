@@ -1,17 +1,16 @@
-package Admin;
+package User;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class MatchTree extends Application {
+public class HowTo  extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(MatchTree.class.getResource("MatchTree.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.setTitle("Match TREE");
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("HowTo.fxml"));
+        stage.setTitle("FIFA WORLD CUP 2022");
+        stage.setScene(new Scene(fxmlLoader.load()));
         stage.show();
     }
 
@@ -19,3 +18,5 @@ public class MatchTree extends Application {
         launch(args);
     }
 }
+
+
