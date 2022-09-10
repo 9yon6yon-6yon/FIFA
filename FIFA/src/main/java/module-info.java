@@ -19,9 +19,6 @@ module com.example.fifa {
 
     opens Admin to javafx.fxml;
     exports Admin;
-
-    opens Admin.About to javafx.fxml;
-    exports  Admin.About;
     opens User to javafx.fxml;
     exports User;
 

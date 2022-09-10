@@ -1,9 +1,8 @@
 package User;
 
-import Admin.About.UsController;
+import Admin.Us;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
@@ -102,7 +101,13 @@ public class FeedController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event)  {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 

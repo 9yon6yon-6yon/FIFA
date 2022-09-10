@@ -5,13 +5,11 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-import Admin.About.UsController;
+import Admin.Us;
 import MatchDetails.Groups;
 import MatchDetails.flags;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
@@ -255,7 +253,14 @@ public class TeamsController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
 
     }
 

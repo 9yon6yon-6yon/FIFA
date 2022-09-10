@@ -432,83 +432,97 @@ public class MatchTreeController {
         q1m1.setOnAction(event -> {
             semi1.setText(quater1.getText());
             quater2.setEditable(false);
-            q1m2.setDisable(true);                storeMatches("semi.txt", quater1.getText());
+            q1m2.setDisable(true);
+            storeMatches("semi.txt", quater1.getText());
 
         });
         q1m2.setOnAction(event -> {
             semi1.setText(quater2.getText());
             quater1.setEditable(false);
-            q1m1.setDisable(true);                storeMatches("semi.txt", quater2.getText());
+            q1m1.setDisable(true);
+            storeMatches("semi.txt", quater2.getText());
 
         });
         q1m3.setOnAction(event -> {
             semi2.setText(quater3.getText());
             quater4.setEditable(false);
-            q1m4.setDisable(true);                storeMatches("semi.txt", quater3.getText());
+            q1m4.setDisable(true);
+            storeMatches("semi.txt", quater3.getText());
 
         });
         q1m4.setOnAction(event -> {
             semi2.setText(quater4.getText());
             quater3.setEditable(false);
-            q1m3.setDisable(true);                storeMatches("semi.txt", quater4.getText());
+            q1m3.setDisable(true);
+            storeMatches("semi.txt", quater4.getText());
 
         });
         q1m5.setOnAction(event -> {
             semi3.setText(quater5.getText());
             quater6.setEditable(false);
-            q1m6.setDisable(true);                storeMatches("semi.txt", quater5.getText());
+            q1m6.setDisable(true);
+            storeMatches("semi.txt", quater5.getText());
 
         });
         q1m6.setOnAction(event -> {
             semi3.setText(quater6.getText());
             quater5.setEditable(false);
-            q1m5.setDisable(true);                storeMatches("semi.txt", quater6.getText());
+            q1m5.setDisable(true);
+            storeMatches("semi.txt", quater6.getText());
 
         });
         q1m7.setOnAction(event -> {
             semi4.setText(quater7.getText());
             quater8.setEditable(false);
-            q1m8.setDisable(true);                storeMatches("semi.txt", quater7.getText());
+            q1m8.setDisable(true);
+            storeMatches("semi.txt", quater7.getText());
 
         });
         q1m8.setOnAction(event -> {
             semi4.setText(quater8.getText());
             quater7.setEditable(false);
-            q1m7.setDisable(true);                storeMatches("semi.txt", quater8.getText());
+            q1m7.setDisable(true);
+            storeMatches("semi.txt", quater8.getText());
 
         });
         s1m1.setOnAction(event -> {
             finalMatch1.setText(semi1.getText());
             semi2.setEditable(false);
-            s1m2.setDisable(true);                storeMatches("finalMatch.txt", semi1.getText());
+            s1m2.setDisable(true);
+            storeMatches("finalMatch.txt", semi1.getText());
 
         });
         s1m2.setOnAction(event -> {
             finalMatch1.setText(semi2.getText());
             semi1.setEditable(false);
-            s1m1.setDisable(true);                storeMatches("finalMatch.txt", semi2.getText());
+            s1m1.setDisable(true);
+            storeMatches("finalMatch.txt", semi2.getText());
 
         });
         s1m3.setOnAction(event -> {
             finalMatch2.setText(semi3.getText());
             semi4.setEditable(false);
-            s1m4.setDisable(true);                storeMatches("finalMatch.txt", semi3.getText());
+            s1m4.setDisable(true);
+            storeMatches("finalMatch.txt", semi3.getText());
 
         });
         s1m4.setOnAction(event -> {
             finalMatch2.setText(semi4.getText());
             semi3.setEditable(false);
-            s1m3.setDisable(true);                storeMatches("finalMatch.txt", semi4.getText());
+            s1m3.setDisable(true);
+            storeMatches("finalMatch.txt", semi4.getText());
 
         });
         f1m1.setOnAction(event -> {
             finalMatch2.setEditable(false);
-            f1m2.setDisable(true);                storeMatches("won.txt",finalMatch1.getText());
+            f1m2.setDisable(true);
+            storeMatches("won.txt", finalMatch1.getText());
 
         });
         f1m2.setOnAction(event -> {
             finalMatch1.setEditable(false);
-            f1m1.setDisable(true);                storeMatches("won.txt", finalMatch2.getText());
+            f1m1.setDisable(true);
+            storeMatches("won.txt", finalMatch2.getText());
 
         });
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="372.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UsController">
+   <children>
+      <Button fx:id="aboutButton" layoutX="158.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" text="About">
+         <font>
+            <Font name="Likhan" size="13.0" />
+         </font>
+      </Button>
+      <Separator focusTraversable="false" layoutY="56.0" prefHeight="5.0" prefWidth="442.0" />
+      <Button fx:id="creditsButton" layoutX="221.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="62.0" text="Credits">
+         <font>
+            <Font name="Likhan" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="crditsText" cacheShape="false" editable="false" layoutX="87.0" layoutY="213.0" prefHeight="145.0" prefWidth="285.0" visible="false" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="213.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="aboutImage" fitHeight="113.0" fitWidth="326.0" layoutX="14.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/cup.jpeg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="versionText" editable="false" layoutX="13.0" layoutY="183.0" prefHeight="116.0" prefWidth="423.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextArea>
+      <ImageView fx:id="bannerimg" fitHeight="136.0" fitWidth="441.0" layoutY="71.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/fifa22_banner_1500x500.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

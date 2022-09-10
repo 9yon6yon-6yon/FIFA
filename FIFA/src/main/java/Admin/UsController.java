@@ -1,4 +1,4 @@
-package Admin.About;
+package Admin;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -40,6 +40,7 @@ public class UsController {
         versionText.setText("FIFA World Cup Management System");
         bannerimg.setVisible(false);
         creditsButton.setOnAction(event -> {
+            crditsText.clear();
             aboutImage.setVisible(false);
             versionText.setVisible(false);
             crditsText.setVisible(true);
@@ -48,7 +49,7 @@ public class UsController {
                 BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("Files/about.txt")));
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
-                    crditsText.appendText(line+"\n");
+                    crditsText.appendText(line + "\n");
                 }
                 bufferedReader.close();
             } catch (IOException e) {

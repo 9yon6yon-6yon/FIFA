@@ -1,6 +1,7 @@
 package User;
 
 
+import Admin.Us;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
@@ -226,7 +227,13 @@ public class BMIController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event)  {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 
