@@ -85,6 +85,21 @@ public class HowToController {
         wikipage.setOnAction(event -> www.load(urls[1]));
         netpage.setOnAction(event -> www.load(urls[2]));
         mempage.setOnAction(event -> www.load(urls[3]));
+        wikipage.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                www.load(urls[1]);
+
+            }
+        });
+        netpage.setOnAction(event -> www.load(urls[2]));
+        mempage.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                www.load(urls[3]);
+
+            }
+        });
         contributors.setOnAction(event -> www.load(urls[4]));
 
     }
