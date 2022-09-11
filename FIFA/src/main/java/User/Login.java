@@ -34,8 +34,8 @@ public class Login {
     @FXML
     private TextField username;
 
-    @FXML
-    private Label wronglogin;
+//    @FXML
+//    private Label wronglogin;
 
     @FXML
     void userLogin(ActionEvent event) throws IOException {
@@ -45,17 +45,15 @@ public class Login {
 
 
     private void checkLoging(ActionEvent event) throws IOException {
-
         Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController main = (FeedController) scene.controller;
         String user1 = username.getText();
         String user2 = password.getText();
-
+        String line;
         FileReader fr = new FileReader("Files/login.txt");
         BufferedReader br = new BufferedReader(fr);
-        String line;
         while ((line = br.readLine()) != null) {
             String[] part = line.split(" ");
             if (user1.equals(part[0]) && user2.equals(part[1])) {
@@ -64,15 +62,13 @@ public class Login {
             }
         }
 
-        if (username.getText().isEmpty() && password.getText().isEmpty()) {
-            wronglogin.setText("Please enter your data.");
-
-        } else wronglogin.setText("Wrong username or password!");
-
+//        if (username.getText().isEmpty() && password.getText().isEmpty()) {
+//            wronglogin.setText("Please enter your data.");
+//
+//        } else wronglogin.setText("Wrong username or password!");
         fr.close();
-
-
     }
+
 
     @FXML
     void userSignup(ActionEvent event) throws IOException {
@@ -87,12 +83,12 @@ public class Login {
 
     @FXML
     void forgetmethod(MouseEvent event) throws IOException {
-
         Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Forgotten.fxml");
         Parent root = scene.root;
         ForgottenController main = (ForgottenController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        mainStage.setScene(new Scene(root));
+
 
     }
 

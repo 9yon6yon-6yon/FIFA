@@ -306,7 +306,7 @@ public class PlayerController {
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="FeedRoot" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FeedController">
    <children>
@@ -194,16 +200,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <SeparatorMenuItem mnemonicParsing="false" />
-              <MenuItem fx:id="aboutUs" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-about-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
+              <MenuItem fx:id="aboutUs" mnemonicParsing="false" onAction="#aboutOnAction" text="About" />
             </items>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
@@ -215,5 +212,61 @@
           </Menu>
         </menus>
       </MenuBar>
+      <TextArea fx:id="showArea" layoutX="505.0" layoutY="93.0" prefHeight="387.0" prefWidth="391.0" />
+      <TextField fx:id="inputField" layoutX="505.0" layoutY="516.0" prefHeight="49.0" prefWidth="239.0" promptText="Enter your name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button" layoutX="770.0" layoutY="520.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="42.0" prefWidth="101.0" text="Connect">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="633.0" layoutY="38.0" prefHeight="36.0" prefWidth="149.0" text="Group Chat">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="53.0" layoutX="589.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-team-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="69.0" layoutX="784.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-share-3-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="team1" alignment="CENTER" layoutX="14.0" layoutY="171.0" prefHeight="36.0" prefWidth="190.0" text="Team 1">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="team2" alignment="CENTER" layoutX="14.0" layoutY="324.0" prefHeight="36.0" prefWidth="190.0" text="Team 2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <ImageView fx:id="team2img" fitHeight="89.0" fitWidth="149.0" layoutX="30.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../flags/de.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="team3" alignment="CENTER" layoutX="14.0" layoutY="462.0" prefHeight="36.0" prefWidth="190.0" text="Team 3">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <ImageView fx:id="team3img" fitHeight="100.0" fitWidth="142.0" layoutX="33.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../flags/ar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="team1img" fitHeight="100.0" fitWidth="149.0" layoutX="33.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../flags/br.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="countryNames" layoutX="9.0" layoutY="44.0" prefHeight="30.0" prefWidth="180.0" />
+      <Button layoutX="4.0" layoutY="93.0" mnemonicParsing="false" onAction="#team1" text="Team 1" />
+      <Button layoutX="135.0" layoutY="93.0" mnemonicParsing="false" onAction="#team3" text="Team 3" />
+      <Button layoutX="73.0" layoutY="93.0" mnemonicParsing="false" onAction="#team2" text="Team 2" />
    </children>
 </AnchorPane>

@@ -252,7 +252,6 @@ public class UserMatchTreeController {
         FeedController feed = (FeedController) scene.controller;
         mainStage.setScene(new Scene(root));
 
-
     }
 
     @FXML
@@ -277,7 +276,7 @@ public class UserMatchTreeController {
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML
@@ -298,6 +297,7 @@ public class UserMatchTreeController {
         Parent root = scene.root;
         TicketController tc = (TicketController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -307,6 +307,7 @@ public class UserMatchTreeController {
         Parent root = scene.root;
         BMIController bmi = (BMIController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML

@@ -35,7 +35,7 @@ public class MarketController {
     @FXML
     private ScrollPane scroll;
 
-    private List<Product> products = new ArrayList<>();
+    private final List<Product> products = new ArrayList<>();
     private Image image;
     private MyListener myListener;
 

@@ -211,6 +211,7 @@ public class TeamsController {
 
     }
 
+
     @FXML
     void closeOnAction(ActionEvent event) {
         System.exit(0);
@@ -223,7 +224,6 @@ public class TeamsController {
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
         mainStage.setScene(new Scene(root));
-
 
     }
 
@@ -249,18 +249,17 @@ public class TeamsController {
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) {
+    void aboutOnAction(ActionEvent event) throws IOException {
         Us us = new Us();
         try {
             us.start(new Stage());
         } catch (Exception e) {
             System.out.println(e);
         }
-
 
     }
 
@@ -271,6 +270,7 @@ public class TeamsController {
         Parent root = scene.root;
         TicketController tc = (TicketController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -280,6 +280,7 @@ public class TeamsController {
         Parent root = scene.root;
         BMIController bmi = (BMIController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -345,6 +346,4 @@ public class TeamsController {
         mainStage.setScene(new Scene(root));
 
     }
-
-
 }
