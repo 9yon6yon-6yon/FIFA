@@ -60,7 +60,7 @@ Run the server file first to establish connection with the Admin/ Server.  Then 
     13.Calculate BMI
     14.Shop jersey of favourite team
     15.Help 
-
+Enjoy the project and any contributions will be appreciated.
 
 ### Contributors
 
