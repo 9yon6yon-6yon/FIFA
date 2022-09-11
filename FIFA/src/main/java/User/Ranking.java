@@ -1,22 +1,23 @@
-package Admin;
+package User;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 
-public class AddTickets extends Application {
+public class Ranking extends Application {
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(AddTickets.class.getResource("AddTickets.fxml"));
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Ranking.class.getResource("Ranking.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle(" Admin Panel ");
+        stage.setTitle("Profile setting");
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) {
-        launch(args);
+        launch();
     }
 }

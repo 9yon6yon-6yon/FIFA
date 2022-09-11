@@ -38,6 +38,8 @@ public class signUp {
 
     @FXML
     private PasswordField spassword;
+    @FXML
+    private PasswordField sconfirmpass;
 
     @FXML
     void backlogin(MouseEvent event) throws IOException {
@@ -48,25 +50,17 @@ public class signUp {
         mainStage.setScene(new Scene(root));//need to add new live fxml here
 
 
-
-
     }
 
     @FXML
     void signupComplete(ActionEvent event) throws IOException {
-        FileWriter fw= new FileWriter("login.txt",true);
-        fw.write(smail.getText()+"\t"+spassword.getText()+"\n");
+        FileWriter fw = new FileWriter("login.txt", true);
+        fw.write(smail.getText() + "\t" + spassword.getText() + "\n");
         fw.close();
 
-
-
-        FileWriter w= new FileWriter("Files/otherlogin.txt",true);
-        w.write(sname.getText()+"\t"+sdof.getText()+"\t"+scountry.getText()+"\n");
+        FileWriter w = new FileWriter("Files/otherlogin.txt", true);
+        w.write(sname.getText() + "\t" + sdof.getText() + "\t" + scountry.getText() + "\n");
         w.close();
-
-
-
-
 
 
     }

@@ -3,6 +3,7 @@ package User;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -12,10 +13,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ForgottenController {
+    @FXML
+    private AnchorPane ffc;
+    @FXML
+    private Label backmethod;
 
     @FXML
     private ResourceBundle resources;
@@ -36,13 +41,18 @@ public class ForgottenController {
     private Label hidelabel;
 
     @FXML
-    void backmethod(MouseEvent event) throws IOException {
-        Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Main.fxml");
-        Parent root = scene.root;
-        Login main = (Login) scene.controller;
-        mainStage.setScene(new Scene(root));//need to add new live fxml here
-
+    void initialize() {
+        backmethod.setOnMouseClicked(mouseEvent -> {
+            try {
+                Stage mainStage = (Stage) ffc.getScene().getWindow();  // then cast to stage to get the window
+                FXMLScene scene = FXMLScene.load("Main.fxml");
+                Parent root = scene.root;
+                Login login = (Login) scene.controller;
+                mainStage.setScene(new Scene(root));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @FXML
@@ -52,11 +62,6 @@ public class ForgottenController {
 
     @FXML
     void modifypass(ActionEvent event) {
-
-    }
-
-    @FXML
-    void initialize() {
 
     }
 

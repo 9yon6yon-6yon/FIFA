@@ -85,8 +85,10 @@
                 <Font name="FreeMono Bold" size="18.0" />
             </font>
         </Label>
+
         <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="687.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="145.0" />
         <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date" AnchorPane.bottomAnchor="433.0" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="148.0">
+
             <textFill>
                 <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                     <stops>
@@ -151,7 +153,7 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.2286427915096283" green="0.6447368264198303" blue="0.035818714648485184" />
+                        <Color red="0.03840000182390213" green="0.09139810502529144" blue="0.6399999856948853" />
                      </color>
                   </Stop>
                </stops>
@@ -215,7 +217,7 @@
             <Image url="@../Images/icons8-restart-100.png" />
          </image>
       </ImageView>
-      <Button fx:id="editing" alignment="CENTER" contentDisplay="CENTER" layoutX="820.0" layoutY="559.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="57.0" style="-fx-background-color: #0fffdb;" text="Edit">
+      <Button fx:id="editing" alignment="CENTER" contentDisplay="CENTER" layoutX="820.0" layoutY="559.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="57.0" style="-fx-background-color: #ffa64d;" styleClass="credits-btn" stylesheets="@../Style/style.css" text="Edit">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>

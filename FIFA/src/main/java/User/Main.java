@@ -3,15 +3,17 @@ package User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Main.fxml"));
         stage.setTitle("FIFA WORLD CUP 2022");
-        stage.setResizable(false);
+        stage.getIcons().add(new Image(new FileInputStream("Images/icons8-world-cup-2018-100.png")));
         stage.setScene(new Scene(fxmlLoader.load()));
         stage.show();
     }

@@ -10,13 +10,14 @@
 
 <AnchorPane prefHeight="372.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UsController">
    <children>
-      <Button fx:id="aboutButton" layoutX="158.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" text="About">
+      <Button fx:id="aboutButton" layoutX="107.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="105.0" styleClass="about-btn" stylesheets="@../Style/style.css" text="Admin.About">
          <font>
             <Font name="Likhan" size="13.0" />
          </font>
       </Button>
       <Separator focusTraversable="false" layoutY="56.0" prefHeight="5.0" prefWidth="442.0" />
-      <Button fx:id="creditsButton" layoutX="221.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="62.0" text="Credits">
+      <Button fx:id="creditsButton" layoutX="240.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="105.0" styleClass="credits-btn" stylesheets="@../Style/style.css" text="Credits">
+
          <font>
             <Font name="Likhan" size="13.0" />
          </font>
