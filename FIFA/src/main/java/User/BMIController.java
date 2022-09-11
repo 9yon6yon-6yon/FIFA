@@ -1,18 +1,13 @@
 package User;
 
 
-import Admin.About.UsController;
+import Admin.Us;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.Slider;
-
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -175,15 +170,19 @@ public class BMIController {
     }
 
     private void checkBMIRules(double bmi) {
+        Alert show = new Alert(Alert.AlertType.NONE);
+        show.setTitle("BMI");
+        show.setAlertType(Alert.AlertType.INFORMATION);
         if (bmi < 18.5) {
-            System.out.println("Under Weight");
+            show.setContentText("Under Weight");
         } else if (bmi >= 18.5 && bmi <= 24.9) {
-            System.out.println("Healthy Weight");
+            show.setContentText("Healthy Weight");
         } else if (bmi >= 25.0 && bmi <= 29.9) {
-            System.out.println("Over Weight");
+            show.setContentText("Over Weight");
         } else
-            System.out.println("Obesity");
-
+            show.setContentText("Obesity");
+        show.setHeaderText("Your current condition ");
+        show.show();
     }
 
     @FXML
@@ -204,8 +203,8 @@ public class BMIController {
 
     @FXML
     void logoutOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("sample.fxml");
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Main.fxml");
         Parent root = scene.root;
         Login login = (Login) scene.controller;
         mainStage.setScene(new Scene(root));
@@ -220,7 +219,7 @@ public class BMIController {
 
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
@@ -228,13 +227,19 @@ public class BMIController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event) throws IOException {
+    void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Ticket.fxml");
         Parent root = scene.root;
         TicketController tc = (TicketController) scene.controller;
@@ -243,7 +248,7 @@ public class BMIController {
 
     @FXML
     void checkBMIOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("BMI.fxml");
         Parent root = scene.root;
         BMIController bmi = (BMIController) scene.controller;
@@ -252,7 +257,7 @@ public class BMIController {
 
     @FXML
     void gMatchesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Matches.fxml");
         Parent root = scene.root;
         MatchesController mc = (MatchesController) scene.controller;
@@ -261,7 +266,7 @@ public class BMIController {
 
     @FXML
     void groupsOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Teams.fxml");
         Parent root = scene.root;
         TeamsController tc = (TeamsController) scene.controller;
@@ -270,12 +275,16 @@ public class BMIController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("HowTo.fxml");
+        Parent root = scene.root;
+        HowToController tc = (HowToController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
     @FXML
     void mTreeOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("UserMatchTree.fxml");
         Parent root = scene.root;
         UserMatchTreeController um = (UserMatchTreeController) scene.controller;
@@ -284,7 +293,7 @@ public class BMIController {
 
     @FXML
     void matchScoreOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Feed.fxml");
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
@@ -293,7 +302,7 @@ public class BMIController {
 
     @FXML
     void pProfilesOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Player.fxml");
         Parent root = scene.root;
         PlayerController pc = (PlayerController) scene.controller;
@@ -302,7 +311,7 @@ public class BMIController {
 
     @FXML
     void profileOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("profile-view.fxml");
         Parent root = scene.root;
         ProfileController pc = (ProfileController) scene.controller;

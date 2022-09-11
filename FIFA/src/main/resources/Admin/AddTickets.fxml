@@ -43,7 +43,7 @@
             </image>
         </ImageView>
         <Separator layoutX="200.0" layoutY="115.0" prefHeight="3.0" prefWidth="500.0" />
-        <Label layoutX="303.0" layoutY="197.0" prefHeight="19.0" prefWidth="228.0" text="Add Matches">
+        <Label layoutX="303.0" layoutY="197.0" prefHeight="19.0" prefWidth="228.0" text="Add Matches" AnchorPane.bottomAnchor="384.0" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="369.0" AnchorPane.topAnchor="197.0">
             <textFill>
                 <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                     <stops>
@@ -85,8 +85,8 @@
                 <Font name="FreeMono Bold" size="18.0" />
             </font>
         </Label>
-        <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" />
-        <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date">
+        <DatePicker fx:id="ticketsDate" layoutX="687.0" layoutY="145.0" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="687.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="145.0" />
+        <Label alignment="CENTER_RIGHT" layoutX="522.0" layoutY="148.0" prefHeight="19.0" prefWidth="153.0" text="Choose Date" AnchorPane.bottomAnchor="433.0" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="148.0">
             <textFill>
                 <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                     <stops>
@@ -107,12 +107,7 @@
                 <Font name="FreeMono Bold" size="18.0" />
             </font>
         </Label>
-        <ImageView fx:id="shoppingCart" fitHeight="33.0" fitWidth="37.0" layoutX="848.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../Images/icons8-cart.png" />
-            </image>
-        </ImageView>
-        <ImageView fx:id="reductTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="reductTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="822.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="822.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="233.0">
             <image>
                 <Image url="@../Images/icons8-minus-key-100.png" />
             </image>
@@ -138,14 +133,14 @@
                 <Font name="FreeMono Bold" size="18.0" />
             </font>
         </Label>
-        <ImageView fx:id="addTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="855.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="addTicket1" fitHeight="30.0" fitWidth="45.0" layoutX="850.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="850.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="232.0">
             <image>
                 <Image url="@../Images/icons8-plus-key-100.png" />
             </image>
         </ImageView>
-        <TextField fx:id="setMatch1" layoutX="68.0" layoutY="233.0" prefHeight="30.0" prefWidth="541.0" />
+        <TextField fx:id="setMatch1" layoutX="68.0" layoutY="233.0" prefHeight="30.0" prefWidth="541.0" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="291.0" AnchorPane.topAnchor="233.0" />
         <Label fx:id="avbtk1" alignment="CENTER" contentDisplay="CENTER" layoutX="660.0" layoutY="233.0" prefHeight="30.0" prefWidth="140.0" />
-      <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="522.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: #0fffdb;" text="ADD">
+      <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="522.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: #0fffdb;" text="ADD" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="373.0" AnchorPane.topAnchor="522.0">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -166,13 +161,13 @@
             <Font name="Ubuntu Thin" size="20.0" />
          </font>
       </Button>
-      <ListView fx:id="showMatchesfromFile" layoutX="41.0" layoutY="286.0" prefHeight="200.0" prefWidth="818.0" />
+      <ListView fx:id="showMatchesfromFile" layoutX="41.0" layoutY="286.0" prefHeight="200.0" prefWidth="818.0" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="286.0" />
       <ImageView fx:id="searchImg" fitHeight="30.0" fitWidth="45.0" layoutX="26.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/icons8-search-100.png" />
          </image>
       </ImageView>
-      <TextField fx:id="searchTokenField" layoutX="25.0" layoutY="535.0" prefHeight="24.0" prefWidth="188.0" promptText="enter token" />
+      <TextField fx:id="searchTokenField" layoutX="25.0" layoutY="535.0" prefHeight="24.0" prefWidth="188.0" promptText="enter token" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="687.0" AnchorPane.topAnchor="535.0" />
       <Label alignment="CENTER_RIGHT" layoutX="613.0" layoutY="197.0" prefHeight="19.0" prefWidth="188.0" text="Add Tickets">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
@@ -194,7 +189,7 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="190.0" layoutY="263.0" prefHeight="19.0" prefWidth="332.0" text="Available Matches &amp; Tokens">
+      <Label layoutX="194.0" layoutY="262.0" prefHeight="19.0" prefWidth="447.0" text="Available Matches &amp; Tokens" AnchorPane.bottomAnchor="319.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="262.0">
          <textFill>
             <LinearGradient endX="0.9714285714285714" endY="0.461904761904762" startX="0.4523809523809524" startY="0.43809523809523815">
                <stops>
@@ -215,7 +210,7 @@
             <Font name="FreeMono Bold" size="18.0" />
          </font>
       </Label>
-      <ImageView fx:id="refresh" fitHeight="30.0" fitWidth="45.0" layoutX="613.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="refresh" fitHeight="30.0" fitWidth="45.0" layoutX="613.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="613.0" AnchorPane.rightAnchor="257.0" AnchorPane.topAnchor="233.0">
          <image>
             <Image url="@../Images/icons8-restart-100.png" />
          </image>

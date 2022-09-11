@@ -14,6 +14,7 @@ module com.example.fifa {
     requires svg;
     requires barcodes;
     requires org.slf4j;
+    requires javafx.web;
 
 
     opens Admin to javafx.fxml;
