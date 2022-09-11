@@ -532,6 +532,7 @@ public class MatchTreeController {
     private void showAlertMsg() {
         Alert alert = new Alert(Alert.AlertType.NONE);
         alert.setAlertType(Alert.AlertType.ERROR);
+        alert.setTitle("Empty String");
         alert.setContentText("Country Name field cannot be null. Must Use an Input. (e.g. Qatar)");
         alert.show();
     }
