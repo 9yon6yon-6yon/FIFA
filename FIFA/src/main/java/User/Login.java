@@ -57,17 +57,15 @@ public class Login {
         BufferedReader br = new BufferedReader(fr);
         String line;
         while ((line = br.readLine()) != null) {
-            if (line.equals(user1 + "\t" + user2)) {
+            String[] part = line.split(" ");
+            if (user1.equals(part[0]) && user2.equals(part[1])) {
                 mainStage.setScene(new Scene(root));
                 break;
             }
         }
 
-
         if (username.getText().isEmpty() && password.getText().isEmpty()) {
-
             wronglogin.setText("Please enter your data.");
-
 
         } else wronglogin.setText("Wrong username or password!");
 
