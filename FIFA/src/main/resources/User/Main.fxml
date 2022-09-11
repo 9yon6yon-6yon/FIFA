@@ -15,12 +15,12 @@
    <center>
       <AnchorPane prefHeight="600.0" prefWidth="502.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="600.0" fitWidth="900.0" layoutY="10.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="600.0" fitWidth="900.0" layoutY="10.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/b7.jpg" />
                </image>
                <effect>
-                  <GaussianBlur radius="4.44" />
+                  <GaussianBlur radius="2.96" />
                </effect>
             </ImageView>
             <ImageView fitHeight="45.0" fitWidth="57.0" layoutX="406.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
@@ -60,7 +60,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="button2" layoutX="742.0" layoutY="531.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="38.0" prefWidth="123.0" styleClass="border" stylesheets="@../Style/style.css" text="Sign Up">
+            <Button fx:id="button2" layoutX="742.0" layoutY="531.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="38.0" prefWidth="123.0" style="-fx-background-color: #614796;" styleClass="edit_profile" stylesheets="@../Style/style.css" text="Sign Up" textFill="WHITE">
                <font>
                   <Font name="System Italic" size="15.0" />
                </font>

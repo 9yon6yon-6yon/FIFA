@@ -194,7 +194,10 @@
                            </font>
                         </Label>
                         <Pane prefHeight="29.0" prefWidth="131.0" />
-                        <TextField fx:id="nameField" prefHeight="55.0" prefWidth="323.0" promptText="enter name" />
+                        <TextField fx:id="nameField" prefHeight="55.0" prefWidth="323.0" promptText="enter name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font></TextField>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -205,7 +208,10 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField fx:id="userNameField" prefHeight="25.0" prefWidth="323.0" promptText="usename" />
+                        <TextField fx:id="userNameField" prefHeight="25.0" prefWidth="323.0" promptText="usename" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font></TextField>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -216,7 +222,10 @@
                            </font>
                         </Label>
                         <Pane prefHeight="29.0" prefWidth="86.0" />
-                        <TextField fx:id="dobfield" prefHeight="25.0" prefWidth="324.0" promptText="dd/mm/yyyy" />
+                        <TextField fx:id="dobfield" prefHeight="25.0" prefWidth="324.0" promptText="dd/mm/yyyy" style="-fx-background-color: transpatent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font></TextField>
                      </children>
                   </HBox>
                </children>
@@ -255,7 +264,10 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField fx:id="cinfoField" prefHeight="25.0" prefWidth="330.0" promptText="Contact no" />
+                        <TextField fx:id="cinfoField" prefHeight="25.0" prefWidth="330.0" promptText="Contact no" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font></TextField>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="880.0">
@@ -266,7 +278,10 @@
                            </font>
                         </Label>
                         <Pane prefHeight="200.0" prefWidth="140.0" />
-                        <TextField fx:id="emailfield" prefHeight="25.0" prefWidth="330.0" promptText="email" />
+                        <TextField fx:id="emailfield" prefHeight="25.0" prefWidth="330.0" promptText="email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font></TextField>
                      </children>
                   </HBox>
                </children>
