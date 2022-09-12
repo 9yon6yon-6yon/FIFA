@@ -12,8 +12,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class signUp {
 
@@ -53,16 +56,32 @@ public class signUp {
     }
 
     @FXML
-    void signupComplete(ActionEvent event) throws IOException {
-        FileWriter fw = new FileWriter("login.txt", true);
-        fw.write(smail.getText() + "\t" + spassword.getText() + "\n");
-        fw.close();
+    void signupComplete(ActionEvent event) {
+        try {
 
-        FileWriter w = new FileWriter("Files/otherlogin.txt", true);
-        w.write(sname.getText() + "\t" + sdof.getText() + "\t" + scountry.getText() + "\n");
-        w.close();
+            BufferedWriter fw = new BufferedWriter(new FileWriter("Files/login.txt", true));
+            fw.append(smail.getText()).append("___").append(spassword.getText()).append("\n");
+            fw.flush();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            Date date = new Date();
+            BufferedWriter w = new BufferedWriter(new FileWriter("Files/Users.txt", true));
+            w.write(sname.getText() + "___" + sdof.getText() + "___" + scountry.getText() + "___" + smail.getText() + "___" + spassword.getText() + "___" + formatter.format(date) + "\n");
+            w.flush();
 
+        } catch (IOException e) {
+            System.out.println(e);
 
+        }
+        try {
+            Stage mainStage = (Stage) ((Node) (event.getSource())).getScene().getWindow(); // then cast to stage to get the window
+            FXMLScene scene = FXMLScene.load("Main.fxml");
+            Parent root = scene.root;
+            Login main = (Login) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            System.out.println(e);
+
+        }
     }
 
 }

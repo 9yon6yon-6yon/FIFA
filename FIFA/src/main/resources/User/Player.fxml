@@ -185,6 +185,15 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
+                  <MenuItem fx:id="rank" mnemonicParsing="false" onAction="#rankOnAction" text="Ranks">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-web-analytics-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
                </items>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
@@ -201,6 +210,15 @@
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Images/icons8-ticket-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="buyjercy" mnemonicParsing="false" onAction="#buyJercyOnAction" text="Buy Jersey">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/icons8-vs-100.png" />
                            </image>
                         </ImageView>
                      </graphic>

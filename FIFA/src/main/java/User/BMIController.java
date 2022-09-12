@@ -318,6 +318,22 @@ public class BMIController {
         mainStage.setScene(new Scene(root));
 
     }
+    @FXML
+    void rankOnAction(ActionEvent event) throws IOException {
+        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Ranking.fxml");
+        Parent root = scene.root;
+        RankingController rc = (RankingController) scene.controller;
+        mainStage.setScene(new Scene(root));
+    }
 
+    @FXML
+    void buyJercyOnAction(ActionEvent event) throws IOException {
+//        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
+//        FXMLScene scene = FXMLScene.load("market.fxml");
+//        Parent root = scene.root;
+//        MarketController mc = (MarketController) scene.controller;
+//        mainStage.setScene(new Scene(root));
+    }
 
 }

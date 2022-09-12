@@ -27,7 +27,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0" stylesheets="@../Style/style.css">
                      <children>
-                        <Label prefHeight="49.0" prefWidth="128.0" text="Sports" textFill="#878787">
+                        <Label prefHeight="49.0" prefWidth="146.0" text="Sports" textFill="#878787">
                            <font>
                               <Font name="Cambria Bold" size="40.0" />
                            </font>

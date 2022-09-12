@@ -1,19 +1,26 @@
 package User;
 
 import Admin.Us;
+import MatchDetails.Groups;
+import MatchDetails.flags;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
+import java.net.Socket;
+import java.net.SocketException;
 
 public class FeedController {
 
     public AnchorPane FeedRoot;
+    @FXML
+    private Button button;
     @FXML
     private MenuItem aboutUs;
 
@@ -60,6 +67,14 @@ public class FeedController {
     private MenuItem refresh;
 
     @FXML
+    private TextField inputField;
+
+    @FXML
+    private TextArea showArea;
+
+
+
+    @FXML
     void closeOnAction(ActionEvent event) {
         System.exit(0);
     }
@@ -101,7 +116,7 @@ public class FeedController {
     }
 
     @FXML
-    void aboutOnAction(ActionEvent event)  {
+    void aboutOnAction(ActionEvent event) {
         Us us = new Us();
         try {
             us.start(new Stage());
@@ -113,6 +128,7 @@ public class FeedController {
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
+
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("Ticket.fxml");
         Parent root = scene.root;
@@ -122,6 +138,7 @@ public class FeedController {
 
     @FXML
     void checkBMIOnAction(ActionEvent event) throws IOException {
+
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("BMI.fxml");
         Parent root = scene.root;
@@ -149,7 +166,7 @@ public class FeedController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  FeedRoot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("HowTo.fxml");
         Parent root = scene.root;
         HowToController tc = (HowToController) scene.controller;
@@ -185,6 +202,7 @@ public class FeedController {
 
     @FXML
     void profileOnAction(ActionEvent event) throws IOException {
+
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("profile-view.fxml");
         Parent root = scene.root;
@@ -192,4 +210,100 @@ public class FeedController {
         mainStage.setScene(new Scene(root));
 
     }
+
+    @FXML
+    void rankOnAction(ActionEvent event) throws IOException {
+        Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Ranking.fxml");
+        Parent root = scene.root;
+        RankingController rc = (RankingController) scene.controller;
+        mainStage.setScene(new Scene(root));
+    }
+
+    @FXML
+    void buyJercyOnAction(ActionEvent event) throws IOException {
+//        Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
+//        FXMLScene scene = FXMLScene.load("market.fxml");
+//        Parent root = scene.root;
+//        MarketController mc = (MarketController) scene.controller;
+//        mainStage.setScene(new Scene(root));
+    }
+
+    boolean isConnected = false;
+    BufferedReader reader;
+    BufferedWriter writer;
+
+    @FXML
+    void buttonPressed(ActionEvent event) {
+
+        if (!isConnected) {
+
+            String inputName = inputField.getText();
+
+            if (inputName == null || inputName.length() == 0) {
+
+                showArea.appendText("Enter a valid name!\n");
+                return;
+            }
+
+            try {
+                Socket sc = new Socket("127.0.0.1", 33333);
+                OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
+                writer = new BufferedWriter(o);
+                writer.write(inputName + "\n");
+                writer.flush();
+                InputStreamReader isr = new InputStreamReader(sc.getInputStream());
+                reader = new BufferedReader(isr);
+                Thread serverListener = new Thread() {
+
+                    @Override
+                    public void run() {
+                        while (true) {
+                            try {
+                                String data = reader.readLine() + "\n";
+                                showArea.appendText(data);
+
+                            } catch (SocketException e) {
+
+                                showArea.appendText("Connection lost!\n");
+                                break;
+                            } catch (IOException e) {
+
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+
+
+                };
+                serverListener.start();
+                showArea.appendText("Connection established!\n");
+                button.setText("Send");
+                inputField.clear();
+                inputField.setPromptText("Write your message");
+                showArea.clear();
+                isConnected = true;
+
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+
+        } else {
+            try {
+
+                String msg = inputField.getText();
+                inputField.clear();
+                if (msg == null || msg.length() == 0) {
+                    return;
+                }
+                writer.write(msg + "\n");
+                writer.flush();
+
+            } catch (IOException e) {
+                System.out.println(e);
+
+            }
+        }
+    }
+
 }

@@ -6,6 +6,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
+import java.util.Objects;
+
 public class ItemController {
 
     @FXML
@@ -29,8 +31,8 @@ public class ItemController {
         this.product = product;
         this.myListener = myListener;
         nameLabel.setText(product.getName());
-        priceLable.setText(SportsShop.CURRENCY + product.getPrice());
-        Image image = new Image(getClass().getResourceAsStream(product.getImgSrc()));
+        priceLable.setText(SportsShop.CURRENCY + this.product.getPrice());
+        Image image = new Image(this.product.getImgSrc());
         img.setImage(image);
 
     }

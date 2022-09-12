@@ -44,7 +44,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fitHeight="44.0" fitWidth="54.0" layoutX="450.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="44.0" fitWidth="54.0" layoutX="441.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/black-lock-icon-isolated-on-yellow-background-vector-34875823.jpg" />
          </image>
@@ -70,25 +70,29 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <TextField fx:id="createpassword" layoutX="360.0" layoutY="176.0" onAction="#modifypass" prefHeight="27.0" prefWidth="223.0" promptText="create password" style="-fx-background-color: TRANSPARENT; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+
+      <TextField fx:id="createpassword" layoutX="351.0" layoutY="217.0" prefHeight="27.0" prefWidth="223.0" promptText="create password" style="-fx-background-color: TRANSPARENT; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font name="System Italic" size="14.0" />
          </font></TextField>
-      <Label fx:id="hidelabel" layoutX="151.0" layoutY="140.0" prefHeight="30.0" prefWidth="209.0" textFill="RED">
+      <Label fx:id="hidelabel" layoutX="355.0" layoutY="517.0" prefHeight="30.0" prefWidth="238.0" textFill="RED">
+
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="button" layoutX="422.0" layoutY="306.0" mnemonicParsing="false" onAction="#change" prefHeight="32.0" prefWidth="88.0" styleClass="border" stylesheets="@../Style/style.css" text="Change" textFill="#200857" underline="true">
+      <Button fx:id="button" layoutX="418.0" layoutY="342.0" mnemonicParsing="false" onAction="#change" prefHeight="32.0" prefWidth="88.0" styleClass="border" stylesheets="@../Style/style.css" text="Change" textFill="#200857" underline="true">
+
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <PasswordField fx:id="confirmpassword" layoutX="359.0" layoutY="236.0" onAction="#modifypass" prefHeight="25.0" prefWidth="223.0" promptText="confirm password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+      <PasswordField fx:id="confirmpassword" layoutX="351.0" layoutY="263.0" prefHeight="25.0" prefWidth="223.0" promptText="confirm password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font name="System Italic" size="14.0" />
          </font></PasswordField>
       <Label fx:id="backmethod" layoutX="14.0" layoutY="9.0" prefHeight="27.0" prefWidth="111.0" text="Back" underline="true">
+
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -109,5 +113,9 @@
             </LinearGradient>
          </textFill>
       </Label>
+      <TextField fx:id="emailtxtfield" layoutX="350.0" layoutY="170.0" prefHeight="30.0" prefWidth="223.0" promptText="email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></TextField>
    </children>
 </AnchorPane>

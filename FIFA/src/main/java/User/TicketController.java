@@ -105,7 +105,7 @@ public class TicketController {
                         FXMLScene scene = FXMLScene.load("TicketSubmitForm.fxml");
                         Parent root = scene.root;
                         TicketSubmitFormController tc = (TicketSubmitFormController) scene.controller;
-                        tc.setM("T.I. of "+match_name);
+                        tc.setM("T.I. of " + match_name);
                         tc.setTk(codeText.getText());
                         mainStage.setScene(new Scene(root));
                     } catch (Exception e) {
@@ -135,7 +135,8 @@ public class TicketController {
                 if (codeText.getText().equals(parts[2])) {
                     match_name = parts[1];
                 }
-            }     bf.close();
+            }
+            bf.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -242,6 +243,7 @@ public class TicketController {
         Parent root = scene.root;
         MatchesController mc = (MatchesController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -251,6 +253,7 @@ public class TicketController {
         Parent root = scene.root;
         TeamsController tc = (TeamsController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -269,6 +272,7 @@ public class TicketController {
         Parent root = scene.root;
         UserMatchTreeController um = (UserMatchTreeController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -278,6 +282,7 @@ public class TicketController {
         Parent root = scene.root;
         FeedController feed = (FeedController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -287,6 +292,7 @@ public class TicketController {
         Parent root = scene.root;
         PlayerController pc = (PlayerController) scene.controller;
         mainStage.setScene(new Scene(root));
+
     }
 
     @FXML
@@ -296,6 +302,7 @@ public class TicketController {
         Parent root = scene.root;
         ProfileController pc = (ProfileController) scene.controller;
         mainStage.setScene(new Scene(root));
+
 
     }
 
