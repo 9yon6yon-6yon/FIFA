@@ -6,14 +6,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class SportsShop extends Application {
 
     public static final String CURRENCY = "tk";
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("market.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Player.class.getResource("market.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         primaryStage.setTitle("Sports Market");
-        primaryStage.setScene(new Scene(root));
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

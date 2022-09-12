@@ -1,97 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mtree" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="match-tree" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.MatchTreeController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminProfileController">
    <children>
-      <HBox layoutY="103.0" prefHeight="49.0" prefWidth="1200.0">
-         <children>
-            <Label alignment="CENTER" prefHeight="52.0" prefWidth="300.0" styleClass="border" stylesheets="@../Style/style.css" text="Round Up 16" />
-            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border1" stylesheets="@../Style/style.css" text="Quater Final" />
-            <Label alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border3" stylesheets="@../Style/style.css" text="Semi-Final" />
-            <Label alignment="CENTER" layoutX="610.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border2" stylesheets="@../Style/style.css" text="Final" />
-            <Label alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border3" text="Semi-Final" />
-            <Label alignment="CENTER" layoutX="730.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border1" text="Quater Final" />
-            <Label alignment="CENTER" layoutX="410.0" layoutY="10.0" prefHeight="52.0" prefWidth="300.0" styleClass="border" text="Round Up 16" />
-         </children>
-      </HBox>
-      <TextField fx:id="round1" layoutX="10.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round2" layoutX="10.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round3" layoutX="10.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round4" layoutX="10.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round5" layoutX="10.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round6" layoutX="10.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round7" layoutX="10.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round8" layoutX="10.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" stylesheets="@../Style/style.css" />
-      <TextField fx:id="round9" layoutX="1040.0" layoutY="195.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round10" layoutX="1040.0" layoutY="225.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round11" layoutX="1040.0" layoutY="275.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round12" layoutX="1040.0" layoutY="305.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round13" layoutX="1040.0" layoutY="355.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round14" layoutX="1040.0" layoutY="385.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round15" layoutX="1040.0" layoutY="435.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="round16" layoutX="1040.0" layoutY="465.0" prefHeight="24.0" prefWidth="150.0" styleClass="border" />
-      <TextField fx:id="quater1" editable="false" layoutX="185.0" layoutY="210.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater2" editable="false" layoutX="185.0" layoutY="295.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater3" editable="false" layoutX="185.0" layoutY="375.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater4" editable="false" layoutX="185.0" layoutY="455.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater5" editable="false" layoutX="860.0" layoutY="212.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater6" editable="false" layoutX="860.0" layoutY="297.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater7" editable="false" layoutX="860.0" layoutY="377.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="quater8" editable="false" layoutX="860.0" layoutY="457.0" prefHeight="24.0" prefWidth="150.0" styleClass="border1" />
-      <TextField fx:id="semi1" editable="false" layoutX="360.0" layoutY="255.0" prefHeight="24.0" prefWidth="150.0" styleClass="border3" />
-      <TextField fx:id="semi2" editable="false" layoutX="360.0" layoutY="415.0" prefHeight="24.0" prefWidth="150.0" styleClass="border3" />
-      <TextField fx:id="semi3" editable="false" layoutX="695.0" layoutY="255.0" prefHeight="24.0" prefWidth="150.0" styleClass="border3" />
-      <TextField fx:id="semi4" editable="false" layoutX="695.0" layoutY="415.0" prefHeight="24.0" prefWidth="150.0" styleClass="border3" />
-      <TextField fx:id="finalMatch1" editable="false" layoutX="532.0" layoutY="324.0" prefHeight="24.0" prefWidth="150.0" styleClass="border2" />
-      <TextField fx:id="finalMatch2" editable="false" layoutX="532.0" layoutY="358.0" prefHeight="24.0" prefWidth="150.0" styleClass="border2" />
-      <Button fx:id="savetree" layoutX="551.0" layoutY="644.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="125.0" styleClass="add-match-box" text="Save" textFill="#2b0a40" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="551.0" AnchorPane.rightAnchor="524.0" AnchorPane.topAnchor="644.0">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font></Button>
-      <CheckBox fx:id="r1m1" layoutX="162.0" layoutY="198.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m2" layoutX="162.0" layoutY="228.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m3" layoutX="162.0" layoutY="279.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m4" layoutX="162.0" layoutY="309.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m5" layoutX="162.0" layoutY="356.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m6" layoutX="162.0" layoutY="386.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m7" layoutX="162.0" layoutY="437.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m8" layoutX="162.0" layoutY="467.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m1" layoutX="337.0" layoutY="214.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m2" layoutX="337.0" layoutY="298.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m3" layoutX="337.0" layoutY="378.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m4" layoutX="337.0" layoutY="457.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m9" layoutX="1021.0" layoutY="198.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m10" layoutX="1021.0" layoutY="228.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m11" layoutX="1021.0" layoutY="279.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m12" layoutX="1021.0" layoutY="308.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m13" layoutX="1021.0" layoutY="358.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m14" layoutX="1021.0" layoutY="388.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m15" layoutX="1021.0" layoutY="437.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="r1m16" layoutX="1021.0" layoutY="467.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m5" layoutX="838.0" layoutY="216.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m6" layoutX="838.0" layoutY="300.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m7" layoutX="838.0" layoutY="380.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="q1m8" layoutX="838.0" layoutY="459.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="s1m3" layoutX="674.0" layoutY="257.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="s1m4" layoutX="674.0" layoutY="417.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="s1m1" layoutX="514.0" layoutY="259.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="s1m2" layoutX="514.0" layoutY="419.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="f1m1" layoutX="686.0" layoutY="327.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <CheckBox fx:id="f1m2" layoutX="511.0" layoutY="361.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="9.0" />
-      <MenuBar layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="672.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar AnchorPane.bottomAnchor="572.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <menus>
             <Menu mnemonicParsing="false" text="Home">
                <items>

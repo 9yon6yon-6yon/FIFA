@@ -1,10 +1,17 @@
 package Admin;
 
+import User.BMIController;
+import User.Login;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.*;
@@ -12,6 +19,7 @@ import java.util.*;
 public class MatchTreeController {
 
 
+    public AnchorPane mtree;
     @FXML
     private CheckBox f1m1;
 
@@ -196,17 +204,158 @@ public class MatchTreeController {
     private TextField semi4;
 
     @FXML
+    void LiveOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void aboutOnAction(ActionEvent event) {
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            FXMLScene scene = FXMLScene.load("Us.fxml");
+            Parent root = scene.root;
+            UsController pc = (UsController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+
+    @FXML
+    void buyJercyOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void buyTicketOnAction(ActionEvent event) {
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            Admin.FXMLScene scene = FXMLScene.load("AddTickets.fxml");
+            Parent root = scene.root;
+            AddTicketsController atc = (AddTicketsController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @FXML
+    void closeOnAction(ActionEvent event) {
+        System.exit(0);
+
+    }
+
+    @FXML
+    void feedOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void gMatchesOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void groupsOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void howToOnAction(ActionEvent event) {
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            Admin.FXMLScene scene = FXMLScene.load("BMI.fxml");
+            Parent root = scene.root;
+            BMIController bmi = (BMIController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @FXML
+    void logoutOnAction(ActionEvent event) {
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            User.FXMLScene scene = User.FXMLScene.load("Main.fxml");
+            Parent root = scene.root;
+            Login login = (Login) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @FXML
+    void mTreeOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void matchScoreOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void pProfilesOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void profileOnAction(ActionEvent event) {
+        try {
+            logs logs = new logs();
+            logs.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
+
+    @FXML
+    void rankOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void refreshOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
     void initialize() {
-//        try {
-//            BufferedReader bf = new BufferedReader(new FileReader("Files/Scores.txt"));
-//            String line;
-//            while ((line = bf.readLine()) != null) {
-//                String[] parts = line.split("_");
-//            }
-//            bf.close();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
+        ArrayList<String> roundUp = new ArrayList<>();
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader("Files/r16.txt"));
+            String line;
+            while ((line = bf.readLine()) != null) {
+                roundUp.add(line);
+            }
+            bf.close();
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
+        round1.setText(roundUp.get(0));
+        round2.setText(roundUp.get(1));
+        round3.setText(roundUp.get(2));
+        round4.setText(roundUp.get(3));
+        round5.setText(roundUp.get(4));
+        round6.setText(roundUp.get(5));
+        round7.setText(roundUp.get(6));
+        round8.setText(roundUp.get(7));
+        round9.setText(roundUp.get(8));
+        round10.setText(roundUp.get(9));
+        round11.setText(roundUp.get(10));
+        round12.setText(roundUp.get(11));
+        round13.setText(roundUp.get(12));
+        round14.setText(roundUp.get(13));
+        round15.setText(roundUp.get(14));
+        round16.setText(roundUp.get(15));
+
         r1m1.setOnAction(event -> {
             if (!Objects.equals(round1.getText(), "") && !Objects.equals(round2.getText(), "")) {
                 round2.setEditable(false);
@@ -431,97 +580,98 @@ public class MatchTreeController {
         });
         q1m1.setOnAction(event -> {
             semi1.setText(quater1.getText());
-            quater2.setEditable(false);
             q1m2.setDisable(true);
+            q1m1.setDisable(true);
             storeMatches("semi.txt", quater1.getText());
 
         });
         q1m2.setOnAction(event -> {
             semi1.setText(quater2.getText());
-            quater1.setEditable(false);
             q1m1.setDisable(true);
+            q1m2.setDisable(true);
             storeMatches("semi.txt", quater2.getText());
 
         });
         q1m3.setOnAction(event -> {
             semi2.setText(quater3.getText());
-            quater4.setEditable(false);
+            q1m3.setDisable(true);
             q1m4.setDisable(true);
             storeMatches("semi.txt", quater3.getText());
 
         });
         q1m4.setOnAction(event -> {
             semi2.setText(quater4.getText());
-            quater3.setEditable(false);
             q1m3.setDisable(true);
+            q1m4.setDisable(true);
             storeMatches("semi.txt", quater4.getText());
 
         });
         q1m5.setOnAction(event -> {
             semi3.setText(quater5.getText());
-            quater6.setEditable(false);
+            q1m5.setDisable(true);
             q1m6.setDisable(true);
             storeMatches("semi.txt", quater5.getText());
 
         });
         q1m6.setOnAction(event -> {
             semi3.setText(quater6.getText());
-            quater5.setEditable(false);
             q1m5.setDisable(true);
+            q1m6.setDisable(true);
             storeMatches("semi.txt", quater6.getText());
 
         });
         q1m7.setOnAction(event -> {
             semi4.setText(quater7.getText());
-            quater8.setEditable(false);
             q1m8.setDisable(true);
+            q1m7.setDisable(true);
             storeMatches("semi.txt", quater7.getText());
 
         });
         q1m8.setOnAction(event -> {
             semi4.setText(quater8.getText());
-            quater7.setEditable(false);
             q1m7.setDisable(true);
+            q1m8.setDisable(true);
             storeMatches("semi.txt", quater8.getText());
 
         });
+
         s1m1.setOnAction(event -> {
             finalMatch1.setText(semi1.getText());
-            semi2.setEditable(false);
             s1m2.setDisable(true);
+            s1m1.setDisable(true);
             storeMatches("finalMatch.txt", semi1.getText());
 
         });
         s1m2.setOnAction(event -> {
             finalMatch1.setText(semi2.getText());
-            semi1.setEditable(false);
             s1m1.setDisable(true);
+            s1m2.setDisable(true);
             storeMatches("finalMatch.txt", semi2.getText());
 
         });
         s1m3.setOnAction(event -> {
             finalMatch2.setText(semi3.getText());
-            semi4.setEditable(false);
             s1m4.setDisable(true);
+            s1m3.setDisable(true);
             storeMatches("finalMatch.txt", semi3.getText());
 
         });
         s1m4.setOnAction(event -> {
             finalMatch2.setText(semi4.getText());
-            semi3.setEditable(false);
             s1m3.setDisable(true);
+            s1m4.setDisable(true);
             storeMatches("finalMatch.txt", semi4.getText());
 
         });
         f1m1.setOnAction(event -> {
-            finalMatch2.setEditable(false);
             f1m2.setDisable(true);
+            f1m1.setDisable(true);
             storeMatches("won.txt", finalMatch1.getText());
 
         });
         f1m2.setOnAction(event -> {
-            finalMatch1.setEditable(false);
             f1m1.setDisable(true);
+            f1m2.setDisable(true);
             storeMatches("won.txt", finalMatch2.getText());
 
         });

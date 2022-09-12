@@ -433,7 +433,7 @@ public class MatchesController {
 
     @FXML
     void howToOnAction(ActionEvent event) throws IOException {
-        Stage mainStage = (Stage)  Forgottenroot.getScene().getWindow(); // then cast to stage to get the window
+        Stage mainStage = (Stage) Forgottenroot.getScene().getWindow(); // then cast to stage to get the window
         FXMLScene scene = FXMLScene.load("HowTo.fxml");
         Parent root = scene.root;
         HowToController tc = (HowToController) scene.controller;
@@ -475,6 +475,15 @@ public class MatchesController {
         ProfileController pc = (ProfileController) scene.controller;
         mainStage.setScene(new Scene(root));
 
+    }
+
+    @FXML
+    void rankOnAction(ActionEvent event) throws IOException {
+        Stage mainStage = (Stage) Forgottenroot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Ranking.fxml");
+        Parent root = scene.root;
+        RankingController rc = (RankingController) scene.controller;
+        mainStage.setScene(new Scene(root));
     }
 
 }

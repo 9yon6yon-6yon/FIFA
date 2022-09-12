@@ -14,6 +14,7 @@ import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MarketController {
 
@@ -73,7 +74,7 @@ public class MarketController {
     private void setChosenProduct(Product product) {
         productNameLable.setText(product.getName());
         productPriceLabel.setText(SportsShop.CURRENCY + product.getPrice());
-        image = new Image(getClass().getResourceAsStream(product.getImgSrc()));
+//        image = new Image(product.getImgSrc());
         productImg.setImage(image);
         chosenProductCard.setStyle("-fx-background-color: #" + product.getColor() + ";\n" + "    -fx-background-radius: 30;");
 

@@ -83,7 +83,11 @@
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></TextField>
-            <TextField fx:id="scountry" layoutX="-363.0" layoutY="295.0" prefHeight="25.0" prefWidth="290.0" promptText="country of residence" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+            <TextField fx:id="sdof" layoutX="-361.0" layoutY="236.0" prefHeight="25.0" prefWidth="290.0" promptText="Date of Birth e.g. 01/01/2011" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="scountry" layoutX="-363.0" layoutY="295.0" prefHeight="25.0" prefWidth="290.0" promptText="country name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></TextField>
@@ -95,10 +99,6 @@
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></PasswordField>
-            <TextField fx:id="sdof" layoutX="-361.0" layoutY="236.0" prefHeight="25.0" prefWidth="290.0" promptText="Enter a date of birth" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
-               <font>
-                  <Font name="System Bold Italic" size="14.0" />
-               </font></TextField>
          </children>
       </AnchorPane>
    </right>

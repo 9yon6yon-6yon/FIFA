@@ -21,6 +21,10 @@ import java.io.IOException;
 public class PlayerController {
     public AnchorPane PlayerRoot;
     @FXML
+    public MenuItem buyjercy;
+    @FXML
+    public MenuItem rank;
+    @FXML
     private MenuItem aboutUs;
 
     @FXML
@@ -403,4 +407,21 @@ public class PlayerController {
 
     }
 
+    @FXML
+    void rankOnAction(ActionEvent event) throws IOException {
+        Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
+        FXMLScene scene = FXMLScene.load("Ranking.fxml");
+        Parent root = scene.root;
+        RankingController rc = (RankingController) scene.controller;
+        mainStage.setScene(new Scene(root));
+    }
+
+    @FXML
+    void buyJercyOnAction(ActionEvent event) throws IOException {
+//        Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
+//        FXMLScene scene = FXMLScene.load("market.fxml");
+//        Parent root = scene.root;
+//        MarketController mc = (MarketController) scene.controller;
+//        mainStage.setScene(new Scene(root));
+    }
 }
