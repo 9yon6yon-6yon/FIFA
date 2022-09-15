@@ -1,7 +1,9 @@
 package User;
 
+import Admin.AdminProfileController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,6 +14,7 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
 
 public class Login {
@@ -52,6 +55,19 @@ public class Login {
                 a.setAlertType(Alert.AlertType.ERROR);
                 a.setContentText("Enter Valid information");
                 a.show();
+                return;
+            }
+            if (emailId.equals("admin") && Objects.equals(pass, "admin")) {
+                try {
+                    Stage adminStage = (Stage) ((Node) (event.getSource())).getScene().getWindow();
+                    FXMLScene adminScene = FXMLScene.load("/Admin/adminProfile.fxml");
+                    Parent r = adminScene.root;
+                    AdminProfileController ad = (AdminProfileController) adminScene.controller;
+                    adminStage.setScene(new Scene(r));
+
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
                 return;
             }
             boolean found = false;

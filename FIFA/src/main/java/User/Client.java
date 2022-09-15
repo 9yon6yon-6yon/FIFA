@@ -27,17 +27,12 @@ public class Client implements Runnable {
     }
     @Override
     public void run() {
-
         while (true) {
-
             try {
                 String data = reader.readLine();
-                data = clientName + ": " + data + "\n";
-
+                data = clientName + " ->  " + data + "\n";
                 synchronized (clients) {
-
                     for (Client client : clients) {
-
                         client.writer.write(data);
                         client.writer.flush();
                     }
