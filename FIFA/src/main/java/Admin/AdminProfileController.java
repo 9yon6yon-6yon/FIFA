@@ -1,13 +1,19 @@
 package Admin;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
+
+import User.Login;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class AdminProfileController {
 
+    public AnchorPane adminProfile;
     @FXML
     private MenuItem aboutUs;
 
@@ -32,8 +38,6 @@ public class AdminProfileController {
     @FXML
     private MenuItem groups;
 
-    @FXML
-    private MenuItem howTo;
 
     @FXML
     private MenuItem liveMatch;
@@ -60,12 +64,20 @@ public class AdminProfileController {
     private MenuItem refresh;
 
     @FXML
-    void LiveOnAction(ActionEvent event) {
-
+    void LiveOnAction(ActionEvent event) throws IOException {
+//        Stage stage = (Stage) adminProfile.getScene().getWindow();
+//        FXMLScene scene = FXMLScene.load("");
+//        Parent root = scene.root;
     }
 
     @FXML
     void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
+        try {
+            us.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 
@@ -75,73 +87,99 @@ public class AdminProfileController {
     }
 
     @FXML
-    void buyTicketOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void checkBMIOnAction(ActionEvent event) {
+    void buyTicketOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("AddTickets.fxml");
+        Parent root = scene.root;
+        AddTicketsController adc = (AddTicketsController) scene.controller;
+        stage.setScene(new Scene(root));
 
     }
 
     @FXML
     void closeOnAction(ActionEvent event) {
+        System.exit(0);
 
     }
 
     @FXML
-    void feedOnAction(ActionEvent event) {
-
+    void feedOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("adminProfile.fxml");
+        Parent root = scene.root;
     }
 
     @FXML
-    void gMatchesOnAction(ActionEvent event) {
-
+    void gMatchesOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("MatchTree.fxml");
+        Parent root = scene.root;
     }
 
     @FXML
-    void groupsOnAction(ActionEvent event) {
+    void groupsOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("MatchTree.fxml");
+        Parent root = scene.root;
+    }
 
+
+    @FXML
+    void logoutOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("/User/Main.fxml");
+        Parent root = scene.root;
+        Login  l = (Login) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
     @FXML
-    void howToOnAction(ActionEvent event) {
-
+    void mTreeOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("MatchTree.fxml");
+        Parent root = scene.root;
+        MatchTreeController mtc = (MatchTreeController) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
     @FXML
-    void logoutOnAction(ActionEvent event) {
-
+    void matchScoreOnAction(ActionEvent event) throws IOException {
+//        Stage stage = (Stage) adminProfile.getScene().getWindow();
+//        FXMLScene scene = FXMLScene.load("");
+//        Parent root = scene.root;
     }
 
     @FXML
-    void mTreeOnAction(ActionEvent event) {
-
+    void pProfilesOnAction(ActionEvent event) throws IOException {
+//        Stage stage = (Stage) adminProfile.getScene().getWindow();
+//        FXMLScene scene = FXMLScene.load("");
+//        Parent root = scene.root;
     }
 
     @FXML
-    void matchScoreOnAction(ActionEvent event) {
-
+    void profileOnAction(ActionEvent event) throws IOException {
+        try {
+            logs logs = new logs();
+            logs.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     @FXML
-    void pProfilesOnAction(ActionEvent event) {
-
+    void rankOnAction(ActionEvent event) throws IOException {
+//        Stage stage = (Stage) adminProfile.getScene().getWindow();
+//        FXMLScene scene = FXMLScene.load("");
+//        Parent root = scene.root;
     }
 
     @FXML
-    void profileOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void rankOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void refreshOnAction(ActionEvent event) {
-
+    void refreshOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("adminProfile.fxml");
+        Parent root = scene.root;
+        AdminProfileController adc = (AdminProfileController) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
 

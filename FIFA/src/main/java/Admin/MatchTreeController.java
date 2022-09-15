@@ -1,6 +1,5 @@
 package Admin;
 
-import User.BMIController;
 import User.Login;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -261,19 +260,6 @@ public class MatchTreeController {
 
     }
 
-    @FXML
-    void howToOnAction(ActionEvent event) {
-        try {
-            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
-            Admin.FXMLScene scene = FXMLScene.load("BMI.fxml");
-            Parent root = scene.root;
-            BMIController bmi = (BMIController) scene.controller;
-            mainStage.setScene(new Scene(root));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
 
     @FXML
     void logoutOnAction(ActionEvent event) {

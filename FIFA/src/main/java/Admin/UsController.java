@@ -15,7 +15,6 @@ import java.io.IOException;
 
 public class UsController {
 
-    public AnchorPane aboutUsroot;
     @FXML
     private Button aboutButton;
 

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="372.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UsController">
+<AnchorPane  prefHeight="372.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UsController">
    <children>
       <Button fx:id="aboutButton" layoutX="158.0" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" text="About">
          <font>
@@ -21,7 +21,7 @@
             <Font name="Likhan" size="13.0" />
          </font>
       </Button>
-      <TextArea fx:id="crditsText" cacheShape="false" editable="false" layoutX="87.0" layoutY="213.0" prefHeight="145.0" prefWidth="285.0" visible="false" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="213.0">
+      <TextArea fx:id="crditsText" cacheShape="false" layoutX="87.0" layoutY="213.0" prefHeight="145.0" prefWidth="285.0" visible="false" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="213.0">
          <font>
             <Font size="15.0" />
          </font>
@@ -31,7 +31,7 @@
             <Image url="@../Images/cup.jpeg" />
          </image>
       </ImageView>
-      <TextArea fx:id="versionText" editable="false" layoutX="13.0" layoutY="183.0" prefHeight="116.0" prefWidth="423.0">
+      <TextArea fx:id="versionText" layoutX="13.0" layoutY="183.0" prefHeight="116.0" prefWidth="423.0">
          <font>
             <Font size="15.0" />
          </font></TextArea>
