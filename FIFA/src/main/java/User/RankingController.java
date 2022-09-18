@@ -1,6 +1,6 @@
 package User;
 
-import Admin.LiveController;
+
 import Admin.Us;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,6 +15,8 @@ import javafx.scene.control.MenuItem;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
 
 public class RankingController {
     public AnchorPane rankc;
@@ -87,9 +89,69 @@ public class RankingController {
     @FXML
     private ListView<String> teamShow;
 
+    ArrayList<RankSorting> ranks = new ArrayList<RankSorting>();
+
     @FXML
     void initialize() {
         readSquad();
+        position.setOnAction(event -> {
+            ranks.sort((pos1, pos2) -> {
+                int a = pos1.rank;
+                int b = pos2.rank;
+                if (a == b)
+                    return 0;
+                else if (a > b)
+                    return 1;
+                else
+                    return -1;
+
+            });
+            rankShow.getItems().clear();
+            teamShow.getItems().clear();
+            pointShow.getItems().clear();
+            for (RankSorting l : ranks) {
+                rankShow.getItems().addAll(String.valueOf(l.rank));
+                teamShow.getItems().addAll(l.names);
+                pointShow.getItems().addAll(String.valueOf(l.scores));
+            }
+        });
+        teamName.setOnAction(event -> {
+            ranks.sort((n1, n2) -> {
+                String a = n1.names;
+                String b = n2.names;
+                return a.compareTo(b);
+            });
+            rankShow.getItems().clear();
+            teamShow.getItems().clear();
+            pointShow.getItems().clear();
+            for (RankSorting l : ranks) {
+                rankShow.getItems().addAll(String.valueOf(l.rank));
+                teamShow.getItems().addAll(l.names);
+                pointShow.getItems().addAll(String.valueOf(l.scores));
+            }
+        });
+        point.setOnAction(event -> {
+            ranks.sort((pos1, pos2) -> {
+                int a = pos1.scores;
+                int b = pos2.scores;
+                if (a == b)
+                    return 0;
+                else if (a > b)
+                    return 1;
+                else
+                    return -1;
+
+            });
+            rankShow.getItems().clear();
+            teamShow.getItems().clear();
+            pointShow.getItems().clear();
+            for (RankSorting l : ranks) {
+                rankShow.getItems().addAll(String.valueOf(l.rank));
+                teamShow.getItems().addAll(l.names);
+                pointShow.getItems().addAll(String.valueOf(l.scores));
+            }
+        });
+
 
     }
 
@@ -106,6 +168,8 @@ public class RankingController {
                 rankShow.getItems().addAll(parts[0]);
                 teamShow.getItems().addAll(parts[1]);
                 pointShow.getItems().addAll(parts[2]);
+                RankSorting rs = new RankSorting(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2]));
+                ranks.add(rs);
 
             }
             bf.close();
