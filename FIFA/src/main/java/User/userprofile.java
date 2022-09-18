@@ -17,36 +17,10 @@ public class userprofile {
 
     @FXML
     void logout(ActionEvent event) throws IOException {
-
-
-
     }
 
     @FXML
     void profilepic(MouseEvent event) throws IOException {
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

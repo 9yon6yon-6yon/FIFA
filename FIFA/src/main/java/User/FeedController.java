@@ -20,6 +20,8 @@ public class FeedController {
 
     public AnchorPane FeedRoot;
     @FXML
+    private TextArea news;
+    @FXML
     private Button button;
     @FXML
     private MenuItem aboutUs;
@@ -82,52 +84,36 @@ public class FeedController {
 
     public FeedController() {
 
-        try{
-            Socket sc=new Socket("localhost",1234);
-            OutputStreamWriter o=new OutputStreamWriter(sc.getOutputStream());
-            awriter=new BufferedWriter(o);
+        try {
+            Socket sc = new Socket("localhost", 1234);
+            OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
+            awriter = new BufferedWriter(o);
 
-            InputStreamReader isr=new InputStreamReader(sc.getInputStream());
-            areader=new BufferedReader(isr);
-
-            Thread sl= new Thread(){
+            InputStreamReader isr = new InputStreamReader(sc.getInputStream());
+            areader = new BufferedReader(isr);
+            Thread sl = new Thread() {
 
                 @Override
                 public void run() {
-                    while(true){
-
-                        try{
-
+                    while (true) {
+                        try {
                             String s1 = areader.readLine();
+                            news.appendText(s1);
 
-
-
-                            postlabel.setText(s1);
-
-                        }
-
-                        catch (SocketException e){
+                        } catch (SocketException e) {
 
                             break;
-                        }
-
-                        catch (IOException e){
+                        } catch (IOException e) {
 
                             e.printStackTrace();
                         }
-
                     }
                 }
             };
-
             sl.start();
 
 
-
-
-
-        }
-        catch (IOException e){
+        } catch (IOException e) {
 
             e.printStackTrace();
         }
@@ -281,14 +267,6 @@ public class FeedController {
         mainStage.setScene(new Scene(root));
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) throws IOException {
-//        Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
-//        FXMLScene scene = FXMLScene.load("market.fxml");
-//        Parent root = scene.root;
-//        MarketController mc = (MarketController) scene.controller;
-//        mainStage.setScene(new Scene(root));
-    }
 
     boolean isConnected = false;
     BufferedReader reader;

@@ -259,13 +259,5 @@ public class RankingController {
         mainStage.setScene(new Scene(root));
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) throws IOException {
-//        Stage mainStage = (Stage) rankc.getScene().getWindow(); // then cast to stage to get the window
-//        FXMLScene scene = FXMLScene.load("market.fxml");
-//        Parent root = scene.root;
-//        MarketController mc = (MarketController) scene.controller;
-//        mainStage.setScene(new Scene(root));
-    }
 
 }

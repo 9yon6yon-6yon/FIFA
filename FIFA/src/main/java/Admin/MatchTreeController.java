@@ -203,27 +203,25 @@ public class MatchTreeController {
     private TextField semi4;
 
     @FXML
-    void LiveOnAction(ActionEvent event) {
-
+    void LiveOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) mtree.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("live.fxml");
+        Parent root = scene.root;
+        LiveController adc = (LiveController) scene.controller;
+        stage.setScene(new Scene(root));
     }
+
 
     @FXML
     void aboutOnAction(ActionEvent event) {
+        Us us = new Us();
         try {
-            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
-            FXMLScene scene = FXMLScene.load("Us.fxml");
-            Parent root = scene.root;
-            UsController pc = (UsController) scene.controller;
-            mainStage.setScene(new Scene(root));
-        } catch (IOException e) {
+            us.start(new Stage());
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) {
-
-    }
 
     @FXML
     void buyTicketOnAction(ActionEvent event) {
@@ -247,19 +245,16 @@ public class MatchTreeController {
 
     @FXML
     void feedOnAction(ActionEvent event) {
-
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            FXMLScene scene = FXMLScene.load("adminProfile.fxml");
+            Parent root = scene.root;
+            AdminProfileController adn = (AdminProfileController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
-
-    @FXML
-    void gMatchesOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void groupsOnAction(ActionEvent event) {
-
-    }
-
 
     @FXML
     void logoutOnAction(ActionEvent event) {
@@ -277,12 +272,15 @@ public class MatchTreeController {
 
     @FXML
     void mTreeOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void matchScoreOnAction(ActionEvent event) {
-
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            FXMLScene scene = FXMLScene.load("MatchTree.fxml");
+            Parent root = scene.root;
+            MatchTreeController adn = (MatchTreeController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -298,17 +296,19 @@ public class MatchTreeController {
         } catch (Exception e) {
             System.out.println(e);
         }
-
-    }
-
-    @FXML
-    void rankOnAction(ActionEvent event) {
-
     }
 
     @FXML
     void refreshOnAction(ActionEvent event) {
-
+        try {
+            Stage mainStage = (Stage) mtree.getScene().getWindow(); // then cast to stage to get the window
+            FXMLScene scene = FXMLScene.load("MatchTree.fxml");
+            Parent root = scene.root;
+            MatchTreeController adn = (MatchTreeController) scene.controller;
+            mainStage.setScene(new Scene(root));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
