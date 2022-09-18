@@ -30,7 +30,6 @@ public class PostController {
 
     @FXML
     void post(ActionEvent event) {
-
         String s1 = textfield.getText();
         try {
             awriter.write("post\n");

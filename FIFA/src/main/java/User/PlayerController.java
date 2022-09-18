@@ -1,5 +1,6 @@
 package User;
 
+import Admin.LiveController;
 import Admin.Us;
 import MatchDetails.*;
 import javafx.event.ActionEvent;
@@ -307,9 +308,9 @@ public class PlayerController {
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) PlayerRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
+        FXMLScene scene = FXMLScene.load("liveScore.fxml");
         Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
+        ViewLiveScoreController feed = (ViewLiveScoreController) scene.controller;
         mainStage.setScene(new Scene(root));
     }
 

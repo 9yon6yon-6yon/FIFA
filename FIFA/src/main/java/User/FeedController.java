@@ -1,5 +1,7 @@
 package User;
 
+import Admin.Live;
+import Admin.LiveController;
 import Admin.Us;
 import MatchDetails.Groups;
 import MatchDetails.flags;
@@ -81,9 +83,7 @@ public class FeedController {
     BufferedReader areader;
     BufferedWriter awriter;
 
-
     public FeedController() {
-
         try {
             Socket sc = new Socket("localhost", 1234);
             OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
@@ -99,23 +99,19 @@ public class FeedController {
                         try {
                             String s1 = areader.readLine();
                             news.appendText(s1);
-
                         } catch (SocketException e) {
-
+                            System.out.println(e);
                             break;
                         } catch (IOException e) {
 
-                            e.printStackTrace();
+                            System.out.println(e);
                         }
                     }
                 }
             };
             sl.start();
-
-
         } catch (IOException e) {
-
-            e.printStackTrace();
+            System.out.println(e);
         }
 
 
@@ -156,9 +152,9 @@ public class FeedController {
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
+        FXMLScene scene = FXMLScene.load("liveScore.fxml");
         Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
+        ViewLiveScoreController feed = (ViewLiveScoreController) scene.controller;
         mainStage.setScene(new Scene(root));//need to add new live fxml here
     }
 
