@@ -15,57 +15,29 @@ public class PostController {
     BufferedReader areader;
     BufferedWriter awriter;
 
-
     public PostController() {
+        try {
+            Socket sc = new Socket("localhost", 1234);
+            OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
+            awriter = new BufferedWriter(o);
+            InputStreamReader isr = new InputStreamReader(sc.getInputStream());
+            areader = new BufferedReader(isr);
 
-        try{
-            Socket sc=new Socket("localhost",1234);
-            OutputStreamWriter o=new OutputStreamWriter(sc.getOutputStream());
-            awriter=new BufferedWriter(o);
-
-            InputStreamReader isr=new InputStreamReader(sc.getInputStream());
-            areader=new BufferedReader(isr);
-
+        } catch (IOException e) {
+            System.out.println(e);
         }
-        catch (IOException e){
-
-            e.printStackTrace();
-        }
-
-
-
-
-
-
-
-
-
-
     }
 
     @FXML
     void post(ActionEvent event) {
-
-        String s1=textfield.getText();
-        try{
+        String s1 = textfield.getText();
+        try {
             awriter.write("post\n");
-            awriter.write(s1+"\n");
-
+            awriter.write(s1 + "\n");
             awriter.flush();
-
-
-
+        } catch (IOException e) {
+            System.out.println(e);
         }
-
-        catch (IOException e){
-
-            e.printStackTrace();
-        }
-
-
-
-
-
 
     }
 

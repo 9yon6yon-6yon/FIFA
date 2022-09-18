@@ -169,9 +169,11 @@ public class AddTicketsController {
 
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
-//        Stage stage = (Stage) addTickets.getScene().getWindow();
-//        FXMLScene scene = FXMLScene.load("");
-//        Parent root = scene.root;
+        Stage stage = (Stage) addTickets.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("live.fxml");
+        Parent root = scene.root;
+        LiveController adc = (LiveController) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
     @FXML
@@ -185,10 +187,6 @@ public class AddTicketsController {
 
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) {
-
-    }
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
@@ -247,12 +245,6 @@ public class AddTicketsController {
         stage.setScene(new Scene(root));
     }
 
-    @FXML
-    void matchScoreOnAction(ActionEvent event) throws IOException {
-//        Stage stage = (Stage) addTickets.getScene().getWindow();
-//        FXMLScene scene = FXMLScene.load("");
-//        Parent root = scene.root;
-    }
 
     @FXML
     void pProfilesOnAction(ActionEvent event) throws IOException {

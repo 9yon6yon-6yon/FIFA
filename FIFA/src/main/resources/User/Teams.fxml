@@ -233,5 +233,10 @@
             </Menu>
          </menus>
       </MenuBar>
+      <ImageView fitHeight="392.0" fitWidth="249.0" layoutX="595.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="595.0" AnchorPane.rightAnchor="69.41648864746094" AnchorPane.topAnchor="106.0">
+         <image>
+            <Image url="@../Images/18-182611_world-cup-png-fifa-world-cup-png-transparent.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

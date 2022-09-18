@@ -152,47 +152,11 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="matchScores" mnemonicParsing="false" onAction="#matchScoreOnAction" text="Match Scores">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-score-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem fx:id="groups" mnemonicParsing="false" onAction="#groupsOnAction" text="Groups">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-team-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem fx:id="groupMatches" mnemonicParsing="false" onAction="#gMatchesOnAction" text="Group Matches">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-vs-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
                   <MenuItem fx:id="matchtree" mnemonicParsing="false" onAction="#mTreeOnAction" text="Match Tree">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Images/icons8-match-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem fx:id="rank" mnemonicParsing="false" onAction="#rankOnAction" text="Ranks">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-web-analytics-100.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -217,7 +181,7 @@
                         </ImageView>
                      </graphic>
                   </MenuItem>
-                  <MenuItem fx:id="pProfiles" mnemonicParsing="false" onAction="#pProfilesOnAction" text="Players Profile">
+                  <MenuItem fx:id="pProfiles" mnemonicParsing="false" onAction="#pProfilesOnAction" text="Profile">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -242,15 +206,6 @@
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Images/icons8-ticket-100.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem fx:id="buyjercy" mnemonicParsing="false" onAction="#buyJercyOnAction" text="Add Jersey">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                           <image>
-                              <Image url="@../Images/icons8-vs-100.png" />
                            </image>
                         </ImageView>
                      </graphic>

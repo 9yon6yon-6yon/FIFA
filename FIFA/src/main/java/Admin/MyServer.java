@@ -12,9 +12,11 @@ public class MyServer {
     public static void main(String[] args) {
         try {
             ServerSocket serverSocket = new ServerSocket(33333);
+             new Server2();
+
             while (true) {
                 Socket sc = serverSocket.accept();
-                Thread t = new Thread( new Client(sc));
+                Thread t = new Thread(new Client(sc));
                 t.start();
             }
 

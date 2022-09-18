@@ -12,7 +12,6 @@ public class Live extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(Live.class.getResource("live.fxml"));
         stage.setTitle("Live Score Update");
-
         stage.setScene(new Scene(fxmlLoader.load()));
         stage.show();
     }

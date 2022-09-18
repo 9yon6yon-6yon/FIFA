@@ -65,9 +65,11 @@ public class AdminProfileController {
 
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
-//        Stage stage = (Stage) adminProfile.getScene().getWindow();
-//        FXMLScene scene = FXMLScene.load("");
-//        Parent root = scene.root;
+        Stage stage = (Stage) adminProfile.getScene().getWindow();
+        FXMLScene scene = FXMLScene.load("live.fxml");
+        Parent root = scene.root;
+        LiveController adc = (LiveController) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
     @FXML
@@ -81,10 +83,6 @@ public class AdminProfileController {
 
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) {
-
-    }
 
     @FXML
     void buyTicketOnAction(ActionEvent event) throws IOException {
@@ -107,21 +105,12 @@ public class AdminProfileController {
         Stage stage = (Stage) adminProfile.getScene().getWindow();
         FXMLScene scene = FXMLScene.load("adminProfile.fxml");
         Parent root = scene.root;
+       AdminProfileController mc = (AdminProfileController) scene.controller;
+        stage.setScene(new Scene(root));
     }
 
-    @FXML
-    void gMatchesOnAction(ActionEvent event) throws IOException {
-        Stage stage = (Stage) adminProfile.getScene().getWindow();
-        FXMLScene scene = FXMLScene.load("MatchTree.fxml");
-        Parent root = scene.root;
-    }
 
-    @FXML
-    void groupsOnAction(ActionEvent event) throws IOException {
-        Stage stage = (Stage) adminProfile.getScene().getWindow();
-        FXMLScene scene = FXMLScene.load("MatchTree.fxml");
-        Parent root = scene.root;
-    }
+
 
 
     @FXML
@@ -142,12 +131,6 @@ public class AdminProfileController {
         stage.setScene(new Scene(root));
     }
 
-    @FXML
-    void matchScoreOnAction(ActionEvent event) throws IOException {
-//        Stage stage = (Stage) adminProfile.getScene().getWindow();
-//        FXMLScene scene = FXMLScene.load("");
-//        Parent root = scene.root;
-    }
 
     @FXML
     void pProfilesOnAction(ActionEvent event) throws IOException {
@@ -166,12 +149,6 @@ public class AdminProfileController {
         }
     }
 
-    @FXML
-    void rankOnAction(ActionEvent event) throws IOException {
-//        Stage stage = (Stage) adminProfile.getScene().getWindow();
-//        FXMLScene scene = FXMLScene.load("");
-//        Parent root = scene.root;
-    }
 
     @FXML
     void refreshOnAction(ActionEvent event) throws IOException {
@@ -183,4 +160,13 @@ public class AdminProfileController {
     }
 
 
+    public void postNews(ActionEvent event) {
+       Post post = new Post();
+        try {
+           post.start(new Stage());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
 }

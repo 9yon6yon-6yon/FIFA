@@ -1,6 +1,5 @@
 package User;
 
-import Admin.AdminProfile;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,7 +10,6 @@ public class ViewLiveScore extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(ViewLiveScore.class.getResource("liveScore.fxml"));
         stage.setTitle("Live Score");
-
         stage.setScene(new Scene(fxmlLoader.load()));
         stage.show();
     }

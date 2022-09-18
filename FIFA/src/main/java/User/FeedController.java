@@ -1,5 +1,7 @@
 package User;
 
+import Admin.Live;
+import Admin.LiveController;
 import Admin.Us;
 import MatchDetails.Groups;
 import MatchDetails.flags;
@@ -19,6 +21,8 @@ import java.net.SocketException;
 public class FeedController {
 
     public AnchorPane FeedRoot;
+    @FXML
+    private TextArea news;
     @FXML
     private Button button;
     @FXML
@@ -79,57 +83,35 @@ public class FeedController {
     BufferedReader areader;
     BufferedWriter awriter;
 
-
     public FeedController() {
+        try {
+            Socket sc = new Socket("localhost", 1234);
+            OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
+            awriter = new BufferedWriter(o);
 
-        try{
-            Socket sc=new Socket("localhost",1234);
-            OutputStreamWriter o=new OutputStreamWriter(sc.getOutputStream());
-            awriter=new BufferedWriter(o);
-
-            InputStreamReader isr=new InputStreamReader(sc.getInputStream());
-            areader=new BufferedReader(isr);
-
-            Thread sl= new Thread(){
+            InputStreamReader isr = new InputStreamReader(sc.getInputStream());
+            areader = new BufferedReader(isr);
+            Thread sl = new Thread() {
 
                 @Override
                 public void run() {
-                    while(true){
-
-                        try{
-
+                    while (true) {
+                        try {
                             String s1 = areader.readLine();
-
-
-
-                            postlabel.setText(s1);
-
-                        }
-
-                        catch (SocketException e){
-
+                            news.appendText(s1);
+                        } catch (SocketException e) {
+                            System.out.println(e);
                             break;
+                        } catch (IOException e) {
+
+                            System.out.println(e);
                         }
-
-                        catch (IOException e){
-
-                            e.printStackTrace();
-                        }
-
                     }
                 }
             };
-
             sl.start();
-
-
-
-
-
-        }
-        catch (IOException e){
-
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println(e);
         }
 
 
@@ -170,9 +152,9 @@ public class FeedController {
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
+        FXMLScene scene = FXMLScene.load("liveScore.fxml");
         Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
+        ViewLiveScoreController feed = (ViewLiveScoreController) scene.controller;
         mainStage.setScene(new Scene(root));//need to add new live fxml here
     }
 
@@ -281,14 +263,6 @@ public class FeedController {
         mainStage.setScene(new Scene(root));
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) throws IOException {
-//        Stage mainStage = (Stage) FeedRoot.getScene().getWindow(); // then cast to stage to get the window
-//        FXMLScene scene = FXMLScene.load("market.fxml");
-//        Parent root = scene.root;
-//        MarketController mc = (MarketController) scene.controller;
-//        mainStage.setScene(new Scene(root));
-    }
 
     boolean isConnected = false;
     BufferedReader reader;

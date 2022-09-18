@@ -1,6 +1,7 @@
 package User;
 
 
+import Admin.LiveController;
 import Admin.Us;
 import javafx.event.ActionEvent;
 
@@ -220,9 +221,9 @@ public class BMIController {
     @FXML
     void LiveOnAction(ActionEvent event) throws IOException {
         Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
-        FXMLScene scene = FXMLScene.load("Feed.fxml");
+        FXMLScene scene = FXMLScene.load("liveScore.fxml");
         Parent root = scene.root;
-        FeedController feed = (FeedController) scene.controller;
+        ViewLiveScoreController feed = (ViewLiveScoreController) scene.controller;
         mainStage.setScene(new Scene(root));//need to add new live fxml here
     }
 
@@ -327,13 +328,5 @@ public class BMIController {
         mainStage.setScene(new Scene(root));
     }
 
-    @FXML
-    void buyJercyOnAction(ActionEvent event) throws IOException {
-//        Stage mainStage = (Stage) BMIroot.getScene().getWindow(); // then cast to stage to get the window
-//        FXMLScene scene = FXMLScene.load("market.fxml");
-//        Parent root = scene.root;
-//        MarketController mc = (MarketController) scene.controller;
-//        mainStage.setScene(new Scene(root));
-    }
 
 }
