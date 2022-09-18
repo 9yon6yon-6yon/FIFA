@@ -302,7 +302,6 @@ public class FeedController {
             String inputName = inputField.getText();
 
             if (inputName == null || inputName.length() == 0) {
-
                 showArea.appendText("Enter a valid name!\n");
                 return;
             }
@@ -323,14 +322,11 @@ public class FeedController {
                             try {
                                 String data = reader.readLine() + "\n";
                                 showArea.appendText(data);
-
                             } catch (SocketException e) {
-
                                 showArea.appendText("Connection lost!\n");
                                 break;
                             } catch (IOException e) {
-
-                                e.printStackTrace();
+                                System.out.println(e);
                             }
                         }
                     }
@@ -351,7 +347,6 @@ public class FeedController {
 
         } else {
             try {
-
                 String msg = inputField.getText();
                 inputField.clear();
                 if (msg == null || msg.length() == 0) {

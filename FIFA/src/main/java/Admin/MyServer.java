@@ -2,9 +2,10 @@ package Admin;
 
 import User.Client;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Objects;
 
 public class MyServer {
 
@@ -13,10 +14,7 @@ public class MyServer {
             ServerSocket serverSocket = new ServerSocket(33333);
             while (true) {
                 Socket sc = serverSocket.accept();
-                Client client = new Client(sc);
-                //LiveController licnt=new LiveController(sc);
-                //Thread t2 = new Thread(licnt);
-                Thread t = new Thread(client);
+                Thread t = new Thread( new Client(sc));
                 t.start();
             }
 
