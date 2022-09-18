@@ -14,8 +14,8 @@ public class Client implements Runnable {
 
     public Client(Socket sc) {
         try {
-            OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
-            writer = new BufferedWriter(o);
+            OutputStreamWriter osr = new OutputStreamWriter(sc.getOutputStream());
+            writer = new BufferedWriter(osr);
             InputStreamReader isr = new InputStreamReader(sc.getInputStream());
             reader = new BufferedReader(isr);
             clientName = reader.readLine();

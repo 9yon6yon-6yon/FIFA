@@ -81,7 +81,8 @@ public class TicketController {
 
     @FXML
     private DatePicker ticketsDate;
-    boolean bought = true;
+    boolean buy = true;
+    boolean found = false;
 
     String match_name;
     String path = "Files/availableMatch.txt";
@@ -91,27 +92,36 @@ public class TicketController {
         ticketsDate.getEditor().appendText("MM/DD/YYYY");
         ticketsDate.setOnAction(this::readFile);
         buyTo.setOnMouseClicked(mouseEvent -> {
-            if (bought) {
+            if (buy) {
                 if (Objects.equals(codeText.getText(), "")) {
                     Alert alert = new Alert(Alert.AlertType.NONE);
                     alert.setAlertType(Alert.AlertType.WARNING);
                     alert.setContentText("Ticket not found");
                     alert.show();
                 } else {
-                    try {
-                        readToken();
-                        buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
-                        Stage mainStage = (Stage) TicketRoot.getScene().getWindow();
-                        FXMLScene scene = FXMLScene.load("TicketSubmitForm.fxml");
-                        Parent root = scene.root;
-                        TicketSubmitFormController tc = (TicketSubmitFormController) scene.controller;
-                        tc.setM("T.I. of " + match_name);
-                        tc.setTk(codeText.getText());
-                        mainStage.setScene(new Scene(root));
-                    } catch (Exception e) {
-                        System.out.println(e);
+                    readToken();
+                    if (found) {
+                        try {
+                            found = false;
+                            buyTo.setImage(new Image(new FileInputStream("Images/icons8-buy-done-100.png")));
+                            Stage mainStage = (Stage) TicketRoot.getScene().getWindow();
+                            FXMLScene scene = FXMLScene.load("TicketSubmitForm.fxml");
+                            Parent root = scene.root;
+                            TicketSubmitFormController tc = (TicketSubmitFormController) scene.controller;
+                            tc.setM("T.I. of " + match_name);
+                            tc.setTk(codeText.getText());
+                            mainStage.setScene(new Scene(root));
+                        } catch (Exception e) {
+                            System.out.println(e);
+                        }
+                    } else {
+                        Alert alert = new Alert(Alert.AlertType.NONE);
+                        alert.setAlertType(Alert.AlertType.WARNING);
+                        alert.setContentText("Ticket not found");
+                        alert.show();
+
                     }
-                    bought = false;
+                    buy = false;
                 }
 
             } else {
@@ -120,7 +130,7 @@ public class TicketController {
                 } catch (FileNotFoundException e) {
                     System.out.println(e);
                 }
-                bought = true;
+                buy = true;
             }
         });
 
@@ -134,6 +144,7 @@ public class TicketController {
                 String[] parts = line.split("___");
                 if (codeText.getText().equals(parts[2])) {
                     match_name = parts[1];
+                    found = true;
                 }
             }
             bf.close();

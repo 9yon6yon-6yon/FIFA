@@ -3,6 +3,7 @@ package User;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -10,8 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 public class TicketSubmitFormController {
 
@@ -91,8 +91,8 @@ public class TicketSubmitFormController {
 
     @FXML
     void initialize() {
-        matchTeams.setText(m);
-        tokenView.setText(tk);
+        matchTeams.setText(getM());
+        tokenView.setText(getTk());
 
         choosepath.setOnAction(actionEvent -> {
             DirectoryChooser directoryChooser = new DirectoryChooser();
@@ -105,10 +105,45 @@ public class TicketSubmitFormController {
             locationPath.setText(sDir);
         });
         saveButton.setOnAction(actionEvent -> {
-            TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(), getTokenView().getText(), sDir);
-            tg.setToken(tk);
-            tg.setMatchInfo(m);
-            tg.generatePDF();
+            boolean hasTicket = false;
+            try {
+                String t = "Files/temp.txt";
+                File temp = new File(t);
+                BufferedReader bf = new BufferedReader(new FileReader("Files/availableMatch.txt"));
+                BufferedWriter bw = new BufferedWriter(new FileWriter(temp, true));
+                String line;
+                while ((line = bf.readLine()) != null) {
+                    String[] parts = line.split("___");
+                    if (getTk().equals(parts[2])) {
+                        int Ticket = Integer.parseInt(parts[3]);
+                        if (Ticket > 0) {
+                            hasTicket = true;
+                            int avbTicket = Ticket - 1;
+                            bw.append(parts[0]).append("___").append(parts[1]).append("___").append(getTk()).append("___").append(String.valueOf(avbTicket)).append("\n");
+                        }
+                    } else {
+                        bw.append(line).append("\n");
+                    }
+                }
+                bf.close();
+                bw.close();
+                temp.renameTo(new File("Files/availableMatch.txt"));
+                if(hasTicket){
+                    TicketGenerator tg = new TicketGenerator(fullName.getText(), userid.getText(), mail.getText(), cInfo.getText(), getTokenView().getText(), sDir);
+                    tg.setToken(tk);
+                    tg.setMatchInfo(m);
+                    tg.generatePDF();
+                }
+                else {
+                    Alert alert = new Alert(Alert.AlertType.NONE);
+                    alert.setAlertType(Alert.AlertType.WARNING);
+                    alert.setContentText("Ticket not available");
+                    alert.show();
+                }
+
+            } catch (IOException e) {
+                System.out.println(e);
+            }
             try {
                 Stage mainStage = (Stage) form.getScene().getWindow(); // then cast to stage to get the window
                 FXMLScene scene = FXMLScene.load("Ticket.fxml");
