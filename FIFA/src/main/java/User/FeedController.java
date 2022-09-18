@@ -73,6 +73,67 @@ public class FeedController {
     private TextArea showArea;
 
 
+    @FXML
+    private Label postlabel;
+
+    BufferedReader areader;
+    BufferedWriter awriter;
+
+
+    public FeedController() {
+
+        try{
+            Socket sc=new Socket("localhost",1234);
+            OutputStreamWriter o=new OutputStreamWriter(sc.getOutputStream());
+            awriter=new BufferedWriter(o);
+
+            InputStreamReader isr=new InputStreamReader(sc.getInputStream());
+            areader=new BufferedReader(isr);
+
+            Thread sl= new Thread(){
+
+                @Override
+                public void run() {
+                    while(true){
+
+                        try{
+
+                            String s1 = areader.readLine();
+
+
+
+                            postlabel.setText(s1);
+
+                        }
+
+                        catch (SocketException e){
+
+                            break;
+                        }
+
+                        catch (IOException e){
+
+                            e.printStackTrace();
+                        }
+
+                    }
+                }
+            };
+
+            sl.start();
+
+
+
+
+
+        }
+        catch (IOException e){
+
+            e.printStackTrace();
+        }
+
+
+    }
 
     @FXML
     void closeOnAction(ActionEvent event) {
