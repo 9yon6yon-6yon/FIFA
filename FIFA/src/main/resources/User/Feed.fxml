@@ -16,7 +16,7 @@
 
 <AnchorPane fx:id="FeedRoot" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FeedController">
    <children>
-      <ImageView disable="true" fitHeight="600.0" fitWidth="900.0" focusTraversable="true" layoutX="-1.0" layoutY="51.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="postlabel" disable="true" fitHeight="600.0" fitWidth="900.0" focusTraversable="true" layoutX="-1.0" layoutY="51.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/new.jpg" />
          </image>
@@ -258,5 +258,10 @@
             <Image url="@../Images/icons8-team-100.png" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="193.0" prefHeight="188.0" prefWidth="377.0" text="News">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

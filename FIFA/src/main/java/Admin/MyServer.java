@@ -14,6 +14,8 @@ public class MyServer {
             while (true) {
                 Socket sc = serverSocket.accept();
                 Client client = new Client(sc);
+                //LiveController licnt=new LiveController(sc);
+                //Thread t2 = new Thread(licnt);
                 Thread t = new Thread(client);
                 t.start();
             }
